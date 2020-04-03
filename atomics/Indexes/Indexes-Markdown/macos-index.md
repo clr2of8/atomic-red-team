@@ -1,6 +1,6 @@
 # macOS Atomic Tests by ATT&CK Tactic & Technique
 # persistence
-- [T1156 .bash_profile and .bashrc](./T1156/T1156.md)
+- [T1156 .bash_profile and .bashrc](../../T1156/T1156.md)
   - Atomic Test #1: Add command to .bash_profile [macos, linux]
   - Atomic Test #2: Add command to .bashrc [macos, linux]
 - [T1176 Browser Extensions](./T1176/T1176.md)
