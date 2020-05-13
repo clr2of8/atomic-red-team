@@ -4,6 +4,7 @@ display_name: Data Encoding
 
 atomic_tests:
 - name: Base64 Encoded data.
+  auto_generated_guid: 7067601a-7204-490f-b26b-c885bd21c6e2
   description: |
     Utilizing a common technique for posting base64 encoded data.
 

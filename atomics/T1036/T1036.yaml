@@ -4,6 +4,7 @@ display_name: Masquerading
 
 atomic_tests:
 - name: Masquerading as Windows LSASS process
+  auto_generated_guid: fa1c458f-a436-432c-a5a4-155d47813494
   description: |
     Copies cmd.exe, renames it, and launches it to masquerade as an instance of lsass.exe.
 
@@ -21,6 +22,7 @@ atomic_tests:
       del /Q /F %SystemRoot%\Temp\lsass.exe >nul 2>&1
 
 - name: Masquerading as Linux crond process.
+  auto_generated_guid: 137e8108-714c-4013-87d8-62669c94470b
   description: |
     Copies sh process, renames it as crond, and executes it to masquerade as the cron daemon.
 
@@ -37,6 +39,7 @@ atomic_tests:
       /tmp/crond
 
 - name: Masquerading - cscript.exe running as notepad.exe
+  auto_generated_guid: 3eeccfaf-4151-4e97-bc35-0c2f80825510
   description: |
     Copies cscript.exe, renames it, and launches it to masquerade as an instance of notepad.exe.
 
@@ -54,6 +57,7 @@ atomic_tests:
       del /Q /F %APPDATA%\notepad.exe >nul 2>&1
 
 - name: Masquerading - wscript.exe running as svchost.exe
+  auto_generated_guid: 28926b26-fb8d-4790-ab0a-c89ecaf91bd1
   description: |
     Copies wscript.exe, renames it, and launches it to masquerade as an instance of svchost.exe.
 
@@ -71,6 +75,7 @@ atomic_tests:
       del /Q /F %APPDATA%\svchost.exe >nul 2>&1
 
 - name: Masquerading - powershell.exe running as taskhostw.exe
+  auto_generated_guid: 26a90846-6ac0-42e0-92a5-c17d967cc19a
   description: |
     Copies powershell.exe, renames it, and launches it to masquerade as an instance of taskhostw.exe.
 
@@ -89,6 +94,7 @@ atomic_tests:
       del /Q /F %APPDATA%\taskhostw.exe >nul 2>&1
 
 - name: Masquerading - non-windows exe running as windows exe
+  auto_generated_guid: e2c0703e-3f64-4921-9902-a529e9e268e6
   description: |
     Copies an exe, renames it as a windows exe, and launches it to masquerade as a real windows exe
 
@@ -128,6 +134,7 @@ atomic_tests:
       Remove-Item #{outputfile} -Force -ErrorAction Ignore
 
 - name: Masquerading - windows exe running as different windows exe
+  auto_generated_guid: 4d2eabc8-03f4-496a-bc5b-79a5e825f935
   description: |
     Copies a windows exe, renames it as another windows exe, and launches it to masquerade as second windows exe
 
@@ -155,6 +162,7 @@ atomic_tests:
       Remove-Item #{outputfile} -Force -ErrorAction Ignore
 
 - name: Malicious process Masquerading as LSM.exe
+  auto_generated_guid: d3dba1f7-8259-4369-beec-756c2a3fed31
   description: |
     Detect LSM running from an incorrect directory and an incorrect service account
     This works by copying cmd.exe to a file, naming it lsm.exe, then copying a file to the C:\ folder.

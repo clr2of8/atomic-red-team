@@ -4,6 +4,7 @@ display_name: Pass the Hash
 
 atomic_tests:
 - name: Mimikatz Pass the Hash
+  auto_generated_guid: 97316534-5a58-4c46-819a-1a7763a5efa0
   description: |
     Note: must dump hashes first
     [Reference](https://github.com/gentilkiwi/mimikatz/wiki/module-~-sekurlsa#pth)
@@ -31,6 +32,7 @@ atomic_tests:
       mimikatz # sekurlsa::pth /user:#{user_name} /domain:#{domain} /ntlm:#{ntlm}
 
 - name: crackmapexec Pass the Hash
+  auto_generated_guid: 779988e7-3302-424f-bc00-a8aea62d8b95
   description: |
      command execute with crackmapexec
 

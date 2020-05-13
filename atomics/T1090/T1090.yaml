@@ -4,6 +4,7 @@ display_name: Connection Proxy
 
 atomic_tests:
 - name: Connection Proxy
+  auto_generated_guid: fff549e2-d6c9-4a9f-9a1e-06e5008bc34e
   description: |
     Enable traffic redirection.
 
@@ -33,6 +34,7 @@ atomic_tests:
       unset https_proxy
 
 - name: portproxy reg key
+  auto_generated_guid: d1e8afed-f116-46f3-b874-8b353cb5835a
   description: |
     Adds a registry key to set up a proxy on the endpoint at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PortProxy\v4tov4
     Upon execution there will be a new proxy entry in netsh

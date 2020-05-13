@@ -4,6 +4,7 @@ display_name: Software Packing
 
 atomic_tests:
 - name: Binary simply packed by UPX (linux)
+  auto_generated_guid: f3005d74-0301-4242-a894-b02c8221a8be
   description: |
     Copies and then runs a simple binary (just outputting "the cake is a lie"), that was packed by UPX.
     No other protection/compression were applied.
@@ -26,6 +27,7 @@ atomic_tests:
       rm /tmp/packed_bin
 
 - name: Binary packed by UPX, with modified headers (linux)
+  auto_generated_guid: 6b17e27e-6374-4856-a6df-625268d100c6
   description: |
     Copies and then runs a simple binary (just outputting "the cake is a lie"), that was packed by UPX.
 
@@ -50,6 +52,7 @@ atomic_tests:
       rm /tmp/packed_bin
 
 - name: Binary simply packed by UPX
+  auto_generated_guid: 5a154014-8217-44d6-9a21-6c8d6aa05252
   description: |
     Copies and then runs a simple binary (just outputting "the cake is a lie"), that was packed by UPX.
     No other protection/compression were applied.
@@ -72,6 +75,7 @@ atomic_tests:
       rm /tmp/packed_bin
 
 - name: Binary packed by UPX, with modified headers
+  auto_generated_guid: 024151a7-ddf9-4b90-a37b-5cdf3d846f61
   description: |
     Copies and then runs a simple binary (just outputting "the cake is a lie"), that was packed by UPX.
 

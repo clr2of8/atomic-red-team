@@ -4,6 +4,7 @@ display_name: rc.common
 
 atomic_tests:
 - name: rc.common
+  auto_generated_guid: fc022f3e-0112-45ec-9525-cb1861deced0
   description: |
     Modify rc.common
 

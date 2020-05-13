@@ -4,6 +4,7 @@ display_name: Loadable Kernel Module based Rootkit
 
 atomic_tests:
 - name: Loadable Kernel Module based Rootkit
+  auto_generated_guid: 29177778-45b6-400c-89cd-6c67287eb101
   description: |
     Loadable Kernel Module based Rootkit
 
@@ -49,6 +50,7 @@ atomic_tests:
       sudo rmmod #{rootkit_name}
       
 - name: Loadable Kernel Module based Rootkit
+  auto_generated_guid: c439ea6c-dd5a-4d3d-b35d-3abe427a7ff1
   description: |
     Loadable Kernel Module based Rootkit
 
@@ -96,6 +98,7 @@ atomic_tests:
       sudo depmod -a
 
 - name: Windows Signed Driver Rootkit Test
+  auto_generated_guid: 89e684ec-1227-4b5f-b9cf-e4e834d08105
   description: |
     This test exploits a signed driver to execute code in Kernel.
     SHA1 C1D5CF8C43E7679B782630E93F5E6420CA1749A7

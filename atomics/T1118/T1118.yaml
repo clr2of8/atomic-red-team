@@ -3,6 +3,7 @@ attack_technique: T1118
 display_name: InstallUtil
 atomic_tests:
 - name: CheckIfInstallable method call
+  auto_generated_guid: c6a9ab74-934c-491a-a179-80799d1e131d
   description: |
     Executes the CheckIfInstallable class constructor runner instead of executing InstallUtil. Upon execution, the InstallUtil test harness will be executed.
     If no output is displayed the test executed successfuly.
@@ -68,6 +69,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallHelper method call
+  auto_generated_guid: 7346e7ab-0bdc-4129-933b-82b80fe7e6a6
   description: |
     Executes the InstallHelper class constructor runner instead of executing InstallUtil. Upon execution, no output will be displayed if the test
     executed successfuly.
@@ -135,6 +137,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil class constructor method call
+  auto_generated_guid: 1a9de86e-79ed-4ecb-a10a-5ab4c81877fb
   description: |
     Executes the installer assembly class constructor. Upon execution, version information will be displayed the .NET framework install utility.
   supported_platforms:
@@ -201,6 +204,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil Install method call
+  auto_generated_guid: ba0cee5e-2fec-4991-8229-1ad00606b37e
   description: |
     Executes the Install Method. Upon execution, version information will be displayed the .NET framework install utility.
   supported_platforms:
@@ -267,6 +271,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil Uninstall method call - /U variant
+  auto_generated_guid: 333e2224-5606-42fe-8b6e-46bfd33309e7
   description: |
     Executes the Uninstall Method. Upon execution, version information will be displayed the .NET framework install utility.
   supported_platforms:
@@ -333,6 +338,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+  auto_generated_guid: 5fff88dc-1969-47db-9875-0561e8bbac70
   description: |
     Executes the Uninstall Method. Upon execution, version information will be displayed the .NET framework install utility.
   supported_platforms:
@@ -399,6 +405,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil HelpText method call
+  auto_generated_guid: ba9467f5-12db-426c-b527-83cb3082d5ef
   description: |
     Executes the Uninstall Method. Upon execution, help information will be displayed for InstallUtil.
   supported_platforms:
@@ -465,6 +472,7 @@ atomic_tests:
       Remove-Item -Path $InstallerAssemblyFullPath -ErrorAction Ignore
 
 - name: InstallUtil evasive invocation
+  auto_generated_guid: b72c7bdb-06c2-4608-8ec0-dd40482a4876
   description: |
     Executes an InstallUtil assembly by renaming InstallUtil.exe and using a nonstandard extension for the assembly. Upon execution, "Running a transacted installation."
     will be displayed, along with other information about the opperation. "The transacted install has completed." will be displayed upon completion.

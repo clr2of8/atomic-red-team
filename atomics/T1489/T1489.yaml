@@ -4,6 +4,7 @@ display_name: Service Stop
 
 atomic_tests:
 - name: Windows - Stop service using Service Controller
+  auto_generated_guid: 502e0434-7e02-4cf6-832f-617058f2d05f
   description: |
     Stops a specified service using the sc.exe command. Upon execution, if the spooler service was running infomration will be displayed saying
     it has changed to a state of STOP_PENDING. If the spooler service was not running "The service has not been started." will be displayed and it can be
@@ -27,6 +28,7 @@ atomic_tests:
       sc.exe start #{service_name} >nul 2>&1
 
 - name: Windows - Stop service using net.exe
+  auto_generated_guid: 81cd1647-4a64-423c-941e-6f7570f72b04
   description: |
     Stops a specified service using the net.exe command. Upon execution, if the service was running "The Print Spooler service was stopped successfully."
     will be displayed. If the service was not running, "The Print Spooler service is not started." will be displayed and it can be
@@ -50,6 +52,7 @@ atomic_tests:
       net.exe start #{service_name} >nul 2>&1
 
 - name: Windows - Stop service by killing process
+  auto_generated_guid: 6aeb5db5-5f9b-47a4-8bd5-452c16e1c776
   description: |
     Stops a specified service killng the service's process.
     This technique was used by WannaCry. Upon execution, if the spoolsv service was running "SUCCESS: The process "spoolsv.exe" with PID 2316 has been terminated."

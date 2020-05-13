@@ -4,6 +4,7 @@ display_name: Remote System Discovery
 
 atomic_tests:
 - name: Remote System Discovery - net
+  auto_generated_guid: daeaa5eb-9734-42c6-b6a4-344a567d5f4d
   description: |
     Identify remote systems with net.exe.
 
@@ -20,6 +21,7 @@ atomic_tests:
       net view
 
 - name: Remote System Discovery - net group Domain Computers
+  auto_generated_guid: 204c5c2a-0d87-409d-b0a2-11456bbbcc0e
   description: |
     Identify remote systems with net.exe querying the Active Directory Domain Computers group.
 
@@ -35,6 +37,7 @@ atomic_tests:
       net group "Domain Computers" /domain
 
 - name: Remote System Discovery - nltest
+  auto_generated_guid: 319ba173-42ee-4acc-a32d-287c8ffa704f
   description: |
     Identify domain controllers for specified domain.
 
@@ -56,6 +59,7 @@ atomic_tests:
       nltest.exe /dclist:#{target_domain}
 
 - name: Remote System Discovery - ping sweep
+  auto_generated_guid: 08a8bddb-aa74-4131-bef5-da4762e0402c
   description: |
     Identify remote systems via ping sweep.
 
@@ -71,6 +75,7 @@ atomic_tests:
       for /l %i in (1,1,254) do ping -n 1 -w 100 192.168.1.%i
 
 - name: Remote System Discovery - arp
+  auto_generated_guid: 0f0ef5ba-51ff-451e-88ed-da87ce744cfc
   description: |
     Identify remote systems via arp. 
 
@@ -86,6 +91,7 @@ atomic_tests:
       arp -a
 
 - name: Remote System Discovery - arp nix
+  auto_generated_guid: b78a903b-b8a0-40d7-a53c-b770dcd5f9a0
   description: |
     Identify remote systems via arp.
 
@@ -110,6 +116,7 @@ atomic_tests:
       arp -a | grep -v '^?'
 
 - name: Remote System Discovery - sweep
+  auto_generated_guid: 5b2a5904-5b04-4e05-ac30-7443c8e5788a
   description: |
     Identify remote systems via ping sweep.
 
@@ -138,6 +145,7 @@ atomic_tests:
       for ip in $(seq #{start_host} #{stop_host}); do ping -c 1 #{subnet}.$ip; [ $? -eq 0 ] && echo "#{subnet}.$ip UP" || : ; done
       
 - name: Remote System Discovery - nslookup
+  auto_generated_guid: 0a73bc97-0136-491d-a12f-6dbbb553a58a
   description: |
     Powershell script that runs nslookup on cmd.exe against the local /24 network of the first network adaptor listed in ipconfig.
 

@@ -4,6 +4,7 @@ display_name: Source
 
 atomic_tests:
 - name: Execute Script using Source
+  auto_generated_guid: 9b9270b2-30de-4675-a69c-8ffb833f11b4
   description: |
     Creates a script and executes it using the source command
 
@@ -19,6 +20,7 @@ atomic_tests:
       source /tmp/art.sh
 
 - name: Execute Script using Source Alias
+  auto_generated_guid: d1a6157a-a5a1-4ce2-9bbe-70f0bdd276b0
   description: |
     Creates a script and executes it using the source command's dot alias
 

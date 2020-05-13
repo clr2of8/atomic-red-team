@@ -4,6 +4,7 @@ display_name: File Permissions Modification
 
 atomic_tests:
 - name: Take ownership using takeown utility
+  auto_generated_guid: 52c8f348-18d8-4b01-bb98-d847dee641d3
   description: |
     Modifies the filesystem permissions of the specified file or folder to take ownership of the object. Upon execution, "SUCCESS" will
     be displayed for the folder and each file inside of it.
@@ -34,6 +35,7 @@ atomic_tests:
       takeown.exe /f #{file_folder_to_own} /r
 
 - name: cacls - Grant permission to specified user or group recursively
+  auto_generated_guid: 04f91a6a-3298-4126-8bec-352a5aa086e0
   description: |
     Modifies the filesystem permissions of the specified folder and contents to allow the specified user or group Full Control. If "Access is denied"
     is displayed it may be because the file or folder doesn't exit. Run the prereq command to create it. Upon successfull execution, "Successfully processed 3 files"
@@ -69,6 +71,7 @@ atomic_tests:
       Icacls.exe #{file_or_folder} /grant #{user_or_group}:F
 
 - name: attrib - Remove read-only attribute
+  auto_generated_guid: fbaa60da-952d-4145-b436-70a5445d8b57
   description: |
     Removes the read-only attribute from a file or folder using the attrib.exe command. Upon execution, no output will be displayed.
     Open the file in File Explorer > Right Click - Prperties and observe that the Read Only checkbox is empty.
@@ -101,6 +104,7 @@ atomic_tests:
       attrib.exe -r #{file_or_folder}\*.* /s
 
 - name: chmod - Change file or folder mode (numeric mode)
+  auto_generated_guid: 4d12f4c8-4e28-4e88-9e81-2d836220903a
   description: |
     Changes a file or folder's permissions using chmod and a specified numeric mode.
 
@@ -124,6 +128,7 @@ atomic_tests:
       chmod #{numeric_mode} #{file_or_folder}
 
 - name: chmod - Change file or folder mode (symbolic mode)
+  auto_generated_guid: 5034b422-2dbf-4bc8-9fc9-8e1140ba8610
   description: |
     Changes a file or folder's permissions using chmod and a specified symbolic mode.
 
@@ -147,6 +152,7 @@ atomic_tests:
       chmod #{symbolic_mode} #{file_or_folder}
 
 - name: chmod - Change file or folder mode (numeric mode) recursively
+  auto_generated_guid: 9c3c91b7-01be-4d25-926c-4161fac0b616
   description: |
     Changes a file or folder's permissions recursively using chmod and a specified numeric mode.
 
@@ -170,6 +176,7 @@ atomic_tests:
       chmod #{numeric_mode} #{file_or_folder} -R
 
 - name: chmod - Change file or folder mode (symbolic mode) recursively
+  auto_generated_guid: 4852ff24-e779-4f45-88ea-6f649ebcd8f3
   description: |
     Changes a file or folder's permissions recursively using chmod and a specified symbolic mode.
 
@@ -193,6 +200,7 @@ atomic_tests:
       chmod #{symbolic_mode} #{file_or_folder} -R
 
 - name: chown - Change file or folder ownership and group
+  auto_generated_guid: 2da3b4fd-f48d-467f-b26a-2a096d8d5486
   description: |
     Changes a file or folder's ownership and group information using chown.
 
@@ -220,6 +228,7 @@ atomic_tests:
       chown #{owner}:#{group} #{file_or_folder}
 
 - name: chown - Change file or folder ownership and group recursively
+  auto_generated_guid: faa41721-e7e9-450e-bfb9-52c0361e59bf
   description: |
     Changes a file or folder's ownership and group information recursively using chown.
   supported_platforms:
@@ -246,6 +255,7 @@ atomic_tests:
       chown #{owner}:#{group} #{file_or_folder} -R
 
 - name: chown - Change file or folder mode ownership only
+  auto_generated_guid: 4b4a1928-e386-4612-9a22-40c87636449b
   description: |
     Changes a file or folder's ownership only using chown.
 
@@ -269,6 +279,7 @@ atomic_tests:
       chown #{owner} #{file_or_folder}
 
 - name: chown - Change file or folder ownership recursively
+  auto_generated_guid: 1e2a577a-a41b-4f70-8985-e1a8e5b65b23
   description: |
     Changes a file or folder's ownership only recursively using chown.
   supported_platforms:
@@ -291,6 +302,7 @@ atomic_tests:
       chown #{owner} #{file_or_folder} -R
 
 - name: chattr - Remove immutable file attribute
+  auto_generated_guid: 0b2c20a6-d510-411c-b1c3-45699e4c07ac
   description: |
     Remove's a file's `immutable` attribute using `chattr`.
     This technique was used by the threat actor Rocke during the compromise of Linux web servers.

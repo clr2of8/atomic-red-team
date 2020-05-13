@@ -4,6 +4,7 @@ display_name: Plist Modification
 
 atomic_tests:
 - name: Plist Modification
+  auto_generated_guid: 111da2da-433b-4c39-86e6-27aa53cc0cd2
   description: |
     Modify MacOS plist file in one of two directories
 

@@ -4,6 +4,7 @@ display_name: Pass the Ticket
 
 atomic_tests:
 - name: Mimikatz Kerberos Ticket Attack
+  auto_generated_guid: 61406266-7328-4fd0-8f16-1b21da9c5954
   description: |
     Similar to PTH, but attacking Kerberos
 

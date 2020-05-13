@@ -4,6 +4,7 @@ display_name: Indicator Removal on Host
 
 atomic_tests:
 - name: Clear Logs
+  auto_generated_guid: 18b5ef69-d3b5-44fd-ae8d-0e2103bda07d
   description: |
     Upon execution this test will clear Windows Event Logs. Open the System.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty.
   supported_platforms:
@@ -20,6 +21,7 @@ atomic_tests:
       wevtutil cl #{log_name}
 
 - name: FSUtil
+  auto_generated_guid: 8b041905-e816-47ca-9d4c-471f35f72c06
   description: |
     Manages the update sequence number (USN) change journal, which provides a persistent log of all changes made to files on the volume. Upon exectuion, no output
     will be displayed. More information about fsutil can be found at https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-usn
@@ -34,6 +36,7 @@ atomic_tests:
       fsutil usn createjournal m=1000 a=100 c:
 
 - name: rm -rf
+  auto_generated_guid: f0ffab8b-4203-4c51-9227-8dce3c0a843a
   description: |
     Delete system and audit logs
   supported_platforms:
@@ -46,6 +49,7 @@ atomic_tests:
       rm -rf /private/var/audit/*
 
 - name: Overwrite Linux Mail Spool
+  auto_generated_guid: d3177235-2c77-4033-80a5-0db2b6aaff0e
   description: |
     This test overwrites the Linux mail spool of a specified user. This technique was used by threat actor Rocke during the exploitation of Linux web servers.
   supported_platforms:
@@ -61,6 +65,7 @@ atomic_tests:
       echo 0> /var/spool/mail/#{username}
 
 - name: Overwrite Linux Log
+  auto_generated_guid: a1db17cd-b8a0-4d55-a60c-a8b2b200e7ed
   description: |
     This test overwrites the specified log. This technique was used by threat actor Rocke during the exploitation of Linux web servers.
   supported_platforms:
@@ -76,6 +81,7 @@ atomic_tests:
       echo 0> #{log_path}
 
 - name: Delete System Logs Using PowerShell
+  auto_generated_guid: f028dc16-f085-4066-8d95-0430c1aecbd8
   description: |
     Recommended Detection: Monitor for use of the windows event log filepath in PowerShell couple with delete arguments.
     Upon execution, open the Security.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty or has very few logs in it.
@@ -93,6 +99,7 @@ atomic_tests:
       Start-Service -Name EventLog
 
 - name: Delete System Logs Using Clear-EventLogId
+  auto_generated_guid: 2cbf86e4-c13d-40ee-8b47-76c88c7e7102
   description: |
     Clear event logs using built-in PowerShell commands.
     Upon execution, open the Security.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty or has very few logs in it.

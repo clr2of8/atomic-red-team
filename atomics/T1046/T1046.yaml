@@ -4,6 +4,7 @@ display_name: Network Service Scanning
 
 atomic_tests:
 - name: Port Scan
+  auto_generated_guid: 516fd6a1-595e-4ce1-90d9-a98992cdc2a0
   description: |
     Scan ports to check for listening ports.
 
@@ -21,6 +22,7 @@ atomic_tests:
       done
 
 - name: Port Scan Nmap
+  auto_generated_guid: bdd32174-baab-4032-9bae-337c1d16ac25
   description: |
     Scan ports to check for listening ports with Nmap.
 

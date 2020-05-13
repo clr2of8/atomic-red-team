@@ -4,6 +4,7 @@ display_name: Data Transfer Size Limits
 
 atomic_tests:
 - name: Data Transfer Size Limits
+  auto_generated_guid: ada6b7c7-abd8-4552-a2ca-a4c7affadae4
   description: |
     Take a file/directory, split it into 5Mb chunks
 

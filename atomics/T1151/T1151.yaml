@@ -4,6 +4,7 @@ display_name: Space After Filename
 
 atomic_tests:
 - name: Space After Filename
+  auto_generated_guid: f60c69b0-ebde-4937-8412-ee880c4003b8
   description: |
     Space After Filename
 

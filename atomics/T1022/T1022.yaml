@@ -4,6 +4,7 @@ display_name: Data Encrypted
 
 atomic_tests:
 - name: Data Encrypted with zip and gpg symmetric
+  auto_generated_guid: 3d30e9ee-c8d2-41e9-948e-54cad01f5110
   description: |
     Encrypt data for exiltration
   supported_platforms:
@@ -42,6 +43,7 @@ atomic_tests:
       rm -Rf #{test_folder}
 
 - name: Compress Data and lock with password for Exfiltration with winrar
+  auto_generated_guid: 0cd2a967-ab69-4d42-bc94-0ef586a31174
   description: |
     Note: Requires winrar installation
     rar a -p"blue" hello.rar (VARIANT)
@@ -58,6 +60,7 @@ atomic_tests:
       dir
 
 - name: Compress Data and lock with password for Exfiltration with winzip
+  auto_generated_guid: 1dce7d9d-0034-4888-8178-8c916555bf24
   description: |
     Note: Requires winzip installation
     wzzip sample.zip -s"blueblue" *.txt (VARIANT)
@@ -102,6 +105,7 @@ atomic_tests:
       dir
 
 - name: Compress Data and lock with password for Exfiltration with 7zip
+  auto_generated_guid: 0742cb0e-8ff5-4f7d-8c58-97509f3d752d
   description: |
     Note: Requires 7zip installation
   supported_platforms:

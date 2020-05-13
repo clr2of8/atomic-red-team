@@ -4,6 +4,7 @@ display_name: Office Application Startup
 
 atomic_tests:
 - name: DDEAUTO
+  auto_generated_guid: d8ddfb47-e057-482a-8e8d-25be36d480c1
   description: |
 
     TrustedSec - Unicorn - https://github.com/trustedsec/unicorn

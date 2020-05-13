@@ -4,6 +4,7 @@ display_name: Adversaries may conduct C2 communications over a non-standard port
 
 atomic_tests:
 - name: Testing usage of uncommonly used port with PowerShell
+  auto_generated_guid: a12df916-b956-47e9-b982-a698be6443d6
   description: |
     Testing uncommonly used port utilizing PowerShell. APT33 has been known to attempt telnet over port 8081. Upon exectuion, details about the successful
     port check will be displayed.
@@ -28,6 +29,7 @@ atomic_tests:
       Test-NetConnection -ComputerName #{domain} -port #{port}
 
 - name: Testing usage of uncommonly used port
+  auto_generated_guid: 6d4f0155-6495-4b38-89db-6961c69c5ddc
   description: |
     Testing uncommonly used port utilizing telnet.
 

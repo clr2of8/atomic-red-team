@@ -4,6 +4,7 @@ display_name: Account Discovery
 
 atomic_tests:
 - name: Enumerate all accounts
+  auto_generated_guid: b49627c8-22ef-4b9a-9b23-735c015c6acb
   description: |
     Enumerate all accounts by copying /etc/passwd to another file
   supported_platforms:
@@ -23,6 +24,7 @@ atomic_tests:
       rm -f #{output_file}
 
 - name: View sudoers access
+  auto_generated_guid: 7fd96cd4-ee69-4be3-8796-5c951355627e
   description: |
     (requires root)
   supported_platforms:
@@ -43,6 +45,7 @@ atomic_tests:
       rm -f #{output_file}
 
 - name: View accounts with UID 0
+  auto_generated_guid: 30bd140a-ce15-4881-8d99-d7084e0bab86
   description: |
     View accounts wtih UID 0
   supported_platforms:
@@ -62,6 +65,7 @@ atomic_tests:
       rm -f #{output_file} 2>/dev/null
 
 - name: List opened files by user
+  auto_generated_guid: 275b8ec4-36d1-40d3-9d02-a33caab0aecf
   description: |
     List opened files by user
   supported_platforms:
@@ -73,6 +77,7 @@ atomic_tests:
       username=$(echo $HOME | awk -F'/' '{print $3}') && lsof -u $username
 
 - name: Show if a user account has ever logged in remotely
+  auto_generated_guid: c250f76f-2255-4f9f-a63b-b2e63089249b
   description: |
     Show if a user account has ever logged in remotely
   supported_platforms:
@@ -99,6 +104,7 @@ atomic_tests:
       rm -f #{output_file}
 
 - name: Enumerate users and groups
+  auto_generated_guid: 96b2c366-85d8-4083-9d73-71fa06ea4e11
   description: |
     Utilize groups and id to enumerate users and groups
   supported_platforms:
@@ -112,6 +118,7 @@ atomic_tests:
       id
 
 - name: Enumerate users and groups
+  auto_generated_guid: 8eae76a8-6205-49ce-9cfd-d302c7c6e079
   description: |
     Utilize local utilities to enumerate users and groups
   supported_platforms:
@@ -127,6 +134,7 @@ atomic_tests:
       dscacheutil -q user
 
 - name: Enumerate all accounts
+  auto_generated_guid: dd3f23a7-90a5-40c5-a5df-adbd484d6917
   description: |
     Enumerate all accounts
     Upon exection, multiple enumeration commands will be run and their output displayed in the PowerShell session
@@ -144,6 +152,7 @@ atomic_tests:
       net localgroup
 
 - name: Enumerate all accounts via PowerShell
+  auto_generated_guid: b9619a97-4c99-4f03-b76b-72d9febaf52a
   description: |
     Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
   supported_platforms:
@@ -165,6 +174,7 @@ atomic_tests:
       net localgroup
 
 - name: Enumerate logged on users via CMD
+  auto_generated_guid: 7691583f-bfe0-4df7-ac7c-e740e85de2c3
   description: |
     Enumerate logged on users. Upon exeuction, logged on users will be displayed.
   supported_platforms:
@@ -176,6 +186,7 @@ atomic_tests:
       query user
 
 - name: Enumerate logged on users via PowerShell
+  auto_generated_guid: a9db48d9-f354-40fb-a6b9-82af5faa2658
   description: |
     Enumerate logged on users via PowerShell. Upon exeuction, logged on users will be displayed.
   supported_platforms:

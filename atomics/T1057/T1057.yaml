@@ -4,6 +4,7 @@ display_name: Process Discovery
 
 atomic_tests:
 - name: Process Discovery - ps
+  auto_generated_guid: 3fa4d9d2-9ba8-402d-ba4a-f4f8cfed9244
   description: |
     Utilize ps to identify processes.
 
@@ -27,6 +28,7 @@ atomic_tests:
       ps aux >> #{output_file}
 
 - name: Process Discovery - tasklist
+  auto_generated_guid: 6efe66e7-06dc-4d9b-a48d-f1253deb73d2
   description: |
     Utilize tasklist to identify processes.
 

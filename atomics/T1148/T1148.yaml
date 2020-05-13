@@ -4,6 +4,7 @@ display_name: HISTCONTROL
 
 atomic_tests:
 - name: Disable history collection
+  auto_generated_guid: f56c2cae-a908-4a32-8e39-cd90f53739da
   description: |
     Disables history collection in shells
   supported_platforms:
@@ -21,6 +22,7 @@ atomic_tests:
       ls #{evil_command}
 
 - name: Mac HISTCONTROL
+  auto_generated_guid: 190b9165-b1fe-42b4-ae55-0710e0aebf94
   description: |
     
   supported_platforms:

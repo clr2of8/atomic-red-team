@@ -4,6 +4,7 @@ display_name: Systemd Service
 
 atomic_tests:
 - name: Create Systemd Service
+  auto_generated_guid: 7836d02d-b76a-456d-a902-10b61d95b597
   description: |
     This test creates a Systemd service unit file and enables it as a service.
 

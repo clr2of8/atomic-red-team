@@ -4,6 +4,7 @@ display_name: Resource Hijacking
 
 atomic_tests:
 - name: macOS/Linux - Simulate CPU Load with Yes
+  auto_generated_guid: c385322d-68cd-4009-a8bf-d04e061c255e
   description: |
     This test simulates a high CPU load as you might observe during cryptojacking attacks.
     End the test by using CTRL/CMD+C to break.

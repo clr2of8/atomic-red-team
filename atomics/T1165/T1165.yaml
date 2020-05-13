@@ -4,6 +4,7 @@ display_name: Startup Items
 
 atomic_tests:
 - name: add file to Local Library StartupItems
+  auto_generated_guid: d6460309-a8b5-4111-9976-2f7943c003b9
   description: |
     Modify or create an file in /Library/StartupItems
 

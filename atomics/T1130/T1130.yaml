@@ -4,6 +4,7 @@ display_name: Install Root Certificate
 
 atomic_tests:
 - name: Install root CA on CentOS/RHEL
+  auto_generated_guid: 435a02d8-d3ba-4f22-bd59-5337b1800c4e
   description: |
     Creates a root CA with openssl
   supported_platforms:
@@ -32,6 +33,7 @@ atomic_tests:
       fi
 
 - name: Install root CA on Debian/Ubuntu
+  auto_generated_guid: d8cbff42-0d4e-468e-b63d-024efdef3406
   description: |
     Creates a root CA with openssl
   supported_platforms:
@@ -62,6 +64,7 @@ atomic_tests:
         echo sudo update-ca-certificates
 
 - name: Install root CA on macOS
+  auto_generated_guid: 8f677759-23f9-464a-a281-2e0b56429e26
   description: |
     Creates a root CA with openssl
   supported_platforms:
@@ -91,6 +94,7 @@ atomic_tests:
         sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "#{cert_filename}"
 
 - name: Install root CA on Windows
+  auto_generated_guid: f1ebce3c-d73c-4487-8f1b-ffd18e69e548
   description: |
     Creates a root CA with Powershell
   supported_platforms:

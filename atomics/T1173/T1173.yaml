@@ -4,6 +4,7 @@ display_name: Dynamic Data Exchange
 
 atomic_tests:
 - name: Execute Commands
+  auto_generated_guid: 4ca5c7e6-a8c9-421c-989c-811b32a061a8
   description: |
     Executes commands via DDE using Microsfot Word
 
@@ -26,6 +27,7 @@ atomic_tests:
       {DDEAUTO c:\\windows\\system32\\cmd.exe "/k calc.exe"  }
 
 - name: Execute PowerShell script via Word DDE
+  auto_generated_guid: e204f9da-c33c-4f50-a0f7-1daff7b17b0b
   description: |
     When the word document opens it will prompt the user to click ok on a dialogue box, then attempt to run PowerShell with DDEAUTO to download and execute a powershell script
   supported_platforms:

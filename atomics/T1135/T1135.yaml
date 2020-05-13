@@ -4,6 +4,7 @@ display_name: Network Share Discovery
 
 atomic_tests:
 - name: Network Share Discovery
+  auto_generated_guid: 71817144-7599-4009-a66f-eae566e588c6
   description: |
     Network Share Discovery
 
@@ -25,6 +26,7 @@ atomic_tests:
       showmount #{computer_name}
 
 - name: Network Share Discovery command prompt
+  auto_generated_guid: 61ee5683-ab89-412e-a352-ab8a27c9d0c5
   description: |
     Network Share Discovery utilizing the command prompt. The computer name variable may need to be modified to point to a different host
     Upon execution avalaible network shares will be displayed in the powershell session
@@ -42,6 +44,7 @@ atomic_tests:
       net view \\#{computer_name}
 
 - name: Network Share Discovery PowerShell
+  auto_generated_guid: 8c7b9983-b1f2-4e8c-bdca-67ff73c0cc43
   description: |
     Network Share Discovery utilizing PowerShell. The computer name variable may need to be modified to point to a different host
     Upon execution, avalaible network shares will be displayed in the powershell session
@@ -60,6 +63,7 @@ atomic_tests:
       get-smbshare -Name #{computer_name}
 
 - name: View available share drives
+  auto_generated_guid: fd917d1a-881e-4606-a391-55cf5ea1a709
   description:
     View information about all of the resources that are shared on the local computer
     Upon execution, avalaible share drives will be displayed in the powershell session

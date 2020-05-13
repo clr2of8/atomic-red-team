@@ -4,6 +4,7 @@ display_name: Screensaver
 
 atomic_tests:
 - name: Set Arbitrary Binary as Screensaver
+  auto_generated_guid: 1f514258-72f7-49bf-a13a-18916ce473d0
   description: |
     This test copies a binary into the Windows System32 folder and sets it as the screensaver so it will execute for persistence. Requires a reboot and logon.
 

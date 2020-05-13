@@ -4,6 +4,7 @@ display_name: Compile After Delivery
 
 atomic_tests:
 - name: Compile After Delivery using csc.exe
+  auto_generated_guid: 5366706d-235d-4349-87fe-f273d650e5c8
   description: |
     Compile C# code using csc.exe binary used by .NET
     Upon execution an exe named T1500.exe will be placed in the temp folder

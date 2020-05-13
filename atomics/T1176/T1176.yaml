@@ -4,6 +4,7 @@ display_name: Browser Extensions
 
 atomic_tests:
 - name: Chrome (Developer Mode)
+  auto_generated_guid: 95288dfe-c808-425e-b2fe-b499b2051f32
   description: |
     
   supported_platforms:
@@ -22,6 +23,7 @@ atomic_tests:
       3. Click 'Select'
 
 - name: Chrome (Chrome Web Store)
+  auto_generated_guid: ba106fe1-c95a-4daf-9461-af488d09ebc4
   description: |
     
   supported_platforms:
@@ -37,6 +39,7 @@ atomic_tests:
       2. Click 'Add to Chrome'
 
 - name: Firefox
+  auto_generated_guid: 1e85f20c-b104-40ef-b5c5-23e7af280597
   description: |
     Create a file called test.wma, with the duration of 30 seconds
   supported_platforms:

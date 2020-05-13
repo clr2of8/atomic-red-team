@@ -4,6 +4,7 @@ display_name: Hypervisor
 
 atomic_tests:
 - name: Installing Hyper-V Feature
+  auto_generated_guid: 67dbd542-c104-4422-8105-b913ae3871c7
   description: |
     PowerShell command to check if Hyper-v is installed.
     Install Hyper-V feature.

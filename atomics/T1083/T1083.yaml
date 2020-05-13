@@ -4,6 +4,7 @@ display_name: File and Directory Discovery
 
 atomic_tests:
 - name: File and Directory Discovery (cmd.exe)
+  auto_generated_guid: 6eb2650f-354e-4a5c-b9c4-0dbfea9a69aa
   description: |
     Find or discover files on the file system.  Upon execution, the file "download" will be placed in the temporary folder and contain the output of
     all of the data discovery commands.
@@ -24,6 +25,7 @@ atomic_tests:
      tree /F >> %temp%\download
 
 - name: File and Directory Discovery (PowerShell)
+  auto_generated_guid: 39a7035e-30b5-44a3-b414-1e9320112f6c
   description: |
     Find or discover files on the file system. Upon execution, file and folder information will be displayed.
 
@@ -39,6 +41,7 @@ atomic_tests:
       gci -recurse
 
 - name: Nix File and Diectory Discovery
+  auto_generated_guid: 0742b587-74de-4b2f-9859-b91c450e6ab5
   description: |
     Find or discover files on the file system
 
@@ -72,6 +75,7 @@ atomic_tests:
 
 
 - name: Nix File and Directory Discovery 2
+  auto_generated_guid: 1a92cecc-c76d-4125-b095-b248bd7c7330
   description: |
     Find or discover files on the file system
 

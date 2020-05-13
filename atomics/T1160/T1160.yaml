@@ -4,6 +4,7 @@ display_name: Launch Daemon
 
 atomic_tests:
 - name: Launch Daemon
+  auto_generated_guid: 085d9e0e-e9b4-4ccc-8f32-81f77979835e
   description: |
     Utilize LaunchDaemon to launch `Hello World`
 

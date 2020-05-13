@@ -4,6 +4,7 @@ display_name: Data Destruction
 
 atomic_tests:
 - name: Windows - Overwrite file with Sysinternals SDelete
+  auto_generated_guid: 63f81f52-e418-4238-bdc3-0046ed9603e2
   description: |
     Overwrites and deletes a file using Sysinternals SDelete. Upon successful execution, "Files deleted: 1" will be displayed in
     the powershell session along with other information about the file that was deleted.
@@ -42,6 +43,7 @@ atomic_tests:
       Invoke-Expression -Command "#{sdelete_exe} -accepteula #{file_to_delete}"
 
 - name: macOS/Linux - Overwrite file with DD
+  auto_generated_guid: 3c409f1d-b390-4225-99fe-53791fdf5082
   description: |
     Overwrites and deletes a file using DD.
     To stop the test, break the command with CTRL/CMD+C.

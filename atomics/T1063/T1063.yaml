@@ -4,6 +4,7 @@ display_name: Security Software Discovery
 
 atomic_tests:
 - name: Security Software Discovery
+  auto_generated_guid: a6f3a4a9-07fb-41da-bc9b-2160a512b396
   description: |
     Methods to identify Security Software on an endpoint
 
@@ -25,6 +26,7 @@ atomic_tests:
       tasklist.exe | findstr /i cylance
 
 - name: Security Software Discovery - powershell
+  auto_generated_guid: 8181b5c6-07a8-449b-b925-02e710972b47
   description: |
     Methods to identify Security Software on an endpoint
 
@@ -43,6 +45,7 @@ atomic_tests:
       get-process | ?{$_.Description -like "*cylance*"}
 
 - name: Security Software Discovery - ps
+  auto_generated_guid: 1f62b18a-bdc4-4a67-90f2-6457dc36b436
   description: |
     Methods to identify Security Software on an endpoint
     when sucessfully executed, command shell  is going to display AV software it is running( Little snitch or carbon black ).
@@ -59,6 +62,7 @@ atomic_tests:
       ps aux | grep CbOsxSensorService
 
 - name: Security Software Discovery - Sysmon Service
+  auto_generated_guid: 4654b41b-34fc-467f-8c39-3220978dc22d
   description: |
     Discovery of an installed Sysinternals Sysmon service using driver altitude (even if the name is changed).
 
@@ -74,6 +78,7 @@ atomic_tests:
       fltmc.exe | findstr.exe 385201
 
 - name: Security Software Discovery - AV Discovery via WMI
+  auto_generated_guid: 30249220-4bd7-4891-830f-383351ce781b
   description: |
     Discovery of installed antivirus products via a WMI query.
 

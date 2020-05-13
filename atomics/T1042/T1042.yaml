@@ -4,6 +4,7 @@ display_name: Change Default File Association
 
 atomic_tests:
 - name: Change Default File Association
+  auto_generated_guid: c29cb577-b911-4291-8453-c7d2f82f528b
   description: |
     Change Default File Association From cmd.exe of hta to notepad.
 

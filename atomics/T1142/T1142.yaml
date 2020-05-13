@@ -4,6 +4,7 @@ display_name: Keychain
 
 atomic_tests:
 - name: Keychain
+  auto_generated_guid: 4e38a89f-caa3-4029-b90b-28c4d57f8147
   description: |
     ### Keychain Files
 

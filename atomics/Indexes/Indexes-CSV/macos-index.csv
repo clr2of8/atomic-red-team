@@ -1,163 +1,163 @@
-Tactic,Technique #,Technique Name,Test #,Test Name
-persistence,T1156,.bash_profile and .bashrc,1,Add command to .bash_profile
-persistence,T1156,.bash_profile and .bashrc,2,Add command to .bashrc
-persistence,T1176,Browser Extensions,1,Chrome (Developer Mode)
-persistence,T1176,Browser Extensions,2,Chrome (Chrome Web Store)
-persistence,T1176,Browser Extensions,3,Firefox
-persistence,T1136,Create Account,2,Create a user account on a MacOS system
-persistence,T1519,Emond,1,Persistance with Event Monitor - emond
-persistence,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory
-persistence,T1158,Hidden Files and Directories,2,Mac Hidden file
-persistence,T1158,Hidden Files and Directories,5,Hidden files
-persistence,T1158,Hidden Files and Directories,6,Hide a Directory
-persistence,T1158,Hidden Files and Directories,7,Show all hidden files
-persistence,T1159,Launch Agent,1,Launch Agent
-persistence,T1160,Launch Daemon,1,Launch Daemon
-persistence,T1152,Launchctl,1,Launchctl
-persistence,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file
-persistence,T1168,Local Job Scheduling,2,Cron - Add script to cron folder
-persistence,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence
-persistence,T1037,Logon Scripts,3,Logon Scripts - Mac
-persistence,T1150,Plist Modification,1,Plist Modification
-persistence,T1163,Rc.common,1,rc.common
-persistence,T1164,Re-opened Applications,1,Re-Opened Applications
-persistence,T1164,Re-opened Applications,2,Re-Opened Applications
-persistence,T1166,Setuid and Setgid,1,Make and modify binary from C source
-persistence,T1166,Setuid and Setgid,2,Set a SetUID flag on file
-persistence,T1166,Setuid and Setgid,3,Set a SetGID flag on file
-persistence,T1165,Startup Items,1,add file to Local Library StartupItems
-persistence,T1154,Trap,1,Trap
-impact,T1485,Data Destruction,2,macOS/Linux - Overwrite file with DD
-impact,T1496,Resource Hijacking,1,macOS/Linux - Simulate CPU Load with Yes
-impact,T1529,System Shutdown/Reboot,3,Restart System via `shutdown` - macOS/Linux
-impact,T1529,System Shutdown/Reboot,4,Shutdown System via `shutdown` - macOS/Linux
-impact,T1529,System Shutdown/Reboot,5,Restart System via `reboot` - macOS/Linux
-discovery,T1087,Account Discovery,1,Enumerate all accounts
-discovery,T1087,Account Discovery,2,View sudoers access
-discovery,T1087,Account Discovery,3,View accounts with UID 0
-discovery,T1087,Account Discovery,4,List opened files by user
-discovery,T1087,Account Discovery,6,Enumerate users and groups
-discovery,T1087,Account Discovery,7,Enumerate users and groups
-discovery,T1217,Browser Bookmark Discovery,2,List Mozilla Firefox Bookmark Database Files on macOS
-discovery,T1217,Browser Bookmark Discovery,3,List Google Chrome Bookmark JSON Files on macOS
-discovery,T1083,File and Directory Discovery,3,Nix File and Diectory Discovery
-discovery,T1083,File and Directory Discovery,4,Nix File and Directory Discovery 2
-discovery,T1046,Network Service Scanning,1,Port Scan
-discovery,T1046,Network Service Scanning,2,Port Scan Nmap
-discovery,T1135,Network Share Discovery,1,Network Share Discovery
-discovery,T1040,Network Sniffing,2,Packet Capture macOS
-discovery,T1201,Password Policy Discovery,7,Examine password policy - macOS
-discovery,T1069,Permission Groups Discovery,1,Permission Groups Discovery
-discovery,T1057,Process Discovery,1,Process Discovery - ps
-discovery,T1018,Remote System Discovery,6,Remote System Discovery - arp nix
-discovery,T1018,Remote System Discovery,7,Remote System Discovery - sweep
-discovery,T1063,Security Software Discovery,3,Security Software Discovery - ps
-discovery,T1082,System Information Discovery,2,System Information Discovery
-discovery,T1082,System Information Discovery,3,List OS Information
-discovery,T1082,System Information Discovery,7,Hostname Discovery
-discovery,T1016,System Network Configuration Discovery,3,System Network Configuration Discovery
-discovery,T1049,System Network Connections Discovery,3,System Network Connections Discovery Linux & MacOS
-discovery,T1033,System Owner/User Discovery,2,System Owner/User Discovery
-execution,T1155,AppleScript,1,AppleScript
-execution,T1059,Command-Line Interface,1,Command-Line Interface
-execution,T1152,Launchctl,1,Launchctl
-execution,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file
-execution,T1168,Local Job Scheduling,2,Cron - Add script to cron folder
-execution,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence
-execution,T1064,Scripting,1,Create and Execute Bash Shell Script
-execution,T1153,Source,1,Execute Script using Source
-execution,T1153,Source,2,Execute Script using Source Alias
-execution,T1151,Space after Filename,1,Space After Filename
-execution,T1154,Trap,1,Trap
-lateral-movement,T1155,AppleScript,1,AppleScript
-lateral-movement,T1037,Logon Scripts,3,Logon Scripts - Mac
-lateral-movement,T1105,Remote File Copy,1,rsync remote file copy (push)
-lateral-movement,T1105,Remote File Copy,2,rsync remote file copy (pull)
-lateral-movement,T1105,Remote File Copy,3,scp remote file copy (push)
-lateral-movement,T1105,Remote File Copy,4,scp remote file copy (pull)
-lateral-movement,T1105,Remote File Copy,5,sftp remote file copy (push)
-lateral-movement,T1105,Remote File Copy,6,sftp remote file copy (pull)
-collection,T1074,Data Staged,2,Stage data from Discovery.sh
-collection,T1005,Data from Local System,1,Search macOS Safari Cookies
-collection,T1113,Screen Capture,1,Screencapture
-collection,T1113,Screen Capture,2,Screencapture (silent)
-exfiltration,T1002,Data Compressed,3,Data Compressed - nix - zip
-exfiltration,T1002,Data Compressed,4,Data Compressed - nix - gzip Single File
-exfiltration,T1002,Data Compressed,5,Data Compressed - nix - tar Folder or File
-exfiltration,T1022,Data Encrypted,1,Data Encrypted with zip and gpg symmetric
-exfiltration,T1030,Data Transfer Size Limits,1,Data Transfer Size Limits
-exfiltration,T1048,Exfiltration Over Alternative Protocol,1,Exfiltration Over Alternative Protocol - SSH
-exfiltration,T1048,Exfiltration Over Alternative Protocol,2,Exfiltration Over Alternative Protocol - SSH
-exfiltration,T1048,Exfiltration Over Alternative Protocol,3,Exfiltration Over Alternative Protocol - HTTP
-credential-access,T1139,Bash History,1,Search Through Bash History
-credential-access,T1081,Credentials in Files,1,Extract Browser and System credentials with LaZagne
-credential-access,T1081,Credentials in Files,2,Extract passwords with grep
-credential-access,T1141,Input Prompt,1,AppleScript - Prompt User for Password
-credential-access,T1142,Keychain,1,Keychain
-credential-access,T1040,Network Sniffing,2,Packet Capture macOS
-credential-access,T1145,Private Keys,2,Discover Private SSH Keys
-credential-access,T1145,Private Keys,4,Copy Private SSH Keys with rsync
-defense-evasion,T1009,Binary Padding,1,Pad Binary to Change Hash - Linux/macOS dd
-defense-evasion,T1146,Clear Command History,1,Clear Bash history (rm)
-defense-evasion,T1146,Clear Command History,2,Clear Bash history (echo)
-defense-evasion,T1146,Clear Command History,3,Clear Bash history (cat dev/null)
-defense-evasion,T1146,Clear Command History,4,Clear Bash history (ln dev/null)
-defense-evasion,T1146,Clear Command History,6,Clear history of a bunch of shells
-defense-evasion,T1090,Connection Proxy,1,Connection Proxy
-defense-evasion,T1089,Disabling Security Tools,6,Disable Carbon Black Response
-defense-evasion,T1089,Disabling Security Tools,7,Disable LittleSnitch
-defense-evasion,T1089,Disabling Security Tools,8,Disable OpenDNS Umbrella
-defense-evasion,T1089,Disabling Security Tools,9,Stop and unload Crowdstrike Falcon on macOS
-defense-evasion,T1107,File Deletion,1,Delete a single file - Linux/macOS
-defense-evasion,T1107,File Deletion,2,Delete an entire folder - Linux/macOS
-defense-evasion,T1222,File and Directory Permissions Modification,4,chmod - Change file or folder mode (numeric mode)
-defense-evasion,T1222,File and Directory Permissions Modification,5,chmod - Change file or folder mode (symbolic mode)
-defense-evasion,T1222,File and Directory Permissions Modification,6,chmod - Change file or folder mode (numeric mode) recursively
-defense-evasion,T1222,File and Directory Permissions Modification,7,chmod - Change file or folder mode (symbolic mode) recursively
-defense-evasion,T1222,File and Directory Permissions Modification,8,chown - Change file or folder ownership and group
-defense-evasion,T1222,File and Directory Permissions Modification,9,chown - Change file or folder ownership and group recursively
-defense-evasion,T1222,File and Directory Permissions Modification,10,chown - Change file or folder mode ownership only
-defense-evasion,T1222,File and Directory Permissions Modification,11,chown - Change file or folder ownership recursively
-defense-evasion,T1222,File and Directory Permissions Modification,12,chattr - Remove immutable file attribute
-defense-evasion,T1144,Gatekeeper Bypass,1,Gatekeeper Bypass
-defense-evasion,T1148,HISTCONTROL,1,Disable history collection
-defense-evasion,T1148,HISTCONTROL,2,Mac HISTCONTROL
-defense-evasion,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory
-defense-evasion,T1158,Hidden Files and Directories,2,Mac Hidden file
-defense-evasion,T1158,Hidden Files and Directories,5,Hidden files
-defense-evasion,T1158,Hidden Files and Directories,6,Hide a Directory
-defense-evasion,T1158,Hidden Files and Directories,7,Show all hidden files
-defense-evasion,T1147,Hidden Users,1,Hidden Users
-defense-evasion,T1070,Indicator Removal on Host,3,rm -rf
-defense-evasion,T1130,Install Root Certificate,3,Install root CA on macOS
-defense-evasion,T1152,Launchctl,1,Launchctl
-defense-evasion,T1027,Obfuscated Files or Information,1,Decode base64 Data into Script
-defense-evasion,T1150,Plist Modification,1,Plist Modification
-defense-evasion,T1064,Scripting,1,Create and Execute Bash Shell Script
-defense-evasion,T1045,Software Packing,3,Binary simply packed by UPX
-defense-evasion,T1045,Software Packing,4,"Binary packed by UPX, with modified headers"
-defense-evasion,T1151,Space after Filename,1,Space After Filename
-defense-evasion,T1099,Timestomp,1,Set a file's access timestamp
-defense-evasion,T1099,Timestomp,2,Set a file's modification timestamp
-defense-evasion,T1099,Timestomp,3,Set a file's creation timestamp
-defense-evasion,T1099,Timestomp,4,Modify file timestamps using reference file
-command-and-control,T1090,Connection Proxy,1,Connection Proxy
-command-and-control,T1132,Data Encoding,1,Base64 Encoded data.
-command-and-control,T1105,Remote File Copy,1,rsync remote file copy (push)
-command-and-control,T1105,Remote File Copy,2,rsync remote file copy (pull)
-command-and-control,T1105,Remote File Copy,3,scp remote file copy (push)
-command-and-control,T1105,Remote File Copy,4,scp remote file copy (pull)
-command-and-control,T1105,Remote File Copy,5,sftp remote file copy (push)
-command-and-control,T1105,Remote File Copy,6,sftp remote file copy (pull)
-command-and-control,T1071,Standard Application Layer Protocol,3,Malicious User Agents - Nix
-command-and-control,T1065,Uncommonly Used Port,2,Testing usage of uncommonly used port
-privilege-escalation,T1519,Emond,1,Persistance with Event Monitor - emond
-privilege-escalation,T1160,Launch Daemon,1,Launch Daemon
-privilege-escalation,T1150,Plist Modification,1,Plist Modification
-privilege-escalation,T1166,Setuid and Setgid,1,Make and modify binary from C source
-privilege-escalation,T1166,Setuid and Setgid,2,Set a SetUID flag on file
-privilege-escalation,T1166,Setuid and Setgid,3,Set a SetGID flag on file
-privilege-escalation,T1165,Startup Items,1,add file to Local Library StartupItems
-privilege-escalation,T1169,Sudo,1,Sudo usage
-privilege-escalation,T1206,Sudo Caching,1,Unlimited sudo cache timeout
-privilege-escalation,T1206,Sudo Caching,2,Disable tty_tickets for sudo caching
+Tactic,Technique #,Technique Name,Test #,Test Name,Test GUID
+persistence,T1156,.bash_profile and .bashrc,1,Add command to .bash_profile,9f5b2e58-d7c8-40c2-ac84-8f5f38628484
+persistence,T1156,.bash_profile and .bashrc,2,Add command to .bashrc,028fe338-ee65-409a-9bce-6e4694b99d88
+persistence,T1176,Browser Extensions,1,Chrome (Developer Mode),95288dfe-c808-425e-b2fe-b499b2051f32
+persistence,T1176,Browser Extensions,2,Chrome (Chrome Web Store),ba106fe1-c95a-4daf-9461-af488d09ebc4
+persistence,T1176,Browser Extensions,3,Firefox,1e85f20c-b104-40ef-b5c5-23e7af280597
+persistence,T1136,Create Account,2,Create a user account on a MacOS system,77509ed4-f962-4d51-8815-b6f56c64f8f2
+persistence,T1519,Emond,1,Persistance with Event Monitor - emond,ee46862e-bd6f-4ade-8371-2cd36fecb73c
+persistence,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory,252ebeb8-09d5-4278-9c8b-8bf1893ee432
+persistence,T1158,Hidden Files and Directories,2,Mac Hidden file,a5ef5d24-8190-4ad9-a852-a814cfb11cfc
+persistence,T1158,Hidden Files and Directories,5,Hidden files,454a5761-593e-4611-9a3e-df721986d4ab
+persistence,T1158,Hidden Files and Directories,6,Hide a Directory,581aae0c-c30a-4ce1-989a-e69cc61a086f
+persistence,T1158,Hidden Files and Directories,7,Show all hidden files,86a993ca-d357-48d4-9e81-b417676d6632
+persistence,T1159,Launch Agent,1,Launch Agent,3ef48fcb-9d9d-4149-81fc-4562091a37e8
+persistence,T1160,Launch Daemon,1,Launch Daemon,085d9e0e-e9b4-4ccc-8f32-81f77979835e
+persistence,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+persistence,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file,ceec02d0-1319-4803-abfd-8365aab3657d
+persistence,T1168,Local Job Scheduling,2,Cron - Add script to cron folder,ce78ee97-c5c5-4202-9138-44a8cbbcee06
+persistence,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence,79b65197-d7bd-4e79-befb-c6809940a687
+persistence,T1037,Logon Scripts,3,Logon Scripts - Mac,bf96e38d-d481-4ff9-a299-2b317f662ddb
+persistence,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+persistence,T1163,Rc.common,1,rc.common,fc022f3e-0112-45ec-9525-cb1861deced0
+persistence,T1164,Re-opened Applications,1,Re-Opened Applications,611baa11-6b69-4d70-b5d6-945892745a5e
+persistence,T1164,Re-opened Applications,2,Re-Opened Applications,3c089ef9-fe6d-4301-bb2c-78ebaf0d0bef
+persistence,T1166,Setuid and Setgid,1,Make and modify binary from C source,560b64d9-ec12-4f3f-b153-bf8d704318e5
+persistence,T1166,Setuid and Setgid,2,Set a SetUID flag on file,d118c39d-487e-41d8-a8aa-dd1ac6cce31c
+persistence,T1166,Setuid and Setgid,3,Set a SetGID flag on file,75abaa14-102a-45c4-9673-8d8ac09d403f
+persistence,T1165,Startup Items,1,add file to Local Library StartupItems,d6460309-a8b5-4111-9976-2f7943c003b9
+persistence,T1154,Trap,1,Trap,23e7523f-c9e4-42e9-a87f-1cd4182f3c1b
+impact,T1485,Data Destruction,2,macOS/Linux - Overwrite file with DD,3c409f1d-b390-4225-99fe-53791fdf5082
+impact,T1496,Resource Hijacking,1,macOS/Linux - Simulate CPU Load with Yes,c385322d-68cd-4009-a8bf-d04e061c255e
+impact,T1529,System Shutdown/Reboot,3,Restart System via `shutdown` - macOS/Linux,64e98b62-b3ca-429a-a52c-55b4667c181b
+impact,T1529,System Shutdown/Reboot,4,Shutdown System via `shutdown` - macOS/Linux,b6e6160a-0bc1-4faa-91aa-74ddba31023e
+impact,T1529,System Shutdown/Reboot,5,Restart System via `reboot` - macOS/Linux,49bd5fa8-177a-4988-bf7e-c9c82d974a98
+discovery,T1087,Account Discovery,1,Enumerate all accounts,b49627c8-22ef-4b9a-9b23-735c015c6acb
+discovery,T1087,Account Discovery,2,View sudoers access,7fd96cd4-ee69-4be3-8796-5c951355627e
+discovery,T1087,Account Discovery,3,View accounts with UID 0,30bd140a-ce15-4881-8d99-d7084e0bab86
+discovery,T1087,Account Discovery,4,List opened files by user,275b8ec4-36d1-40d3-9d02-a33caab0aecf
+discovery,T1087,Account Discovery,6,Enumerate users and groups,96b2c366-85d8-4083-9d73-71fa06ea4e11
+discovery,T1087,Account Discovery,7,Enumerate users and groups,8eae76a8-6205-49ce-9cfd-d302c7c6e079
+discovery,T1217,Browser Bookmark Discovery,2,List Mozilla Firefox Bookmark Database Files on macOS,3a5d1790-e3f9-4eea-86dd-3340d419266b
+discovery,T1217,Browser Bookmark Discovery,3,List Google Chrome Bookmark JSON Files on macOS,35e654fc-96be-4721-b42e-65d98ce509c0
+discovery,T1083,File and Directory Discovery,3,Nix File and Diectory Discovery,0742b587-74de-4b2f-9859-b91c450e6ab5
+discovery,T1083,File and Directory Discovery,4,Nix File and Directory Discovery 2,1a92cecc-c76d-4125-b095-b248bd7c7330
+discovery,T1046,Network Service Scanning,1,Port Scan,516fd6a1-595e-4ce1-90d9-a98992cdc2a0
+discovery,T1046,Network Service Scanning,2,Port Scan Nmap,bdd32174-baab-4032-9bae-337c1d16ac25
+discovery,T1135,Network Share Discovery,1,Network Share Discovery,71817144-7599-4009-a66f-eae566e588c6
+discovery,T1040,Network Sniffing,2,Packet Capture macOS,d21660c1-75d5-49dd-840d-66da344205bc
+discovery,T1201,Password Policy Discovery,7,Examine password policy - macOS,cfabc8c0-19ad-4d87-bf3c-b52b612ab554
+discovery,T1069,Permission Groups Discovery,1,Permission Groups Discovery,7db21d87-8207-4d40-ae4b-e09ecdcec7f0
+discovery,T1057,Process Discovery,1,Process Discovery - ps,3fa4d9d2-9ba8-402d-ba4a-f4f8cfed9244
+discovery,T1018,Remote System Discovery,6,Remote System Discovery - arp nix,b78a903b-b8a0-40d7-a53c-b770dcd5f9a0
+discovery,T1018,Remote System Discovery,7,Remote System Discovery - sweep,5b2a5904-5b04-4e05-ac30-7443c8e5788a
+discovery,T1063,Security Software Discovery,3,Security Software Discovery - ps,1f62b18a-bdc4-4a67-90f2-6457dc36b436
+discovery,T1082,System Information Discovery,2,System Information Discovery,70794ca2-e4cb-4ecc-92d9-93f56093eedf
+discovery,T1082,System Information Discovery,3,List OS Information,0653376d-aba5-4a92-abac-0291b9159c3f
+discovery,T1082,System Information Discovery,7,Hostname Discovery,01bda8b1-3746-486b-bf6e-adc43aac6d7a
+discovery,T1016,System Network Configuration Discovery,3,System Network Configuration Discovery,6283f067-8fbb-41d5-b3a9-773edeed7d4b
+discovery,T1049,System Network Connections Discovery,3,System Network Connections Discovery Linux & MacOS,6b512537-dc50-414c-8e71-184bbd658476
+discovery,T1033,System Owner/User Discovery,2,System Owner/User Discovery,f43d9644-9d84-4fd0-b1f3-b860aa8d6a11
+execution,T1155,AppleScript,1,AppleScript,3c243434-cfba-4fa7-af1c-4b87b9998bf2
+execution,T1059,Command-Line Interface,1,Command-Line Interface,3ca978e6-45d9-42f6-8f5e-9e7a619df9c8
+execution,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+execution,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file,ceec02d0-1319-4803-abfd-8365aab3657d
+execution,T1168,Local Job Scheduling,2,Cron - Add script to cron folder,ce78ee97-c5c5-4202-9138-44a8cbbcee06
+execution,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence,79b65197-d7bd-4e79-befb-c6809940a687
+execution,T1064,Scripting,1,Create and Execute Bash Shell Script,35195b07-f118-4dfb-baf3-55f811182811
+execution,T1153,Source,1,Execute Script using Source,9b9270b2-30de-4675-a69c-8ffb833f11b4
+execution,T1153,Source,2,Execute Script using Source Alias,d1a6157a-a5a1-4ce2-9bbe-70f0bdd276b0
+execution,T1151,Space after Filename,1,Space After Filename,f60c69b0-ebde-4937-8412-ee880c4003b8
+execution,T1154,Trap,1,Trap,23e7523f-c9e4-42e9-a87f-1cd4182f3c1b
+lateral-movement,T1155,AppleScript,1,AppleScript,3c243434-cfba-4fa7-af1c-4b87b9998bf2
+lateral-movement,T1037,Logon Scripts,3,Logon Scripts - Mac,bf96e38d-d481-4ff9-a299-2b317f662ddb
+lateral-movement,T1105,Remote File Copy,1,rsync remote file copy (push),5f354c24-41dd-4bb0-81dd-50b2063f600f
+lateral-movement,T1105,Remote File Copy,2,rsync remote file copy (pull),98a00afe-cbf1-4f1b-94d5-c278365fa5eb
+lateral-movement,T1105,Remote File Copy,3,scp remote file copy (push),b482f00e-8fec-4c63-a966-f3ccbbd4484a
+lateral-movement,T1105,Remote File Copy,4,scp remote file copy (pull),236e8b07-ba27-4ce2-bccb-61a8f03de0da
+lateral-movement,T1105,Remote File Copy,5,sftp remote file copy (push),46d0bb1b-8962-490e-b1c9-93de0161a643
+lateral-movement,T1105,Remote File Copy,6,sftp remote file copy (pull),3ff16771-cdd1-4c3d-962f-2727d99c7746
+collection,T1074,Data Staged,2,Stage data from Discovery.sh,7df23290-e35e-466a-a4ea-cb56ff2a9823
+collection,T1005,Data from Local System,1,Search macOS Safari Cookies,0564d2d0-e78f-4dd3-96fa-67ac2e2b1b28
+collection,T1113,Screen Capture,1,Screencapture,796abcf2-b149-46cf-bcdb-cf5b4c7d933c
+collection,T1113,Screen Capture,2,Screencapture (silent),19847cfd-cb65-4543-a24b-ff26d7504279
+exfiltration,T1002,Data Compressed,3,Data Compressed - nix - zip,7b334f44-3e21-4e5d-a9ab-5d9259a6cb74
+exfiltration,T1002,Data Compressed,4,Data Compressed - nix - gzip Single File,129422f4-cf41-4df0-a99c-7b80d52e0304
+exfiltration,T1002,Data Compressed,5,Data Compressed - nix - tar Folder or File,b3df11fd-dad3-48c7-b03a-355dd5110626
+exfiltration,T1022,Data Encrypted,1,Data Encrypted with zip and gpg symmetric,3d30e9ee-c8d2-41e9-948e-54cad01f5110
+exfiltration,T1030,Data Transfer Size Limits,1,Data Transfer Size Limits,ada6b7c7-abd8-4552-a2ca-a4c7affadae4
+exfiltration,T1048,Exfiltration Over Alternative Protocol,1,Exfiltration Over Alternative Protocol - SSH,488a0854-54b5-46c5-b8ed-479779ea6c9b
+exfiltration,T1048,Exfiltration Over Alternative Protocol,2,Exfiltration Over Alternative Protocol - SSH,519bbdc3-26f1-4d0f-9af3-771118a6dd1f
+exfiltration,T1048,Exfiltration Over Alternative Protocol,3,Exfiltration Over Alternative Protocol - HTTP,4d99db7f-e4c3-4b2a-817c-4091da56df29
+credential-access,T1139,Bash History,1,Search Through Bash History,71025b6e-c685-42f9-8de0-fceb724e56a9
+credential-access,T1081,Credentials in Files,1,Extract Browser and System credentials with LaZagne,d3710d14-9b93-4e9d-9dd5-918617917659
+credential-access,T1081,Credentials in Files,2,Extract passwords with grep,48082ea4-9366-4e61-9c52-8e63ed3ab50c
+credential-access,T1141,Input Prompt,1,AppleScript - Prompt User for Password,b821f3b2-88fa-421a-b652-85511a40b063
+credential-access,T1142,Keychain,1,Keychain,4e38a89f-caa3-4029-b90b-28c4d57f8147
+credential-access,T1040,Network Sniffing,2,Packet Capture macOS,d21660c1-75d5-49dd-840d-66da344205bc
+credential-access,T1145,Private Keys,2,Discover Private SSH Keys,a3a52593-6b0a-4914-9a76-2c4a65f4a873
+credential-access,T1145,Private Keys,4,Copy Private SSH Keys with rsync,71e16dd8-4c95-4370-8f8f-8c2ea9beedeb
+defense-evasion,T1009,Binary Padding,1,Pad Binary to Change Hash - Linux/macOS dd,0066e889-00a2-43fe-9be7-d0c1e85d5962
+defense-evasion,T1146,Clear Command History,1,Clear Bash history (rm),d7a68489-9b17-4f03-b70c-8c4851718e39
+defense-evasion,T1146,Clear Command History,2,Clear Bash history (echo),8ea12ac8-a48d-494b-ac05-4245e0115da0
+defense-evasion,T1146,Clear Command History,3,Clear Bash history (cat dev/null),a92d4f35-01e7-4b1b-95a6-727ba3e5b53d
+defense-evasion,T1146,Clear Command History,4,Clear Bash history (ln dev/null),65e8caa0-cc76-450a-929c-9a89ff16942b
+defense-evasion,T1146,Clear Command History,6,Clear history of a bunch of shells,28e4676f-3062-4449-8bf6-25c668d51205
+defense-evasion,T1090,Connection Proxy,1,Connection Proxy,fff549e2-d6c9-4a9f-9a1e-06e5008bc34e
+defense-evasion,T1089,Disabling Security Tools,6,Disable Carbon Black Response,c8c68e80-4559-4b98-8513-fb6900c63d55
+defense-evasion,T1089,Disabling Security Tools,7,Disable LittleSnitch,61a766ce-8f68-4367-81c1-6ad95cda867b
+defense-evasion,T1089,Disabling Security Tools,8,Disable OpenDNS Umbrella,d5fd958c-3236-41f0-8769-e137717a7f13
+defense-evasion,T1089,Disabling Security Tools,9,Stop and unload Crowdstrike Falcon on macOS,de3e5ad2-e734-4003-af87-7af5bee0d363
+defense-evasion,T1107,File Deletion,1,Delete a single file - Linux/macOS,882269ea-8683-4902-837a-3a19d657e9cc
+defense-evasion,T1107,File Deletion,2,Delete an entire folder - Linux/macOS,1519522d-c28b-432e-953b-2bc196830476
+defense-evasion,T1222,File and Directory Permissions Modification,4,chmod - Change file or folder mode (numeric mode),4d12f4c8-4e28-4e88-9e81-2d836220903a
+defense-evasion,T1222,File and Directory Permissions Modification,5,chmod - Change file or folder mode (symbolic mode),5034b422-2dbf-4bc8-9fc9-8e1140ba8610
+defense-evasion,T1222,File and Directory Permissions Modification,6,chmod - Change file or folder mode (numeric mode) recursively,9c3c91b7-01be-4d25-926c-4161fac0b616
+defense-evasion,T1222,File and Directory Permissions Modification,7,chmod - Change file or folder mode (symbolic mode) recursively,4852ff24-e779-4f45-88ea-6f649ebcd8f3
+defense-evasion,T1222,File and Directory Permissions Modification,8,chown - Change file or folder ownership and group,2da3b4fd-f48d-467f-b26a-2a096d8d5486
+defense-evasion,T1222,File and Directory Permissions Modification,9,chown - Change file or folder ownership and group recursively,faa41721-e7e9-450e-bfb9-52c0361e59bf
+defense-evasion,T1222,File and Directory Permissions Modification,10,chown - Change file or folder mode ownership only,4b4a1928-e386-4612-9a22-40c87636449b
+defense-evasion,T1222,File and Directory Permissions Modification,11,chown - Change file or folder ownership recursively,1e2a577a-a41b-4f70-8985-e1a8e5b65b23
+defense-evasion,T1222,File and Directory Permissions Modification,12,chattr - Remove immutable file attribute,0b2c20a6-d510-411c-b1c3-45699e4c07ac
+defense-evasion,T1144,Gatekeeper Bypass,1,Gatekeeper Bypass,218ebeb0-62e9-4590-8984-d9b28b9f2739
+defense-evasion,T1148,HISTCONTROL,1,Disable history collection,f56c2cae-a908-4a32-8e39-cd90f53739da
+defense-evasion,T1148,HISTCONTROL,2,Mac HISTCONTROL,190b9165-b1fe-42b4-ae55-0710e0aebf94
+defense-evasion,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory,252ebeb8-09d5-4278-9c8b-8bf1893ee432
+defense-evasion,T1158,Hidden Files and Directories,2,Mac Hidden file,a5ef5d24-8190-4ad9-a852-a814cfb11cfc
+defense-evasion,T1158,Hidden Files and Directories,5,Hidden files,454a5761-593e-4611-9a3e-df721986d4ab
+defense-evasion,T1158,Hidden Files and Directories,6,Hide a Directory,581aae0c-c30a-4ce1-989a-e69cc61a086f
+defense-evasion,T1158,Hidden Files and Directories,7,Show all hidden files,86a993ca-d357-48d4-9e81-b417676d6632
+defense-evasion,T1147,Hidden Users,1,Hidden Users,844edd23-660e-41e3-9a13-8d68e25ef23a
+defense-evasion,T1070,Indicator Removal on Host,3,rm -rf,f0ffab8b-4203-4c51-9227-8dce3c0a843a
+defense-evasion,T1130,Install Root Certificate,3,Install root CA on macOS,8f677759-23f9-464a-a281-2e0b56429e26
+defense-evasion,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+defense-evasion,T1027,Obfuscated Files or Information,1,Decode base64 Data into Script,440c8dfd-7eda-4735-a454-679660cf49ab
+defense-evasion,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+defense-evasion,T1064,Scripting,1,Create and Execute Bash Shell Script,35195b07-f118-4dfb-baf3-55f811182811
+defense-evasion,T1045,Software Packing,3,Binary simply packed by UPX,5a154014-8217-44d6-9a21-6c8d6aa05252
+defense-evasion,T1045,Software Packing,4,"Binary packed by UPX, with modified headers",024151a7-ddf9-4b90-a37b-5cdf3d846f61
+defense-evasion,T1151,Space after Filename,1,Space After Filename,f60c69b0-ebde-4937-8412-ee880c4003b8
+defense-evasion,T1099,Timestomp,1,Set a file's access timestamp,532263e3-d39b-4fc8-bfc6-63cfd0f4bfa0
+defense-evasion,T1099,Timestomp,2,Set a file's modification timestamp,53811a38-fcce-4faf-b198-5b02d20870c7
+defense-evasion,T1099,Timestomp,3,Set a file's creation timestamp,d19a37e0-df36-4625-a2eb-97753584ba06
+defense-evasion,T1099,Timestomp,4,Modify file timestamps using reference file,da6425e3-4ed6-452f-8b85-4cef2a37633c
+command-and-control,T1090,Connection Proxy,1,Connection Proxy,fff549e2-d6c9-4a9f-9a1e-06e5008bc34e
+command-and-control,T1132,Data Encoding,1,Base64 Encoded data.,7067601a-7204-490f-b26b-c885bd21c6e2
+command-and-control,T1105,Remote File Copy,1,rsync remote file copy (push),5f354c24-41dd-4bb0-81dd-50b2063f600f
+command-and-control,T1105,Remote File Copy,2,rsync remote file copy (pull),98a00afe-cbf1-4f1b-94d5-c278365fa5eb
+command-and-control,T1105,Remote File Copy,3,scp remote file copy (push),b482f00e-8fec-4c63-a966-f3ccbbd4484a
+command-and-control,T1105,Remote File Copy,4,scp remote file copy (pull),236e8b07-ba27-4ce2-bccb-61a8f03de0da
+command-and-control,T1105,Remote File Copy,5,sftp remote file copy (push),46d0bb1b-8962-490e-b1c9-93de0161a643
+command-and-control,T1105,Remote File Copy,6,sftp remote file copy (pull),3ff16771-cdd1-4c3d-962f-2727d99c7746
+command-and-control,T1071,Standard Application Layer Protocol,3,Malicious User Agents - Nix,ea46f4c3-2c09-4b25-8fc7-a247d3d938c2
+command-and-control,T1065,Uncommonly Used Port,2,Testing usage of uncommonly used port,6d4f0155-6495-4b38-89db-6961c69c5ddc
+privilege-escalation,T1519,Emond,1,Persistance with Event Monitor - emond,ee46862e-bd6f-4ade-8371-2cd36fecb73c
+privilege-escalation,T1160,Launch Daemon,1,Launch Daemon,085d9e0e-e9b4-4ccc-8f32-81f77979835e
+privilege-escalation,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+privilege-escalation,T1166,Setuid and Setgid,1,Make and modify binary from C source,560b64d9-ec12-4f3f-b153-bf8d704318e5
+privilege-escalation,T1166,Setuid and Setgid,2,Set a SetUID flag on file,d118c39d-487e-41d8-a8aa-dd1ac6cce31c
+privilege-escalation,T1166,Setuid and Setgid,3,Set a SetGID flag on file,75abaa14-102a-45c4-9673-8d8ac09d403f
+privilege-escalation,T1165,Startup Items,1,add file to Local Library StartupItems,d6460309-a8b5-4111-9976-2f7943c003b9
+privilege-escalation,T1169,Sudo,1,Sudo usage,6ddb0a50-7ee9-48e8-864e-7e86ae8c2a2c
+privilege-escalation,T1206,Sudo Caching,1,Unlimited sudo cache timeout,6ad573ab-1e76-4236-be2b-56975ad8c66e
+privilege-escalation,T1206,Sudo Caching,2,Disable tty_tickets for sudo caching,6492d060-2715-4253-8f93-a539c92653ed

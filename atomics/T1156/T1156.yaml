@@ -4,6 +4,7 @@ display_name: .bash_profile and .bashrc
 
 atomic_tests:
 - name: Add command to .bash_profile
+  auto_generated_guid: 9f5b2e58-d7c8-40c2-ac84-8f5f38628484
   description: |
     Adds a command to the .bash_profile file of the current user
   supported_platforms:
@@ -20,6 +21,7 @@ atomic_tests:
       echo "#{command_to_add}" >> ~/.bash_profile
 
 - name: Add command to .bashrc
+  auto_generated_guid: 028fe338-ee65-409a-9bce-6e4694b99d88
   description: |
     Adds a command to the .bashrc file of the current user
   supported_platforms:

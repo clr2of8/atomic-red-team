@@ -4,6 +4,7 @@ display_name: Deobfuscate/Decode Files Or Information
 
 atomic_tests:
 - name: Deobfuscate/Decode Files Or Information
+  auto_generated_guid: 6be6a27c-7fe7-40ba-a84b-7912ad0ba85e
   description: |
     Encode/Decode executable
     Upon execution a file named T1140_calc_decoded.exe will be placed in the temp folder
@@ -25,6 +26,7 @@ atomic_tests:
       del %temp%T1140_calc_decoded.exe >nul 2>&1
 
 - name: Certutil Rename and Decode
+  auto_generated_guid: 353935ec-1f9d-4724-8492-ca1153947468
   description: |
     Rename certutil and decode a file. This is in reference to latest research by FireEye [here](https://www.fireeye.com/blog/threat-research/2018/09/apt10-targeting-japanese-corporations-using-updated-ttps.html)
   supported_platforms:

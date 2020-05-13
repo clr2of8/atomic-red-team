@@ -4,6 +4,7 @@ display_name: Account Access Removal
 
 atomic_tests:
 - name: Change User Password - Windows
+  auto_generated_guid: b72f14d7-dd10-4a14-97a0-c8aebf508008
   description: |
     Changes the user password to hinder access attempts. Seen in use by LockerGoga. Upon execution, log into the user account "AtomicAdministrator" with
     the password "HuHuHUHoHo283283".
@@ -42,6 +43,7 @@ atomic_tests:
       net.exe user #{user_account} /delete >nul 2>&1
 
 - name: Delete User - Windows
+  auto_generated_guid: b224af9e-897e-4d27-b903-cff8e43f23ed
   description: |
     Deletes a user account to prevent access. Upon execution, run the command "net user" to verify that the new "AtomicUser" account was deleted.
   supported_platforms:

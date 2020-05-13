@@ -4,6 +4,7 @@ display_name: System Service Discovery
 
 atomic_tests:
 - name: System Service Discovery
+  auto_generated_guid: 38330081-5635-4e1b-b9c9-836239e35358
   description: |
     Identify system services.
 
@@ -21,6 +22,7 @@ atomic_tests:
       sc query state= all
 
 - name: System Service Discovery - net.exe
+  auto_generated_guid: a4a27df1-130f-4314-87f1-d4e5b6b49f57
   description: |
     Enumerates started system services using net.exe and writes them to a file. This technique has been used by multiple threat actors.
 

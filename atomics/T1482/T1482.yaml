@@ -4,6 +4,7 @@ display_name: Domain Trust Discovery
 
 atomic_tests:
 - name: Windows - Discover domain trusts with dsquery
+  auto_generated_guid: 7892a6b3-a9ce-492c-af2a-34c84326caae
   description: |
     Uses the dsquery command to discover domain trusts.
     Requires the installation of dsquery via Windows RSAT or the Windows Server AD DS role.
@@ -15,6 +16,7 @@ atomic_tests:
       dsquery * -filter "(objectClass=trustedDomain)" -attr *
 
 - name: Windows - Discover domain trusts with nltest
+  auto_generated_guid: af4d0e80-d7a6-4fe3-b0e6-e64676052a3e
   description: |
     Uses the nltest command to discover domain trusts.
     Requires the installation of nltest via Windows RSAT or the Windows Server AD DS role.
@@ -27,6 +29,7 @@ atomic_tests:
       nltest /domain_trusts
 
 - name: Powershell enumerate domains and forests
+  auto_generated_guid: 5dcd15f6-9c46-4e5b-98c4-74442cd5655c
   description: |
     Use powershell to enumerate AD information
   supported_platforms:

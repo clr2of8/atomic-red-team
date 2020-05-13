@@ -1,657 +1,657 @@
-Tactic,Technique #,Technique Name,Test #,Test Name
-persistence,T1156,.bash_profile and .bashrc,1,Add command to .bash_profile
-persistence,T1156,.bash_profile and .bashrc,2,Add command to .bashrc
-persistence,T1015,Accessibility Features,1,Attaches Command Prompt as a Debugger to a List of Target Processes
-persistence,T1098,Account Manipulation,1,Admin Account Manipulate
-persistence,T1103,AppInit DLLs,1,Install AppInit Shim
-persistence,T1138,Application Shimming,1,Application Shim Installation
-persistence,T1138,Application Shimming,2,New shim database files created in the default shim database directory
-persistence,T1138,Application Shimming,3,Registry key creation and/or modification events for SDB
-persistence,T1197,BITS Jobs,1,Bitsadmin Download (cmd)
-persistence,T1197,BITS Jobs,2,Bitsadmin Download (PowerShell)
-persistence,T1197,BITS Jobs,3,"Persist, Download, & Execute"
-persistence,T1176,Browser Extensions,1,Chrome (Developer Mode)
-persistence,T1176,Browser Extensions,2,Chrome (Chrome Web Store)
-persistence,T1176,Browser Extensions,3,Firefox
-persistence,T1042,Change Default File Association,1,Change Default File Association
-persistence,T1122,Component Object Model Hijacking,1,COM Hijack Leveraging user scope COR_PROFILER
-persistence,T1122,Component Object Model Hijacking,2,COM Hijack Leveraging System Scope COR_PROFILER
-persistence,T1122,Component Object Model Hijacking,3,COM Hijack Leveraging registry-free process scope COR_PROFILER
-persistence,T1136,Create Account,1,Create a user account on a Linux system
-persistence,T1136,Create Account,2,Create a user account on a MacOS system
-persistence,T1136,Create Account,3,Create a new user in a command prompt
-persistence,T1136,Create Account,4,Create a new user in PowerShell
-persistence,T1136,Create Account,5,Create a new user in Linux with `root` UID and GID.
-persistence,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll
-persistence,T1519,Emond,1,Persistance with Event Monitor - emond
-persistence,T1044,File System Permissions Weakness,1,File System Permissions Weakness
-persistence,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory
-persistence,T1158,Hidden Files and Directories,2,Mac Hidden file
-persistence,T1158,Hidden Files and Directories,3,Create Windows System File with Attrib
-persistence,T1158,Hidden Files and Directories,4,Create Windows Hidden File with Attrib
-persistence,T1158,Hidden Files and Directories,5,Hidden files
-persistence,T1158,Hidden Files and Directories,6,Hide a Directory
-persistence,T1158,Hidden Files and Directories,7,Show all hidden files
-persistence,T1158,Hidden Files and Directories,8,Create ADS command prompt
-persistence,T1158,Hidden Files and Directories,9,Create ADS PowerShell
-persistence,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages
-persistence,T1062,Hypervisor,1,Installing Hyper-V Feature
-persistence,T1183,Image File Execution Options Injection,1,IFEO Add Debugger
-persistence,T1183,Image File Execution Options Injection,2,IFEO Global Flags
-persistence,T1215,Kernel Modules and Extensions,1,Linux - Load Kernel Module via insmod
-persistence,T1159,Launch Agent,1,Launch Agent
-persistence,T1160,Launch Daemon,1,Launch Daemon
-persistence,T1152,Launchctl,1,Launchctl
-persistence,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file
-persistence,T1168,Local Job Scheduling,2,Cron - Add script to cron folder
-persistence,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence
-persistence,T1037,Logon Scripts,1,Logon Scripts
-persistence,T1037,Logon Scripts,2,Scheduled Task Startup Script
-persistence,T1037,Logon Scripts,3,Logon Scripts - Mac
-persistence,T1037,Logon Scripts,4,Supicious vbs file run from startup Folder
-persistence,T1037,Logon Scripts,5,Supicious jse file run from startup Folder
-persistence,T1037,Logon Scripts,6,Supicious bat file run from startup Folder
-persistence,T1031,Modify Existing Service,1,Modify Fax service to run PowerShell
-persistence,T1128,Netsh Helper DLL,1,Netsh Helper DLL Registration
-persistence,T1050,New Service,1,Service Installation CMD
-persistence,T1050,New Service,2,Service Installation PowerShell
-persistence,T1137,Office Application Startup,1,DDEAUTO
-persistence,T1150,Plist Modification,1,Plist Modification
-persistence,T1504,PowerShell Profile,1,Append malicious start-process cmdlet
-persistence,T1163,Rc.common,1,rc.common
-persistence,T1164,Re-opened Applications,1,Re-Opened Applications
-persistence,T1164,Re-opened Applications,2,Re-Opened Applications
-persistence,T1060,Registry Run Keys / Startup Folder,1,Reg Key Run
-persistence,T1060,Registry Run Keys / Startup Folder,2,Reg Key RunOnce
-persistence,T1060,Registry Run Keys / Startup Folder,3,PowerShell Registry RunOnce
-persistence,T1053,Scheduled Task,1,At.exe Scheduled task
-persistence,T1053,Scheduled Task,2,Scheduled task Local
-persistence,T1053,Scheduled Task,3,Scheduled task Remote
-persistence,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task
-persistence,T1180,Screensaver,1,Set Arbitrary Binary as Screensaver
-persistence,T1101,Security Support Provider,1,Modify SSP configuration in registry
-persistence,T1505,Server Software Component,1,Install MS Exchange Transport Agent Persistence
-persistence,T1058,Service Registry Permissions Weakness,1,Service Registry Permissions Weakness
-persistence,T1166,Setuid and Setgid,1,Make and modify binary from C source
-persistence,T1166,Setuid and Setgid,2,Set a SetUID flag on file
-persistence,T1166,Setuid and Setgid,3,Set a SetGID flag on file
-persistence,T1023,Shortcut Modification,1,Shortcut Modification
-persistence,T1023,Shortcut Modification,2,Create shortcut to cmd in startup folders
-persistence,T1165,Startup Items,1,add file to Local Library StartupItems
-persistence,T1501,Systemd Service,1,Create Systemd Service
-persistence,T1154,Trap,1,Trap
-persistence,T1100,Web Shell,1,Web Shell Written to Disk
-persistence,T1084,Windows Management Instrumentation Event Subscription,1,Persistence via WMI Event Subscription
-persistence,T1004,Winlogon Helper DLL,1,Winlogon Shell Key Persistence - PowerShell
-persistence,T1004,Winlogon Helper DLL,2,Winlogon Userinit Key Persistence - PowerShell
-persistence,T1004,Winlogon Helper DLL,3,Winlogon Notify Key Logon Persistence - PowerShell
-defense-evasion,T1197,BITS Jobs,1,Bitsadmin Download (cmd)
-defense-evasion,T1197,BITS Jobs,2,Bitsadmin Download (PowerShell)
-defense-evasion,T1197,BITS Jobs,3,"Persist, Download, & Execute"
-defense-evasion,T1009,Binary Padding,1,Pad Binary to Change Hash - Linux/macOS dd
-defense-evasion,T1088,Bypass User Account Control,1,Bypass UAC using Event Viewer (cmd)
-defense-evasion,T1088,Bypass User Account Control,2,Bypass UAC using Event Viewer (PowerShell)
-defense-evasion,T1088,Bypass User Account Control,3,Bypass UAC using Fodhelper
-defense-evasion,T1088,Bypass User Account Control,4,Bypass UAC using Fodhelper - PowerShell
-defense-evasion,T1088,Bypass User Account Control,5,Bypass UAC using ComputerDefaults (PowerShell)
-defense-evasion,T1088,Bypass User Account Control,6,Bypass UAC by Mocking Trusted Directories
-defense-evasion,T1191,CMSTP,1,CMSTP Executing Remote Scriptlet
-defense-evasion,T1191,CMSTP,2,CMSTP Executing UAC Bypass
-defense-evasion,T1146,Clear Command History,1,Clear Bash history (rm)
-defense-evasion,T1146,Clear Command History,2,Clear Bash history (echo)
-defense-evasion,T1146,Clear Command History,3,Clear Bash history (cat dev/null)
-defense-evasion,T1146,Clear Command History,4,Clear Bash history (ln dev/null)
-defense-evasion,T1146,Clear Command History,5,Clear Bash history (truncate)
-defense-evasion,T1146,Clear Command History,6,Clear history of a bunch of shells
-defense-evasion,T1500,Compile After Delivery,1,Compile After Delivery using csc.exe
-defense-evasion,T1223,Compiled HTML File,1,Compiled HTML Help Local Payload
-defense-evasion,T1223,Compiled HTML File,2,Compiled HTML Help Remote Payload
-defense-evasion,T1122,Component Object Model Hijacking,1,COM Hijack Leveraging user scope COR_PROFILER
-defense-evasion,T1122,Component Object Model Hijacking,2,COM Hijack Leveraging System Scope COR_PROFILER
-defense-evasion,T1122,Component Object Model Hijacking,3,COM Hijack Leveraging registry-free process scope COR_PROFILER
-defense-evasion,T1090,Connection Proxy,1,Connection Proxy
-defense-evasion,T1090,Connection Proxy,2,portproxy reg key
-defense-evasion,T1196,Control Panel Items,1,Control Panel Items
-defense-evasion,T1207,DCShadow,1,DCShadow - Mimikatz
-defense-evasion,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll
-defense-evasion,T1073,DLL Side-Loading,1,DLL Side-Loading using the Notepad++ GUP.exe binary
-defense-evasion,T1140,Deobfuscate/Decode Files or Information,1,Deobfuscate/Decode Files Or Information
-defense-evasion,T1140,Deobfuscate/Decode Files or Information,2,Certutil Rename and Decode
-defense-evasion,T1089,Disabling Security Tools,1,Disable iptables firewall
-defense-evasion,T1089,Disabling Security Tools,2,Disable syslog
-defense-evasion,T1089,Disabling Security Tools,3,Disable Cb Response
-defense-evasion,T1089,Disabling Security Tools,4,Disable SELinux
-defense-evasion,T1089,Disabling Security Tools,5,Stop Crowdstrike Falcon on Linux
-defense-evasion,T1089,Disabling Security Tools,6,Disable Carbon Black Response
-defense-evasion,T1089,Disabling Security Tools,7,Disable LittleSnitch
-defense-evasion,T1089,Disabling Security Tools,8,Disable OpenDNS Umbrella
-defense-evasion,T1089,Disabling Security Tools,9,Stop and unload Crowdstrike Falcon on macOS
-defense-evasion,T1089,Disabling Security Tools,10,Unload Sysmon Filter Driver
-defense-evasion,T1089,Disabling Security Tools,11,Disable Windows IIS HTTP Logging
-defense-evasion,T1089,Disabling Security Tools,12,Uninstall Sysmon
-defense-evasion,T1089,Disabling Security Tools,13,AMSI Bypass - AMSI InitFailed
-defense-evasion,T1089,Disabling Security Tools,14,AMSI Bypass - Remove AMSI Provider Reg Key
-defense-evasion,T1089,Disabling Security Tools,15,Disable Arbitrary Security Windows Service
-defense-evasion,T1089,Disabling Security Tools,16,Tamper with Windows Defender ATP PowerShell
-defense-evasion,T1089,Disabling Security Tools,17,Tamper with Windows Defender Command Prompt
-defense-evasion,T1089,Disabling Security Tools,18,Tamper with Windows Defender Registry
-defense-evasion,T1089,Disabling Security Tools,19,Disable Microft Office Security Features
-defense-evasion,T1089,Disabling Security Tools,20,Remove Windows Defender Definition Files
-defense-evasion,T1089,Disabling Security Tools,21,Stop and Remove Arbitrary Security Windows Service
-defense-evasion,T1089,Disabling Security Tools,22,Uninstall Crowdstrike Falcon on Windows
-defense-evasion,T1107,File Deletion,1,Delete a single file - Linux/macOS
-defense-evasion,T1107,File Deletion,2,Delete an entire folder - Linux/macOS
-defense-evasion,T1107,File Deletion,3,Overwrite and delete a file with shred
-defense-evasion,T1107,File Deletion,4,Delete a single file - Windows cmd
-defense-evasion,T1107,File Deletion,5,Delete an entire folder - Windows cmd
-defense-evasion,T1107,File Deletion,6,Delete a single file - Windows PowerShell
-defense-evasion,T1107,File Deletion,7,Delete an entire folder - Windows PowerShell
-defense-evasion,T1107,File Deletion,8,Delete Filesystem - Linux
-defense-evasion,T1107,File Deletion,9,Delete-PrefetchFile
-defense-evasion,T1107,File Deletion,10,Delete TeamViewer Log Files
-defense-evasion,T1222,File and Directory Permissions Modification,1,Take ownership using takeown utility
-defense-evasion,T1222,File and Directory Permissions Modification,2,cacls - Grant permission to specified user or group recursively
-defense-evasion,T1222,File and Directory Permissions Modification,3,attrib - Remove read-only attribute
-defense-evasion,T1222,File and Directory Permissions Modification,4,chmod - Change file or folder mode (numeric mode)
-defense-evasion,T1222,File and Directory Permissions Modification,5,chmod - Change file or folder mode (symbolic mode)
-defense-evasion,T1222,File and Directory Permissions Modification,6,chmod - Change file or folder mode (numeric mode) recursively
-defense-evasion,T1222,File and Directory Permissions Modification,7,chmod - Change file or folder mode (symbolic mode) recursively
-defense-evasion,T1222,File and Directory Permissions Modification,8,chown - Change file or folder ownership and group
-defense-evasion,T1222,File and Directory Permissions Modification,9,chown - Change file or folder ownership and group recursively
-defense-evasion,T1222,File and Directory Permissions Modification,10,chown - Change file or folder mode ownership only
-defense-evasion,T1222,File and Directory Permissions Modification,11,chown - Change file or folder ownership recursively
-defense-evasion,T1222,File and Directory Permissions Modification,12,chattr - Remove immutable file attribute
-defense-evasion,T1144,Gatekeeper Bypass,1,Gatekeeper Bypass
-defense-evasion,T1148,HISTCONTROL,1,Disable history collection
-defense-evasion,T1148,HISTCONTROL,2,Mac HISTCONTROL
-defense-evasion,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory
-defense-evasion,T1158,Hidden Files and Directories,2,Mac Hidden file
-defense-evasion,T1158,Hidden Files and Directories,3,Create Windows System File with Attrib
-defense-evasion,T1158,Hidden Files and Directories,4,Create Windows Hidden File with Attrib
-defense-evasion,T1158,Hidden Files and Directories,5,Hidden files
-defense-evasion,T1158,Hidden Files and Directories,6,Hide a Directory
-defense-evasion,T1158,Hidden Files and Directories,7,Show all hidden files
-defense-evasion,T1158,Hidden Files and Directories,8,Create ADS command prompt
-defense-evasion,T1158,Hidden Files and Directories,9,Create ADS PowerShell
-defense-evasion,T1147,Hidden Users,1,Hidden Users
-defense-evasion,T1143,Hidden Window,1,Hidden Window
-defense-evasion,T1183,Image File Execution Options Injection,1,IFEO Add Debugger
-defense-evasion,T1183,Image File Execution Options Injection,2,IFEO Global Flags
-defense-evasion,T1070,Indicator Removal on Host,1,Clear Logs
-defense-evasion,T1070,Indicator Removal on Host,2,FSUtil
-defense-evasion,T1070,Indicator Removal on Host,3,rm -rf
-defense-evasion,T1070,Indicator Removal on Host,4,Overwrite Linux Mail Spool
-defense-evasion,T1070,Indicator Removal on Host,5,Overwrite Linux Log
-defense-evasion,T1070,Indicator Removal on Host,6,Delete System Logs Using PowerShell
-defense-evasion,T1070,Indicator Removal on Host,7,Delete System Logs Using Clear-EventLogId
-defense-evasion,T1202,Indirect Command Execution,1,Indirect Command Execution - pcalua.exe
-defense-evasion,T1202,Indirect Command Execution,2,Indirect Command Execution - forfiles.exe
-defense-evasion,T1130,Install Root Certificate,1,Install root CA on CentOS/RHEL
-defense-evasion,T1130,Install Root Certificate,2,Install root CA on Debian/Ubuntu
-defense-evasion,T1130,Install Root Certificate,3,Install root CA on macOS
-defense-evasion,T1130,Install Root Certificate,4,Install root CA on Windows
-defense-evasion,T1118,InstallUtil,1,CheckIfInstallable method call
-defense-evasion,T1118,InstallUtil,2,InstallHelper method call
-defense-evasion,T1118,InstallUtil,3,InstallUtil class constructor method call
-defense-evasion,T1118,InstallUtil,4,InstallUtil Install method call
-defense-evasion,T1118,InstallUtil,5,InstallUtil Uninstall method call - /U variant
-defense-evasion,T1118,InstallUtil,6,InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
-defense-evasion,T1118,InstallUtil,7,InstallUtil HelpText method call
-defense-evasion,T1118,InstallUtil,8,InstallUtil evasive invocation
-defense-evasion,T1152,Launchctl,1,Launchctl
-defense-evasion,T1036,Masquerading,1,Masquerading as Windows LSASS process
-defense-evasion,T1036,Masquerading,2,Masquerading as Linux crond process.
-defense-evasion,T1036,Masquerading,3,Masquerading - cscript.exe running as notepad.exe
-defense-evasion,T1036,Masquerading,4,Masquerading - wscript.exe running as svchost.exe
-defense-evasion,T1036,Masquerading,5,Masquerading - powershell.exe running as taskhostw.exe
-defense-evasion,T1036,Masquerading,6,Masquerading - non-windows exe running as windows exe
-defense-evasion,T1036,Masquerading,7,Masquerading - windows exe running as different windows exe
-defense-evasion,T1036,Masquerading,8,Malicious process Masquerading as LSM.exe
-defense-evasion,T1112,Modify Registry,1,Modify Registry of Current User Profile - cmd
-defense-evasion,T1112,Modify Registry,2,Modify Registry of Local Machine - cmd
-defense-evasion,T1112,Modify Registry,3,Modify registry to store logon credentials
-defense-evasion,T1112,Modify Registry,4,Add domain to Trusted sites Zone
-defense-evasion,T1112,Modify Registry,5,Javascript in registry
-defense-evasion,T1170,Mshta,1,Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
-defense-evasion,T1170,Mshta,2,Mshta executes VBScript to execute malicious command
-defense-evasion,T1170,Mshta,3,Mshta Executes Remote HTML Application (HTA)
-defense-evasion,T1096,NTFS File Attributes,1,Alternate Data Streams (ADS)
-defense-evasion,T1096,NTFS File Attributes,2,Store file in Alternate Data Stream (ADS)
-defense-evasion,T1126,Network Share Connection Removal,1,Add Network Share
-defense-evasion,T1126,Network Share Connection Removal,2,Remove Network Share
-defense-evasion,T1126,Network Share Connection Removal,3,Remove Network Share PowerShell
-defense-evasion,T1027,Obfuscated Files or Information,1,Decode base64 Data into Script
-defense-evasion,T1027,Obfuscated Files or Information,2,Execute base64-encoded PowerShell
-defense-evasion,T1027,Obfuscated Files or Information,3,Execute base64-encoded PowerShell from Windows Registry
-defense-evasion,T1502,Parent PID Spoofing,1,Parent PID Spoofing using PowerShell
-defense-evasion,T1150,Plist Modification,1,Plist Modification
-defense-evasion,T1093,Process Hollowing,1,Process Hollowing using PowerShell
-defense-evasion,T1055,Process Injection,1,Process Injection via mavinject.exe
-defense-evasion,T1055,Process Injection,2,Shared Library Injection via /etc/ld.so.preload
-defense-evasion,T1055,Process Injection,3,Shared Library Injection via LD_PRELOAD
-defense-evasion,T1055,Process Injection,4,Process Injection via C#
-defense-evasion,T1055,Process Injection,5,svchost writing a file to a UNC path
-defense-evasion,T1121,Regsvcs/Regasm,1,Regasm Uninstall Method Call Test
-defense-evasion,T1121,Regsvcs/Regasm,2,Regsvs Uninstall Method Call Test
-defense-evasion,T1117,Regsvr32,1,Regsvr32 local COM scriptlet execution
-defense-evasion,T1117,Regsvr32,2,Regsvr32 remote COM scriptlet execution
-defense-evasion,T1117,Regsvr32,3,Regsvr32 local DLL execution
-defense-evasion,T1014,Rootkit,1,Loadable Kernel Module based Rootkit
-defense-evasion,T1014,Rootkit,2,Loadable Kernel Module based Rootkit
-defense-evasion,T1014,Rootkit,3,Windows Signed Driver Rootkit Test
-defense-evasion,T1085,Rundll32,1,Rundll32 execute JavaScript Remote Payload With GetObject
-defense-evasion,T1085,Rundll32,2,Rundll32 execute VBscript command
-defense-evasion,T1085,Rundll32,3,Rundll32 advpack.dll Execution
-defense-evasion,T1085,Rundll32,4,Rundll32 ieadvpack.dll Execution
-defense-evasion,T1085,Rundll32,5,Rundll32 syssetup.dll Execution
-defense-evasion,T1085,Rundll32,6,Rundll32 setupapi.dll Execution
-defense-evasion,T1064,Scripting,1,Create and Execute Bash Shell Script
-defense-evasion,T1064,Scripting,2,Create and Execute Batch Script
-defense-evasion,T1218,Signed Binary Proxy Execution,1,mavinject - Inject DLL into running process
-defense-evasion,T1218,Signed Binary Proxy Execution,2,SyncAppvPublishingServer - Execute arbitrary PowerShell code
-defense-evasion,T1218,Signed Binary Proxy Execution,3,Register-CimProvider - Execute evil dll
-defense-evasion,T1218,Signed Binary Proxy Execution,4,Msiexec.exe - Execute Local MSI file
-defense-evasion,T1218,Signed Binary Proxy Execution,5,Msiexec.exe - Execute Remote MSI file
-defense-evasion,T1218,Signed Binary Proxy Execution,6,Msiexec.exe - Execute Arbitrary DLL
-defense-evasion,T1218,Signed Binary Proxy Execution,7,Odbcconf.exe - Execute Arbitrary DLL
-defense-evasion,T1218,Signed Binary Proxy Execution,8,InfDefaultInstall.exe .inf Execution
-defense-evasion,T1216,Signed Script Proxy Execution,1,PubPrn.vbs Signed Script Bypass
-defense-evasion,T1216,Signed Script Proxy Execution,2,SyncAppvPublishingServer Signed Script PowerShell Command Execution
-defense-evasion,T1216,Signed Script Proxy Execution,3,manage-bde.wsf Signed Script Command Execution
-defense-evasion,T1045,Software Packing,1,Binary simply packed by UPX (linux)
-defense-evasion,T1045,Software Packing,2,"Binary packed by UPX, with modified headers (linux)"
-defense-evasion,T1045,Software Packing,3,Binary simply packed by UPX
-defense-evasion,T1045,Software Packing,4,"Binary packed by UPX, with modified headers"
-defense-evasion,T1151,Space after Filename,1,Space After Filename
-defense-evasion,T1099,Timestomp,1,Set a file's access timestamp
-defense-evasion,T1099,Timestomp,2,Set a file's modification timestamp
-defense-evasion,T1099,Timestomp,3,Set a file's creation timestamp
-defense-evasion,T1099,Timestomp,4,Modify file timestamps using reference file
-defense-evasion,T1099,Timestomp,5,Windows - Modify file creation timestamp with PowerShell
-defense-evasion,T1099,Timestomp,6,Windows - Modify file last modified timestamp with PowerShell
-defense-evasion,T1099,Timestomp,7,Windows - Modify file last access timestamp with PowerShell
-defense-evasion,T1099,Timestomp,8,Windows - Timestomp a File
-defense-evasion,T1127,Trusted Developer Utilities,1,MSBuild Bypass Using Inline Tasks
-defense-evasion,T1102,Web Service,1,Reach out to C2 Pointer URLs via command_prompt
-defense-evasion,T1102,Web Service,2,Reach out to C2 Pointer URLs via powershell
-defense-evasion,T1220,XSL Script Processing,1,MSXSL Bypass using local files
-defense-evasion,T1220,XSL Script Processing,2,MSXSL Bypass using remote files
-defense-evasion,T1220,XSL Script Processing,3,WMIC bypass using local XSL file
-defense-evasion,T1220,XSL Script Processing,4,WMIC bypass using remote XSL file
-privilege-escalation,T1015,Accessibility Features,1,Attaches Command Prompt as a Debugger to a List of Target Processes
-privilege-escalation,T1103,AppInit DLLs,1,Install AppInit Shim
-privilege-escalation,T1138,Application Shimming,1,Application Shim Installation
-privilege-escalation,T1138,Application Shimming,2,New shim database files created in the default shim database directory
-privilege-escalation,T1138,Application Shimming,3,Registry key creation and/or modification events for SDB
-privilege-escalation,T1088,Bypass User Account Control,1,Bypass UAC using Event Viewer (cmd)
-privilege-escalation,T1088,Bypass User Account Control,2,Bypass UAC using Event Viewer (PowerShell)
-privilege-escalation,T1088,Bypass User Account Control,3,Bypass UAC using Fodhelper
-privilege-escalation,T1088,Bypass User Account Control,4,Bypass UAC using Fodhelper - PowerShell
-privilege-escalation,T1088,Bypass User Account Control,5,Bypass UAC using ComputerDefaults (PowerShell)
-privilege-escalation,T1088,Bypass User Account Control,6,Bypass UAC by Mocking Trusted Directories
-privilege-escalation,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll
-privilege-escalation,T1519,Emond,1,Persistance with Event Monitor - emond
-privilege-escalation,T1044,File System Permissions Weakness,1,File System Permissions Weakness
-privilege-escalation,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages
-privilege-escalation,T1183,Image File Execution Options Injection,1,IFEO Add Debugger
-privilege-escalation,T1183,Image File Execution Options Injection,2,IFEO Global Flags
-privilege-escalation,T1160,Launch Daemon,1,Launch Daemon
-privilege-escalation,T1050,New Service,1,Service Installation CMD
-privilege-escalation,T1050,New Service,2,Service Installation PowerShell
-privilege-escalation,T1502,Parent PID Spoofing,1,Parent PID Spoofing using PowerShell
-privilege-escalation,T1150,Plist Modification,1,Plist Modification
-privilege-escalation,T1504,PowerShell Profile,1,Append malicious start-process cmdlet
-privilege-escalation,T1055,Process Injection,1,Process Injection via mavinject.exe
-privilege-escalation,T1055,Process Injection,2,Shared Library Injection via /etc/ld.so.preload
-privilege-escalation,T1055,Process Injection,3,Shared Library Injection via LD_PRELOAD
-privilege-escalation,T1055,Process Injection,4,Process Injection via C#
-privilege-escalation,T1055,Process Injection,5,svchost writing a file to a UNC path
-privilege-escalation,T1053,Scheduled Task,1,At.exe Scheduled task
-privilege-escalation,T1053,Scheduled Task,2,Scheduled task Local
-privilege-escalation,T1053,Scheduled Task,3,Scheduled task Remote
-privilege-escalation,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task
-privilege-escalation,T1058,Service Registry Permissions Weakness,1,Service Registry Permissions Weakness
-privilege-escalation,T1166,Setuid and Setgid,1,Make and modify binary from C source
-privilege-escalation,T1166,Setuid and Setgid,2,Set a SetUID flag on file
-privilege-escalation,T1166,Setuid and Setgid,3,Set a SetGID flag on file
-privilege-escalation,T1165,Startup Items,1,add file to Local Library StartupItems
-privilege-escalation,T1169,Sudo,1,Sudo usage
-privilege-escalation,T1206,Sudo Caching,1,Unlimited sudo cache timeout
-privilege-escalation,T1206,Sudo Caching,2,Disable tty_tickets for sudo caching
-privilege-escalation,T1100,Web Shell,1,Web Shell Written to Disk
-impact,T1531,Account Access Removal,1,Change User Password - Windows
-impact,T1531,Account Access Removal,2,Delete User - Windows
-impact,T1485,Data Destruction,1,Windows - Overwrite file with Sysinternals SDelete
-impact,T1485,Data Destruction,2,macOS/Linux - Overwrite file with DD
-impact,T1490,Inhibit System Recovery,1,Windows - Delete Volume Shadow Copies
-impact,T1490,Inhibit System Recovery,2,Windows - Delete Volume Shadow Copies via WMI
-impact,T1490,Inhibit System Recovery,3,Windows - Delete Windows Backup Catalog
-impact,T1490,Inhibit System Recovery,4,Windows - Disable Windows Recovery Console Repair
-impact,T1490,Inhibit System Recovery,5,Windows - Delete Volume Shadow Copies via WMI with PowerShell
-impact,T1490,Inhibit System Recovery,6,Windows - Delete Backup Files
-impact,T1496,Resource Hijacking,1,macOS/Linux - Simulate CPU Load with Yes
-impact,T1489,Service Stop,1,Windows - Stop service using Service Controller
-impact,T1489,Service Stop,2,Windows - Stop service using net.exe
-impact,T1489,Service Stop,3,Windows - Stop service by killing process
-impact,T1529,System Shutdown/Reboot,1,Shutdown System - Windows
-impact,T1529,System Shutdown/Reboot,2,Restart System - Windows
-impact,T1529,System Shutdown/Reboot,3,Restart System via `shutdown` - macOS/Linux
-impact,T1529,System Shutdown/Reboot,4,Shutdown System via `shutdown` - macOS/Linux
-impact,T1529,System Shutdown/Reboot,5,Restart System via `reboot` - macOS/Linux
-impact,T1529,System Shutdown/Reboot,6,Shutdown System via `halt` - Linux
-impact,T1529,System Shutdown/Reboot,7,Reboot System via `halt` - Linux
-impact,T1529,System Shutdown/Reboot,8,Shutdown System via `poweroff` - Linux
-impact,T1529,System Shutdown/Reboot,9,Reboot System via `poweroff` - Linux
-discovery,T1087,Account Discovery,1,Enumerate all accounts
-discovery,T1087,Account Discovery,2,View sudoers access
-discovery,T1087,Account Discovery,3,View accounts with UID 0
-discovery,T1087,Account Discovery,4,List opened files by user
-discovery,T1087,Account Discovery,5,Show if a user account has ever logged in remotely
-discovery,T1087,Account Discovery,6,Enumerate users and groups
-discovery,T1087,Account Discovery,7,Enumerate users and groups
-discovery,T1087,Account Discovery,8,Enumerate all accounts
-discovery,T1087,Account Discovery,9,Enumerate all accounts via PowerShell
-discovery,T1087,Account Discovery,10,Enumerate logged on users via CMD
-discovery,T1087,Account Discovery,11,Enumerate logged on users via PowerShell
-discovery,T1010,Application Window Discovery,1,List Process Main Windows - C# .NET
-discovery,T1217,Browser Bookmark Discovery,1,List Mozilla Firefox Bookmark Database Files on Linux
-discovery,T1217,Browser Bookmark Discovery,2,List Mozilla Firefox Bookmark Database Files on macOS
-discovery,T1217,Browser Bookmark Discovery,3,List Google Chrome Bookmark JSON Files on macOS
-discovery,T1217,Browser Bookmark Discovery,4,List Google Chrome Bookmarks on Windows with powershell
-discovery,T1217,Browser Bookmark Discovery,5,List Google Chrome Bookmarks on Windows with command prompt.
-discovery,T1482,Domain Trust Discovery,1,Windows - Discover domain trusts with dsquery
-discovery,T1482,Domain Trust Discovery,2,Windows - Discover domain trusts with nltest
-discovery,T1482,Domain Trust Discovery,3,Powershell enumerate domains and forests
-discovery,T1083,File and Directory Discovery,1,File and Directory Discovery (cmd.exe)
-discovery,T1083,File and Directory Discovery,2,File and Directory Discovery (PowerShell)
-discovery,T1083,File and Directory Discovery,3,Nix File and Diectory Discovery
-discovery,T1083,File and Directory Discovery,4,Nix File and Directory Discovery 2
-discovery,T1046,Network Service Scanning,1,Port Scan
-discovery,T1046,Network Service Scanning,2,Port Scan Nmap
-discovery,T1135,Network Share Discovery,1,Network Share Discovery
-discovery,T1135,Network Share Discovery,2,Network Share Discovery command prompt
-discovery,T1135,Network Share Discovery,3,Network Share Discovery PowerShell
-discovery,T1135,Network Share Discovery,4,View available share drives
-discovery,T1040,Network Sniffing,1,Packet Capture Linux
-discovery,T1040,Network Sniffing,2,Packet Capture macOS
-discovery,T1040,Network Sniffing,3,Packet Capture Windows Command Prompt
-discovery,T1040,Network Sniffing,4,Packet Capture PowerShell
-discovery,T1201,Password Policy Discovery,1,Examine password complexity policy - Ubuntu
-discovery,T1201,Password Policy Discovery,2,Examine password complexity policy - CentOS/RHEL 7.x
-discovery,T1201,Password Policy Discovery,3,Examine password complexity policy - CentOS/RHEL 6.x
-discovery,T1201,Password Policy Discovery,4,Examine password expiration policy - All Linux
-discovery,T1201,Password Policy Discovery,5,Examine local password policy - Windows
-discovery,T1201,Password Policy Discovery,6,Examine domain password policy - Windows
-discovery,T1201,Password Policy Discovery,7,Examine password policy - macOS
-discovery,T1069,Permission Groups Discovery,1,Permission Groups Discovery
-discovery,T1069,Permission Groups Discovery,2,Basic Permission Groups Discovery Windows
-discovery,T1069,Permission Groups Discovery,3,Permission Groups Discovery PowerShell
-discovery,T1069,Permission Groups Discovery,4,Elevated group enumeration using net group
-discovery,T1057,Process Discovery,1,Process Discovery - ps
-discovery,T1057,Process Discovery,2,Process Discovery - tasklist
-discovery,T1012,Query Registry,1,Query Registry
-discovery,T1018,Remote System Discovery,1,Remote System Discovery - net
-discovery,T1018,Remote System Discovery,2,Remote System Discovery - net group Domain Computers
-discovery,T1018,Remote System Discovery,3,Remote System Discovery - nltest
-discovery,T1018,Remote System Discovery,4,Remote System Discovery - ping sweep
-discovery,T1018,Remote System Discovery,5,Remote System Discovery - arp
-discovery,T1018,Remote System Discovery,6,Remote System Discovery - arp nix
-discovery,T1018,Remote System Discovery,7,Remote System Discovery - sweep
-discovery,T1018,Remote System Discovery,8,Remote System Discovery - nslookup
-discovery,T1063,Security Software Discovery,1,Security Software Discovery
-discovery,T1063,Security Software Discovery,2,Security Software Discovery - powershell
-discovery,T1063,Security Software Discovery,3,Security Software Discovery - ps
-discovery,T1063,Security Software Discovery,4,Security Software Discovery - Sysmon Service
-discovery,T1063,Security Software Discovery,5,Security Software Discovery - AV Discovery via WMI
-discovery,T1518,Software Discovery,1,Find and Display Internet Explorer Browser Version
-discovery,T1518,Software Discovery,2,Applications Installed
-discovery,T1082,System Information Discovery,1,System Information Discovery
-discovery,T1082,System Information Discovery,2,System Information Discovery
-discovery,T1082,System Information Discovery,3,List OS Information
-discovery,T1082,System Information Discovery,4,Linux VM Check via Hardware
-discovery,T1082,System Information Discovery,5,Linux VM Check via Kernel Modules
-discovery,T1082,System Information Discovery,6,Hostname Discovery (Windows)
-discovery,T1082,System Information Discovery,7,Hostname Discovery
-discovery,T1082,System Information Discovery,8,Windows MachineGUID Discovery
-discovery,T1016,System Network Configuration Discovery,1,System Network Configuration Discovery on Windows
-discovery,T1016,System Network Configuration Discovery,2,List Windows Firewall Rules
-discovery,T1016,System Network Configuration Discovery,3,System Network Configuration Discovery
-discovery,T1016,System Network Configuration Discovery,4,System Network Configuration Discovery (TrickBot Style)
-discovery,T1016,System Network Configuration Discovery,5,List Open Egress Ports
-discovery,T1049,System Network Connections Discovery,1,System Network Connections Discovery
-discovery,T1049,System Network Connections Discovery,2,System Network Connections Discovery with PowerShell
-discovery,T1049,System Network Connections Discovery,3,System Network Connections Discovery Linux & MacOS
-discovery,T1033,System Owner/User Discovery,1,System Owner/User Discovery
-discovery,T1033,System Owner/User Discovery,2,System Owner/User Discovery
-discovery,T1007,System Service Discovery,1,System Service Discovery
-discovery,T1007,System Service Discovery,2,System Service Discovery - net.exe
-discovery,T1124,System Time Discovery,1,System Time Discovery
-discovery,T1124,System Time Discovery,2,System Time Discovery - PowerShell
-credential-access,T1098,Account Manipulation,1,Admin Account Manipulate
-credential-access,T1139,Bash History,1,Search Through Bash History
-credential-access,T1110,Brute Force,1,Brute Force Credentials
-credential-access,T1003,Credential Dumping,1,Powershell Mimikatz
-credential-access,T1003,Credential Dumping,2,Gsecdump
-credential-access,T1003,Credential Dumping,3,Windows Credential Editor
-credential-access,T1003,Credential Dumping,4,"Registry dump of SAM, creds, and secrets"
-credential-access,T1003,Credential Dumping,5,Dump LSASS.exe Memory using ProcDump
-credential-access,T1003,Credential Dumping,6,Dump LSASS.exe Memory using comsvcs.dll
-credential-access,T1003,Credential Dumping,7,Dump LSASS.exe Memory using direct system calls and API unhooking
-credential-access,T1003,Credential Dumping,8,Dump LSASS.exe Memory using Windows Task Manager
-credential-access,T1003,Credential Dumping,9,Offline Credential Theft With Mimikatz
-credential-access,T1003,Credential Dumping,10,Dump Active Directory Database with NTDSUtil
-credential-access,T1003,Credential Dumping,11,Create Volume Shadow Copy with NTDS.dit
-credential-access,T1003,Credential Dumping,12,Copy NTDS.dit from Volume Shadow Copy
-credential-access,T1003,Credential Dumping,13,GPP Passwords (findstr)
-credential-access,T1003,Credential Dumping,14,GPP Passwords (Get-GPPPassword)
-credential-access,T1003,Credential Dumping,15,LSASS read with pypykatz
-credential-access,T1003,Credential Dumping,16,Registry parse with pypykatz
-credential-access,T1081,Credentials in Files,1,Extract Browser and System credentials with LaZagne
-credential-access,T1081,Credentials in Files,2,Extract passwords with grep
-credential-access,T1081,Credentials in Files,3,Extracting passwords with findstr
-credential-access,T1081,Credentials in Files,4,Access unattend.xml
-credential-access,T1214,Credentials in Registry,1,Enumeration for Credentials in Registry
-credential-access,T1214,Credentials in Registry,2,Enumeration for PuTTY Credentials in Registry
-credential-access,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages
-credential-access,T1056,Input Capture,1,Input Capture
-credential-access,T1141,Input Prompt,1,AppleScript - Prompt User for Password
-credential-access,T1141,Input Prompt,2,PowerShell - Prompt User for Password
-credential-access,T1208,Kerberoasting,1,Request for service tickets
-credential-access,T1142,Keychain,1,Keychain
-credential-access,T1040,Network Sniffing,1,Packet Capture Linux
-credential-access,T1040,Network Sniffing,2,Packet Capture macOS
-credential-access,T1040,Network Sniffing,3,Packet Capture Windows Command Prompt
-credential-access,T1040,Network Sniffing,4,Packet Capture PowerShell
-credential-access,T1174,Password Filter DLL,1,Install and Register Password Filter DLL
-credential-access,T1145,Private Keys,1,Private Keys
-credential-access,T1145,Private Keys,2,Discover Private SSH Keys
-credential-access,T1145,Private Keys,3,Copy Private SSH Keys with CP
-credential-access,T1145,Private Keys,4,Copy Private SSH Keys with rsync
-execution,T1155,AppleScript,1,AppleScript
-execution,T1191,CMSTP,1,CMSTP Executing Remote Scriptlet
-execution,T1191,CMSTP,2,CMSTP Executing UAC Bypass
-execution,T1059,Command-Line Interface,1,Command-Line Interface
-execution,T1223,Compiled HTML File,1,Compiled HTML Help Local Payload
-execution,T1223,Compiled HTML File,2,Compiled HTML Help Remote Payload
-execution,T1196,Control Panel Items,1,Control Panel Items
-execution,T1173,Dynamic Data Exchange,1,Execute Commands
-execution,T1173,Dynamic Data Exchange,2,Execute PowerShell script via Word DDE
-execution,T1118,InstallUtil,1,CheckIfInstallable method call
-execution,T1118,InstallUtil,2,InstallHelper method call
-execution,T1118,InstallUtil,3,InstallUtil class constructor method call
-execution,T1118,InstallUtil,4,InstallUtil Install method call
-execution,T1118,InstallUtil,5,InstallUtil Uninstall method call - /U variant
-execution,T1118,InstallUtil,6,InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
-execution,T1118,InstallUtil,7,InstallUtil HelpText method call
-execution,T1118,InstallUtil,8,InstallUtil evasive invocation
-execution,T1152,Launchctl,1,Launchctl
-execution,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file
-execution,T1168,Local Job Scheduling,2,Cron - Add script to cron folder
-execution,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence
-execution,T1170,Mshta,1,Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
-execution,T1170,Mshta,2,Mshta executes VBScript to execute malicious command
-execution,T1170,Mshta,3,Mshta Executes Remote HTML Application (HTA)
-execution,T1086,PowerShell,1,Mimikatz
-execution,T1086,PowerShell,2,Run BloodHound from local disk
-execution,T1086,PowerShell,3,Run Bloodhound from Memory using Download Cradle
-execution,T1086,PowerShell,4,Obfuscation Tests
-execution,T1086,PowerShell,5,Mimikatz - Cradlecraft PsSendKeys
-execution,T1086,PowerShell,6,Invoke-AppPathBypass
-execution,T1086,PowerShell,7,Powershell MsXml COM object - with prompt
-execution,T1086,PowerShell,8,Powershell XML requests
-execution,T1086,PowerShell,9,Powershell invoke mshta.exe download
-execution,T1086,PowerShell,10,Powershell Invoke-DownloadCradle
-execution,T1086,PowerShell,11,PowerShell Fileless Script Execution
-execution,T1086,PowerShell,12,PowerShell Downgrade Attack
-execution,T1086,PowerShell,13,NTFS Alternate Data Stream Access
-execution,T1121,Regsvcs/Regasm,1,Regasm Uninstall Method Call Test
-execution,T1121,Regsvcs/Regasm,2,Regsvs Uninstall Method Call Test
-execution,T1117,Regsvr32,1,Regsvr32 local COM scriptlet execution
-execution,T1117,Regsvr32,2,Regsvr32 remote COM scriptlet execution
-execution,T1117,Regsvr32,3,Regsvr32 local DLL execution
-execution,T1085,Rundll32,1,Rundll32 execute JavaScript Remote Payload With GetObject
-execution,T1085,Rundll32,2,Rundll32 execute VBscript command
-execution,T1085,Rundll32,3,Rundll32 advpack.dll Execution
-execution,T1085,Rundll32,4,Rundll32 ieadvpack.dll Execution
-execution,T1085,Rundll32,5,Rundll32 syssetup.dll Execution
-execution,T1085,Rundll32,6,Rundll32 setupapi.dll Execution
-execution,T1053,Scheduled Task,1,At.exe Scheduled task
-execution,T1053,Scheduled Task,2,Scheduled task Local
-execution,T1053,Scheduled Task,3,Scheduled task Remote
-execution,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task
-execution,T1064,Scripting,1,Create and Execute Bash Shell Script
-execution,T1064,Scripting,2,Create and Execute Batch Script
-execution,T1035,Service Execution,1,Execute a Command as a Service
-execution,T1035,Service Execution,2,Use PsExec to execute a command on a remote host
-execution,T1218,Signed Binary Proxy Execution,1,mavinject - Inject DLL into running process
-execution,T1218,Signed Binary Proxy Execution,2,SyncAppvPublishingServer - Execute arbitrary PowerShell code
-execution,T1218,Signed Binary Proxy Execution,3,Register-CimProvider - Execute evil dll
-execution,T1218,Signed Binary Proxy Execution,4,Msiexec.exe - Execute Local MSI file
-execution,T1218,Signed Binary Proxy Execution,5,Msiexec.exe - Execute Remote MSI file
-execution,T1218,Signed Binary Proxy Execution,6,Msiexec.exe - Execute Arbitrary DLL
-execution,T1218,Signed Binary Proxy Execution,7,Odbcconf.exe - Execute Arbitrary DLL
-execution,T1218,Signed Binary Proxy Execution,8,InfDefaultInstall.exe .inf Execution
-execution,T1216,Signed Script Proxy Execution,1,PubPrn.vbs Signed Script Bypass
-execution,T1216,Signed Script Proxy Execution,2,SyncAppvPublishingServer Signed Script PowerShell Command Execution
-execution,T1216,Signed Script Proxy Execution,3,manage-bde.wsf Signed Script Command Execution
-execution,T1153,Source,1,Execute Script using Source
-execution,T1153,Source,2,Execute Script using Source Alias
-execution,T1151,Space after Filename,1,Space After Filename
-execution,T1154,Trap,1,Trap
-execution,T1127,Trusted Developer Utilities,1,MSBuild Bypass Using Inline Tasks
-execution,T1204,User Execution,1,OSTap Style Macro Execution
-execution,T1204,User Execution,2,OSTap Payload Download
-execution,T1204,User Execution,3,Maldoc choice flags command execution
-execution,T1204,User Execution,4,OSTAP JS version
-execution,T1047,Windows Management Instrumentation,1,WMI Reconnaissance Users
-execution,T1047,Windows Management Instrumentation,2,WMI Reconnaissance Processes
-execution,T1047,Windows Management Instrumentation,3,WMI Reconnaissance Software
-execution,T1047,Windows Management Instrumentation,4,WMI Reconnaissance List Remote Services
-execution,T1047,Windows Management Instrumentation,5,WMI Execute Local Process
-execution,T1047,Windows Management Instrumentation,6,WMI Execute Remote Process
-execution,T1028,Windows Remote Management,1,Enable Windows Remote Management
-execution,T1028,Windows Remote Management,2,PowerShell Lateral Movement
-execution,T1028,Windows Remote Management,3,WMIC Process Call Create
-execution,T1028,Windows Remote Management,4,Psexec
-execution,T1028,Windows Remote Management,5,Invoke-Command
-execution,T1220,XSL Script Processing,1,MSXSL Bypass using local files
-execution,T1220,XSL Script Processing,2,MSXSL Bypass using remote files
-execution,T1220,XSL Script Processing,3,WMIC bypass using local XSL file
-execution,T1220,XSL Script Processing,4,WMIC bypass using remote XSL file
-lateral-movement,T1155,AppleScript,1,AppleScript
-lateral-movement,T1037,Logon Scripts,1,Logon Scripts
-lateral-movement,T1037,Logon Scripts,2,Scheduled Task Startup Script
-lateral-movement,T1037,Logon Scripts,3,Logon Scripts - Mac
-lateral-movement,T1037,Logon Scripts,4,Supicious vbs file run from startup Folder
-lateral-movement,T1037,Logon Scripts,5,Supicious jse file run from startup Folder
-lateral-movement,T1037,Logon Scripts,6,Supicious bat file run from startup Folder
-lateral-movement,T1075,Pass the Hash,1,Mimikatz Pass the Hash
-lateral-movement,T1075,Pass the Hash,2,crackmapexec Pass the Hash
-lateral-movement,T1097,Pass the Ticket,1,Mimikatz Kerberos Ticket Attack
-lateral-movement,T1076,Remote Desktop Protocol,1,RDP hijacking
-lateral-movement,T1076,Remote Desktop Protocol,2,RDPto-DomainController
-lateral-movement,T1105,Remote File Copy,1,rsync remote file copy (push)
-lateral-movement,T1105,Remote File Copy,2,rsync remote file copy (pull)
-lateral-movement,T1105,Remote File Copy,3,scp remote file copy (push)
-lateral-movement,T1105,Remote File Copy,4,scp remote file copy (pull)
-lateral-movement,T1105,Remote File Copy,5,sftp remote file copy (push)
-lateral-movement,T1105,Remote File Copy,6,sftp remote file copy (pull)
-lateral-movement,T1105,Remote File Copy,7,certutil download (urlcache)
-lateral-movement,T1105,Remote File Copy,8,certutil download (verifyctl)
-lateral-movement,T1105,Remote File Copy,9,Windows - BITSAdmin BITS Download
-lateral-movement,T1105,Remote File Copy,10,Windows - PowerShell Download
-lateral-movement,T1105,Remote File Copy,11,OSTAP Worming Activity
-lateral-movement,T1077,Windows Admin Shares,1,Map admin share
-lateral-movement,T1077,Windows Admin Shares,2,Map Admin Share PowerShell
-lateral-movement,T1077,Windows Admin Shares,3,Copy and Execute File with PsExec
-lateral-movement,T1077,Windows Admin Shares,4,Execute command writing output to local Admin Share
-lateral-movement,T1028,Windows Remote Management,1,Enable Windows Remote Management
-lateral-movement,T1028,Windows Remote Management,2,PowerShell Lateral Movement
-lateral-movement,T1028,Windows Remote Management,3,WMIC Process Call Create
-lateral-movement,T1028,Windows Remote Management,4,Psexec
-lateral-movement,T1028,Windows Remote Management,5,Invoke-Command
-collection,T1123,Audio Capture,1,using device audio capture commandlet
-collection,T1119,Automated Collection,1,Automated Collection Command Prompt
-collection,T1119,Automated Collection,2,Automated Collection PowerShell
-collection,T1119,Automated Collection,3,Recon information for export with PowerShell
-collection,T1119,Automated Collection,4,Recon information for export with Command Prompt
-collection,T1115,Clipboard Data,1,Utilize Clipboard to store or execute commands from
-collection,T1115,Clipboard Data,2,PowerShell
-collection,T1074,Data Staged,1,Stage data from Discovery.bat
-collection,T1074,Data Staged,2,Stage data from Discovery.sh
-collection,T1074,Data Staged,3,Zip a Folder with PowerShell for Staging in Temp
-collection,T1005,Data from Local System,1,Search macOS Safari Cookies
-collection,T1114,Email Collection,1,T1114 Email Collection with PowerShell
-collection,T1056,Input Capture,1,Input Capture
-collection,T1113,Screen Capture,1,Screencapture
-collection,T1113,Screen Capture,2,Screencapture (silent)
-collection,T1113,Screen Capture,3,X Windows Capture
-collection,T1113,Screen Capture,4,Import
-exfiltration,T1002,Data Compressed,1,Compress Data for Exfiltration With PowerShell
-exfiltration,T1002,Data Compressed,2,Compress Data for Exfiltration With Rar
-exfiltration,T1002,Data Compressed,3,Data Compressed - nix - zip
-exfiltration,T1002,Data Compressed,4,Data Compressed - nix - gzip Single File
-exfiltration,T1002,Data Compressed,5,Data Compressed - nix - tar Folder or File
-exfiltration,T1022,Data Encrypted,1,Data Encrypted with zip and gpg symmetric
-exfiltration,T1022,Data Encrypted,2,Compress Data and lock with password for Exfiltration with winrar
-exfiltration,T1022,Data Encrypted,3,Compress Data and lock with password for Exfiltration with winzip
-exfiltration,T1022,Data Encrypted,4,Compress Data and lock with password for Exfiltration with 7zip
-exfiltration,T1030,Data Transfer Size Limits,1,Data Transfer Size Limits
-exfiltration,T1048,Exfiltration Over Alternative Protocol,1,Exfiltration Over Alternative Protocol - SSH
-exfiltration,T1048,Exfiltration Over Alternative Protocol,2,Exfiltration Over Alternative Protocol - SSH
-exfiltration,T1048,Exfiltration Over Alternative Protocol,3,Exfiltration Over Alternative Protocol - HTTP
-exfiltration,T1048,Exfiltration Over Alternative Protocol,4,Exfiltration Over Alternative Protocol - ICMP
-exfiltration,T1048,Exfiltration Over Alternative Protocol,5,Exfiltration Over Alternative Protocol - DNS
-command-and-control,T1090,Connection Proxy,1,Connection Proxy
-command-and-control,T1090,Connection Proxy,2,portproxy reg key
-command-and-control,T1132,Data Encoding,1,Base64 Encoded data.
-command-and-control,T1219,Remote Access Tools,1,TeamViewer Files Detected Test on Windows
-command-and-control,T1219,Remote Access Tools,2,AnyDesk Files Detected Test on Windows
-command-and-control,T1219,Remote Access Tools,3,LogMeIn Files Detected Test on Windows
-command-and-control,T1105,Remote File Copy,1,rsync remote file copy (push)
-command-and-control,T1105,Remote File Copy,2,rsync remote file copy (pull)
-command-and-control,T1105,Remote File Copy,3,scp remote file copy (push)
-command-and-control,T1105,Remote File Copy,4,scp remote file copy (pull)
-command-and-control,T1105,Remote File Copy,5,sftp remote file copy (push)
-command-and-control,T1105,Remote File Copy,6,sftp remote file copy (pull)
-command-and-control,T1105,Remote File Copy,7,certutil download (urlcache)
-command-and-control,T1105,Remote File Copy,8,certutil download (verifyctl)
-command-and-control,T1105,Remote File Copy,9,Windows - BITSAdmin BITS Download
-command-and-control,T1105,Remote File Copy,10,Windows - PowerShell Download
-command-and-control,T1105,Remote File Copy,11,OSTAP Worming Activity
-command-and-control,T1071,Standard Application Layer Protocol,1,Malicious User Agents - Powershell
-command-and-control,T1071,Standard Application Layer Protocol,2,Malicious User Agents - CMD
-command-and-control,T1071,Standard Application Layer Protocol,3,Malicious User Agents - Nix
-command-and-control,T1071,Standard Application Layer Protocol,4,DNS Large Query Volume
-command-and-control,T1071,Standard Application Layer Protocol,5,DNS Regular Beaconing
-command-and-control,T1071,Standard Application Layer Protocol,6,DNS Long Domain Query
-command-and-control,T1071,Standard Application Layer Protocol,7,DNS C2
-command-and-control,T1032,Standard Cryptographic Protocol,1,OpenSSL C2
-command-and-control,T1095,Standard Non-Application Layer Protocol,1,ICMP C2
-command-and-control,T1095,Standard Non-Application Layer Protocol,2,Netcat C2
-command-and-control,T1095,Standard Non-Application Layer Protocol,3,Powercat C2
-command-and-control,T1065,Uncommonly Used Port,1,Testing usage of uncommonly used port with PowerShell
-command-and-control,T1065,Uncommonly Used Port,2,Testing usage of uncommonly used port
-command-and-control,T1102,Web Service,1,Reach out to C2 Pointer URLs via command_prompt
-command-and-control,T1102,Web Service,2,Reach out to C2 Pointer URLs via powershell
-initial-access,T1193,Spearphishing Attachment,1,Download Phishing Attachment - VBScript
+Tactic,Technique #,Technique Name,Test #,Test Name,Test GUID
+persistence,T1156,.bash_profile and .bashrc,1,Add command to .bash_profile,9f5b2e58-d7c8-40c2-ac84-8f5f38628484
+persistence,T1156,.bash_profile and .bashrc,2,Add command to .bashrc,028fe338-ee65-409a-9bce-6e4694b99d88
+persistence,T1015,Accessibility Features,1,Attaches Command Prompt as a Debugger to a List of Target Processes,383ab50e-9db5-4fbd-90e8-4b7fe6a5960f
+persistence,T1098,Account Manipulation,1,Admin Account Manipulate,b2352a85-3e91-4d01-bc5c-b4439e9b6f23
+persistence,T1103,AppInit DLLs,1,Install AppInit Shim,4c6f7d25-0507-4b6e-8f46-98add25ba6a5
+persistence,T1138,Application Shimming,1,Application Shim Installation,05d66f3e-a146-4fcf-b786-26b6f9272eba
+persistence,T1138,Application Shimming,2,New shim database files created in the default shim database directory,fc623ff3-75ab-499a-a75d-2b2468608c25
+persistence,T1138,Application Shimming,3,Registry key creation and/or modification events for SDB,000258fd-44a0-4e04-b902-d8d25fc71bd7
+persistence,T1197,BITS Jobs,1,Bitsadmin Download (cmd),29afae5a-d0d0-45c2-a7c7-062cbf35e8f0
+persistence,T1197,BITS Jobs,2,Bitsadmin Download (PowerShell),08cfe2af-84f7-4673-b051-64af789cce5f
+persistence,T1197,BITS Jobs,3,"Persist, Download, & Execute",b885e3fb-08ba-4ed4-acac-290ca8bb1570
+persistence,T1176,Browser Extensions,1,Chrome (Developer Mode),95288dfe-c808-425e-b2fe-b499b2051f32
+persistence,T1176,Browser Extensions,2,Chrome (Chrome Web Store),ba106fe1-c95a-4daf-9461-af488d09ebc4
+persistence,T1176,Browser Extensions,3,Firefox,1e85f20c-b104-40ef-b5c5-23e7af280597
+persistence,T1042,Change Default File Association,1,Change Default File Association,c29cb577-b911-4291-8453-c7d2f82f528b
+persistence,T1122,Component Object Model Hijacking,1,COM Hijack Leveraging user scope COR_PROFILER,0b3245e7-3639-4317-9805-d9e1c6e1e521
+persistence,T1122,Component Object Model Hijacking,2,COM Hijack Leveraging System Scope COR_PROFILER,f41b29ce-12c0-43c1-9047-193198059628
+persistence,T1122,Component Object Model Hijacking,3,COM Hijack Leveraging registry-free process scope COR_PROFILER,dc08b504-1e1f-4b85-b33d-d940ff7c001d
+persistence,T1136,Create Account,1,Create a user account on a Linux system,62edb633-1cb4-43b7-9fe0-f3f2962ad577
+persistence,T1136,Create Account,2,Create a user account on a MacOS system,77509ed4-f962-4d51-8815-b6f56c64f8f2
+persistence,T1136,Create Account,3,Create a new user in a command prompt,b86c2a3d-031d-4ab7-93eb-a2d6c7d81b6f
+persistence,T1136,Create Account,4,Create a new user in PowerShell,56e36711-5dec-4c9f-a27a-03820644abd0
+persistence,T1136,Create Account,5,Create a new user in Linux with `root` UID and GID.,c35887a6-dd12-4520-bc09-c167e8ff9fde
+persistence,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll,e078a6b8-6e93-4984-9b62-5e63ddd7cfb3
+persistence,T1519,Emond,1,Persistance with Event Monitor - emond,ee46862e-bd6f-4ade-8371-2cd36fecb73c
+persistence,T1044,File System Permissions Weakness,1,File System Permissions Weakness,963d4a0e-b8dd-4195-b9ac-0f2dd39ce9ae
+persistence,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory,252ebeb8-09d5-4278-9c8b-8bf1893ee432
+persistence,T1158,Hidden Files and Directories,2,Mac Hidden file,a5ef5d24-8190-4ad9-a852-a814cfb11cfc
+persistence,T1158,Hidden Files and Directories,3,Create Windows System File with Attrib,fa1ee4ae-7d22-426f-97b0-188a84f2e24a
+persistence,T1158,Hidden Files and Directories,4,Create Windows Hidden File with Attrib,0070dd25-7b8b-46fd-847b-c0aa79fb9304
+persistence,T1158,Hidden Files and Directories,5,Hidden files,454a5761-593e-4611-9a3e-df721986d4ab
+persistence,T1158,Hidden Files and Directories,6,Hide a Directory,581aae0c-c30a-4ce1-989a-e69cc61a086f
+persistence,T1158,Hidden Files and Directories,7,Show all hidden files,86a993ca-d357-48d4-9e81-b417676d6632
+persistence,T1158,Hidden Files and Directories,8,Create ADS command prompt,cd838f18-856e-4ed5-8992-cef06f024233
+persistence,T1158,Hidden Files and Directories,9,Create ADS PowerShell,9180d996-a41e-42ec-a3b9-611d3669af49
+persistence,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages,5ee5d018-bcc6-4a82-b465-f4b4f97bc108
+persistence,T1062,Hypervisor,1,Installing Hyper-V Feature,67dbd542-c104-4422-8105-b913ae3871c7
+persistence,T1183,Image File Execution Options Injection,1,IFEO Add Debugger,5786f6b2-b77f-40bf-acfd-e4145f6b57b0
+persistence,T1183,Image File Execution Options Injection,2,IFEO Global Flags,b013437e-6c01-4ed0-9bfa-fd40cfce6ea9
+persistence,T1215,Kernel Modules and Extensions,1,Linux - Load Kernel Module via insmod,dd3d86a5-e55c-48eb-8ba8-05aa067df922
+persistence,T1159,Launch Agent,1,Launch Agent,3ef48fcb-9d9d-4149-81fc-4562091a37e8
+persistence,T1160,Launch Daemon,1,Launch Daemon,085d9e0e-e9b4-4ccc-8f32-81f77979835e
+persistence,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+persistence,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file,ceec02d0-1319-4803-abfd-8365aab3657d
+persistence,T1168,Local Job Scheduling,2,Cron - Add script to cron folder,ce78ee97-c5c5-4202-9138-44a8cbbcee06
+persistence,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence,79b65197-d7bd-4e79-befb-c6809940a687
+persistence,T1037,Logon Scripts,1,Logon Scripts,56ae7028-9185-4d1a-8389-e3c3557ad799
+persistence,T1037,Logon Scripts,2,Scheduled Task Startup Script,90d2814d-ffa9-461c-af30-81739cba64c4
+persistence,T1037,Logon Scripts,3,Logon Scripts - Mac,bf96e38d-d481-4ff9-a299-2b317f662ddb
+persistence,T1037,Logon Scripts,4,Supicious vbs file run from startup Folder,fdcd83dd-9cad-448e-a7d6-0eedf2ebd32e
+persistence,T1037,Logon Scripts,5,Supicious jse file run from startup Folder,e74f7298-bc0a-46ab-a0a9-4ea9568f2c8d
+persistence,T1037,Logon Scripts,6,Supicious bat file run from startup Folder,a87779ff-0ff2-4645-b917-a6784cd95fae
+persistence,T1031,Modify Existing Service,1,Modify Fax service to run PowerShell,ff1ccb9c-bbb3-44a7-81f0-64f2ebb4fe45
+persistence,T1128,Netsh Helper DLL,1,Netsh Helper DLL Registration,34d64d96-f588-4269-a6da-5988589a411e
+persistence,T1050,New Service,1,Service Installation CMD,8911be82-7641-42e9-a5e9-65fed09c2d68
+persistence,T1050,New Service,2,Service Installation PowerShell,e92be35a-3d91-451b-81c6-e5dd5c6a292c
+persistence,T1137,Office Application Startup,1,DDEAUTO,d8ddfb47-e057-482a-8e8d-25be36d480c1
+persistence,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+persistence,T1504,PowerShell Profile,1,Append malicious start-process cmdlet,7a4ce462-b978-400d-9969-e478b83e58e1
+persistence,T1163,Rc.common,1,rc.common,fc022f3e-0112-45ec-9525-cb1861deced0
+persistence,T1164,Re-opened Applications,1,Re-Opened Applications,611baa11-6b69-4d70-b5d6-945892745a5e
+persistence,T1164,Re-opened Applications,2,Re-Opened Applications,3c089ef9-fe6d-4301-bb2c-78ebaf0d0bef
+persistence,T1060,Registry Run Keys / Startup Folder,1,Reg Key Run,4cdf6f8a-6479-44d7-9faf-6d2fc0baf4f6
+persistence,T1060,Registry Run Keys / Startup Folder,2,Reg Key RunOnce,54d37497-b233-4313-9e68-4cef3afd0f9f
+persistence,T1060,Registry Run Keys / Startup Folder,3,PowerShell Registry RunOnce,715037af-647f-437a-9ff2-7def3298b3d8
+persistence,T1053,Scheduled Task,1,At.exe Scheduled task,0a2ff65b-b35b-4954-81e1-9ca19ac2de80
+persistence,T1053,Scheduled Task,2,Scheduled task Local,148bcba2-9141-4b75-8375-9d7edad314a7
+persistence,T1053,Scheduled Task,3,Scheduled task Remote,91e6e5f8-d867-4cbe-9c4d-e5b57701460a
+persistence,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task,a7cb2775-3eed-4e4b-a786-ae796018ba89
+persistence,T1180,Screensaver,1,Set Arbitrary Binary as Screensaver,1f514258-72f7-49bf-a13a-18916ce473d0
+persistence,T1101,Security Support Provider,1,Modify SSP configuration in registry,84d7fba7-0f80-44e0-a4bc-0dd00f98c37c
+persistence,T1505,Server Software Component,1,Install MS Exchange Transport Agent Persistence,e8b6191b-09ff-4e61-a94b-f6ac3b435055
+persistence,T1058,Service Registry Permissions Weakness,1,Service Registry Permissions Weakness,b1cc4b4c-a4e4-4eae-b9ca-e8bbe3625b70
+persistence,T1166,Setuid and Setgid,1,Make and modify binary from C source,560b64d9-ec12-4f3f-b153-bf8d704318e5
+persistence,T1166,Setuid and Setgid,2,Set a SetUID flag on file,d118c39d-487e-41d8-a8aa-dd1ac6cce31c
+persistence,T1166,Setuid and Setgid,3,Set a SetGID flag on file,75abaa14-102a-45c4-9673-8d8ac09d403f
+persistence,T1023,Shortcut Modification,1,Shortcut Modification,ce12ab38-bed4-47fe-a316-e5e02990a3d3
+persistence,T1023,Shortcut Modification,2,Create shortcut to cmd in startup folders,b29eaffd-56aa-4a14-bf61-b0f057199cfe
+persistence,T1165,Startup Items,1,add file to Local Library StartupItems,d6460309-a8b5-4111-9976-2f7943c003b9
+persistence,T1501,Systemd Service,1,Create Systemd Service,7836d02d-b76a-456d-a902-10b61d95b597
+persistence,T1154,Trap,1,Trap,23e7523f-c9e4-42e9-a87f-1cd4182f3c1b
+persistence,T1100,Web Shell,1,Web Shell Written to Disk,fb191d67-35e6-4694-9a8f-d46f13d1451a
+persistence,T1084,Windows Management Instrumentation Event Subscription,1,Persistence via WMI Event Subscription,275ca623-899a-4e37-912e-dcc630dfb1c9
+persistence,T1004,Winlogon Helper DLL,1,Winlogon Shell Key Persistence - PowerShell,30ca1e81-7bd2-4131-a14c-c5df8f1a8476
+persistence,T1004,Winlogon Helper DLL,2,Winlogon Userinit Key Persistence - PowerShell,0c08b77f-3662-4800-a85f-feaa3b25271a
+persistence,T1004,Winlogon Helper DLL,3,Winlogon Notify Key Logon Persistence - PowerShell,1a6d6726-e77d-49b0-8c23-b58ad61f2a4a
+defense-evasion,T1197,BITS Jobs,1,Bitsadmin Download (cmd),29afae5a-d0d0-45c2-a7c7-062cbf35e8f0
+defense-evasion,T1197,BITS Jobs,2,Bitsadmin Download (PowerShell),08cfe2af-84f7-4673-b051-64af789cce5f
+defense-evasion,T1197,BITS Jobs,3,"Persist, Download, & Execute",b885e3fb-08ba-4ed4-acac-290ca8bb1570
+defense-evasion,T1009,Binary Padding,1,Pad Binary to Change Hash - Linux/macOS dd,0066e889-00a2-43fe-9be7-d0c1e85d5962
+defense-evasion,T1088,Bypass User Account Control,1,Bypass UAC using Event Viewer (cmd),918e73b2-2a56-4d88-9ad2-4374afde7caa
+defense-evasion,T1088,Bypass User Account Control,2,Bypass UAC using Event Viewer (PowerShell),7ba713a1-5a5f-4a7c-968f-8d226d96a05b
+defense-evasion,T1088,Bypass User Account Control,3,Bypass UAC using Fodhelper,0806146c-fe2f-425f-94dc-03df082b8fe2
+defense-evasion,T1088,Bypass User Account Control,4,Bypass UAC using Fodhelper - PowerShell,489433c4-7c94-4240-8c4f-fec7429c7e88
+defense-evasion,T1088,Bypass User Account Control,5,Bypass UAC using ComputerDefaults (PowerShell),3b53d2c2-6753-4f23-939b-90a6aab947e8
+defense-evasion,T1088,Bypass User Account Control,6,Bypass UAC by Mocking Trusted Directories,34cb5a33-7919-4519-b246-e858a5d22ab2
+defense-evasion,T1191,CMSTP,1,CMSTP Executing Remote Scriptlet,b1012b1d-7ca7-413b-aec6-f46a5d23c8ae
+defense-evasion,T1191,CMSTP,2,CMSTP Executing UAC Bypass,8b1371ef-fb1a-43b0-941c-71d0a3a2a962
+defense-evasion,T1146,Clear Command History,1,Clear Bash history (rm),d7a68489-9b17-4f03-b70c-8c4851718e39
+defense-evasion,T1146,Clear Command History,2,Clear Bash history (echo),8ea12ac8-a48d-494b-ac05-4245e0115da0
+defense-evasion,T1146,Clear Command History,3,Clear Bash history (cat dev/null),a92d4f35-01e7-4b1b-95a6-727ba3e5b53d
+defense-evasion,T1146,Clear Command History,4,Clear Bash history (ln dev/null),65e8caa0-cc76-450a-929c-9a89ff16942b
+defense-evasion,T1146,Clear Command History,5,Clear Bash history (truncate),d3987ae0-f3be-4931-a2bf-34546d50db86
+defense-evasion,T1146,Clear Command History,6,Clear history of a bunch of shells,28e4676f-3062-4449-8bf6-25c668d51205
+defense-evasion,T1500,Compile After Delivery,1,Compile After Delivery using csc.exe,5366706d-235d-4349-87fe-f273d650e5c8
+defense-evasion,T1223,Compiled HTML File,1,Compiled HTML Help Local Payload,6a518104-1d3a-4741-a8a1-153aaca5ca50
+defense-evasion,T1223,Compiled HTML File,2,Compiled HTML Help Remote Payload,4dca974b-5f7a-42d5-852d-d6d9be218d72
+defense-evasion,T1122,Component Object Model Hijacking,1,COM Hijack Leveraging user scope COR_PROFILER,0b3245e7-3639-4317-9805-d9e1c6e1e521
+defense-evasion,T1122,Component Object Model Hijacking,2,COM Hijack Leveraging System Scope COR_PROFILER,f41b29ce-12c0-43c1-9047-193198059628
+defense-evasion,T1122,Component Object Model Hijacking,3,COM Hijack Leveraging registry-free process scope COR_PROFILER,dc08b504-1e1f-4b85-b33d-d940ff7c001d
+defense-evasion,T1090,Connection Proxy,1,Connection Proxy,fff549e2-d6c9-4a9f-9a1e-06e5008bc34e
+defense-evasion,T1090,Connection Proxy,2,portproxy reg key,d1e8afed-f116-46f3-b874-8b353cb5835a
+defense-evasion,T1196,Control Panel Items,1,Control Panel Items,24e03628-2fbc-4c64-abff-b4d0d928e67c
+defense-evasion,T1207,DCShadow,1,DCShadow - Mimikatz,8bf91ee7-242a-4196-be72-da81800f73da
+defense-evasion,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll,e078a6b8-6e93-4984-9b62-5e63ddd7cfb3
+defense-evasion,T1073,DLL Side-Loading,1,DLL Side-Loading using the Notepad++ GUP.exe binary,c69507ca-da63-425c-9c78-6844eacc1b22
+defense-evasion,T1140,Deobfuscate/Decode Files or Information,1,Deobfuscate/Decode Files Or Information,6be6a27c-7fe7-40ba-a84b-7912ad0ba85e
+defense-evasion,T1140,Deobfuscate/Decode Files or Information,2,Certutil Rename and Decode,353935ec-1f9d-4724-8492-ca1153947468
+defense-evasion,T1089,Disabling Security Tools,1,Disable iptables firewall,2f07e566-b61a-4bc1-b9f2-52e055b49c42
+defense-evasion,T1089,Disabling Security Tools,2,Disable syslog,66b14b38-82ff-4382-a36d-188866bda558
+defense-evasion,T1089,Disabling Security Tools,3,Disable Cb Response,94930d61-4065-4288-b388-cffd04f18a1f
+defense-evasion,T1089,Disabling Security Tools,4,Disable SELinux,1afb3484-8cf3-4482-a460-61c8f5d05410
+defense-evasion,T1089,Disabling Security Tools,5,Stop Crowdstrike Falcon on Linux,bbf2129e-5c39-4357-9f8e-9e2cdba6cfbb
+defense-evasion,T1089,Disabling Security Tools,6,Disable Carbon Black Response,c8c68e80-4559-4b98-8513-fb6900c63d55
+defense-evasion,T1089,Disabling Security Tools,7,Disable LittleSnitch,61a766ce-8f68-4367-81c1-6ad95cda867b
+defense-evasion,T1089,Disabling Security Tools,8,Disable OpenDNS Umbrella,d5fd958c-3236-41f0-8769-e137717a7f13
+defense-evasion,T1089,Disabling Security Tools,9,Stop and unload Crowdstrike Falcon on macOS,de3e5ad2-e734-4003-af87-7af5bee0d363
+defense-evasion,T1089,Disabling Security Tools,10,Unload Sysmon Filter Driver,603e0800-87d2-40a1-95ee-b5d08de6e2e8
+defense-evasion,T1089,Disabling Security Tools,11,Disable Windows IIS HTTP Logging,2d693ad1-ad84-4318-a8cd-2bb64db091ae
+defense-evasion,T1089,Disabling Security Tools,12,Uninstall Sysmon,6c47e616-ce99-4eff-8f33-8fcaa67af9ea
+defense-evasion,T1089,Disabling Security Tools,13,AMSI Bypass - AMSI InitFailed,ecccea4b-7599-4bb2-8490-29a31f359294
+defense-evasion,T1089,Disabling Security Tools,14,AMSI Bypass - Remove AMSI Provider Reg Key,1833bdad-17ab-4e1a-892f-6741613eac48
+defense-evasion,T1089,Disabling Security Tools,15,Disable Arbitrary Security Windows Service,3baf0a65-5432-4ec2-af77-02e3d0d4d9a2
+defense-evasion,T1089,Disabling Security Tools,16,Tamper with Windows Defender ATP PowerShell,601c5ba0-00f9-481f-9ab6-b974a6c6ea81
+defense-evasion,T1089,Disabling Security Tools,17,Tamper with Windows Defender Command Prompt,77a19156-1c96-424a-a5db-e9a5067bacba
+defense-evasion,T1089,Disabling Security Tools,18,Tamper with Windows Defender Registry,add29adc-e821-46bc-9e04-8d0c1eeb03b0
+defense-evasion,T1089,Disabling Security Tools,19,Disable Microft Office Security Features,90d6ba59-f8e0-40f1-9aa7-dc9bfae23abb
+defense-evasion,T1089,Disabling Security Tools,20,Remove Windows Defender Definition Files,f6afdf76-75d1-4ebe-9a91-5fd0600cb020
+defense-evasion,T1089,Disabling Security Tools,21,Stop and Remove Arbitrary Security Windows Service,41d6a50e-5e8f-46ee-8a29-618f1ca3bc30
+defense-evasion,T1089,Disabling Security Tools,22,Uninstall Crowdstrike Falcon on Windows,e6509134-e89c-4cf5-ae35-5a5dc16c77f5
+defense-evasion,T1107,File Deletion,1,Delete a single file - Linux/macOS,882269ea-8683-4902-837a-3a19d657e9cc
+defense-evasion,T1107,File Deletion,2,Delete an entire folder - Linux/macOS,1519522d-c28b-432e-953b-2bc196830476
+defense-evasion,T1107,File Deletion,3,Overwrite and delete a file with shred,7f5709bc-1f8a-4cf6-8130-82adf0bcd3cb
+defense-evasion,T1107,File Deletion,4,Delete a single file - Windows cmd,f9c688d0-8670-49c9-ac16-ec020007c94e
+defense-evasion,T1107,File Deletion,5,Delete an entire folder - Windows cmd,e62d4f13-7ff8-462b-89e0-19e73a27e4b1
+defense-evasion,T1107,File Deletion,6,Delete a single file - Windows PowerShell,241ca5f8-f89f-4e60-8854-639a6604ef80
+defense-evasion,T1107,File Deletion,7,Delete an entire folder - Windows PowerShell,c8c5ecb9-966b-49a6-930c-f7800833858f
+defense-evasion,T1107,File Deletion,8,Delete Filesystem - Linux,e0c9c090-0914-4920-91fa-aa9adf483a08
+defense-evasion,T1107,File Deletion,9,Delete-PrefetchFile,60f882b0-d1f5-4b20-b9d1-a727a56b0952
+defense-evasion,T1107,File Deletion,10,Delete TeamViewer Log Files,2cd8cd8f-44a8-477d-b7d8-047f231ef43b
+defense-evasion,T1222,File and Directory Permissions Modification,1,Take ownership using takeown utility,52c8f348-18d8-4b01-bb98-d847dee641d3
+defense-evasion,T1222,File and Directory Permissions Modification,2,cacls - Grant permission to specified user or group recursively,04f91a6a-3298-4126-8bec-352a5aa086e0
+defense-evasion,T1222,File and Directory Permissions Modification,3,attrib - Remove read-only attribute,fbaa60da-952d-4145-b436-70a5445d8b57
+defense-evasion,T1222,File and Directory Permissions Modification,4,chmod - Change file or folder mode (numeric mode),4d12f4c8-4e28-4e88-9e81-2d836220903a
+defense-evasion,T1222,File and Directory Permissions Modification,5,chmod - Change file or folder mode (symbolic mode),5034b422-2dbf-4bc8-9fc9-8e1140ba8610
+defense-evasion,T1222,File and Directory Permissions Modification,6,chmod - Change file or folder mode (numeric mode) recursively,9c3c91b7-01be-4d25-926c-4161fac0b616
+defense-evasion,T1222,File and Directory Permissions Modification,7,chmod - Change file or folder mode (symbolic mode) recursively,4852ff24-e779-4f45-88ea-6f649ebcd8f3
+defense-evasion,T1222,File and Directory Permissions Modification,8,chown - Change file or folder ownership and group,2da3b4fd-f48d-467f-b26a-2a096d8d5486
+defense-evasion,T1222,File and Directory Permissions Modification,9,chown - Change file or folder ownership and group recursively,faa41721-e7e9-450e-bfb9-52c0361e59bf
+defense-evasion,T1222,File and Directory Permissions Modification,10,chown - Change file or folder mode ownership only,4b4a1928-e386-4612-9a22-40c87636449b
+defense-evasion,T1222,File and Directory Permissions Modification,11,chown - Change file or folder ownership recursively,1e2a577a-a41b-4f70-8985-e1a8e5b65b23
+defense-evasion,T1222,File and Directory Permissions Modification,12,chattr - Remove immutable file attribute,0b2c20a6-d510-411c-b1c3-45699e4c07ac
+defense-evasion,T1144,Gatekeeper Bypass,1,Gatekeeper Bypass,218ebeb0-62e9-4590-8984-d9b28b9f2739
+defense-evasion,T1148,HISTCONTROL,1,Disable history collection,f56c2cae-a908-4a32-8e39-cd90f53739da
+defense-evasion,T1148,HISTCONTROL,2,Mac HISTCONTROL,190b9165-b1fe-42b4-ae55-0710e0aebf94
+defense-evasion,T1158,Hidden Files and Directories,1,Create a hidden file in a hidden directory,252ebeb8-09d5-4278-9c8b-8bf1893ee432
+defense-evasion,T1158,Hidden Files and Directories,2,Mac Hidden file,a5ef5d24-8190-4ad9-a852-a814cfb11cfc
+defense-evasion,T1158,Hidden Files and Directories,3,Create Windows System File with Attrib,fa1ee4ae-7d22-426f-97b0-188a84f2e24a
+defense-evasion,T1158,Hidden Files and Directories,4,Create Windows Hidden File with Attrib,0070dd25-7b8b-46fd-847b-c0aa79fb9304
+defense-evasion,T1158,Hidden Files and Directories,5,Hidden files,454a5761-593e-4611-9a3e-df721986d4ab
+defense-evasion,T1158,Hidden Files and Directories,6,Hide a Directory,581aae0c-c30a-4ce1-989a-e69cc61a086f
+defense-evasion,T1158,Hidden Files and Directories,7,Show all hidden files,86a993ca-d357-48d4-9e81-b417676d6632
+defense-evasion,T1158,Hidden Files and Directories,8,Create ADS command prompt,cd838f18-856e-4ed5-8992-cef06f024233
+defense-evasion,T1158,Hidden Files and Directories,9,Create ADS PowerShell,9180d996-a41e-42ec-a3b9-611d3669af49
+defense-evasion,T1147,Hidden Users,1,Hidden Users,844edd23-660e-41e3-9a13-8d68e25ef23a
+defense-evasion,T1143,Hidden Window,1,Hidden Window,d32d9e79-183c-4aeb-a94a-6bc5ead7337b
+defense-evasion,T1183,Image File Execution Options Injection,1,IFEO Add Debugger,5786f6b2-b77f-40bf-acfd-e4145f6b57b0
+defense-evasion,T1183,Image File Execution Options Injection,2,IFEO Global Flags,b013437e-6c01-4ed0-9bfa-fd40cfce6ea9
+defense-evasion,T1070,Indicator Removal on Host,1,Clear Logs,18b5ef69-d3b5-44fd-ae8d-0e2103bda07d
+defense-evasion,T1070,Indicator Removal on Host,2,FSUtil,8b041905-e816-47ca-9d4c-471f35f72c06
+defense-evasion,T1070,Indicator Removal on Host,3,rm -rf,f0ffab8b-4203-4c51-9227-8dce3c0a843a
+defense-evasion,T1070,Indicator Removal on Host,4,Overwrite Linux Mail Spool,d3177235-2c77-4033-80a5-0db2b6aaff0e
+defense-evasion,T1070,Indicator Removal on Host,5,Overwrite Linux Log,a1db17cd-b8a0-4d55-a60c-a8b2b200e7ed
+defense-evasion,T1070,Indicator Removal on Host,6,Delete System Logs Using PowerShell,f028dc16-f085-4066-8d95-0430c1aecbd8
+defense-evasion,T1070,Indicator Removal on Host,7,Delete System Logs Using Clear-EventLogId,2cbf86e4-c13d-40ee-8b47-76c88c7e7102
+defense-evasion,T1202,Indirect Command Execution,1,Indirect Command Execution - pcalua.exe,43d5b6a4-3bce-44b6-b43c-377a22ad9cf1
+defense-evasion,T1202,Indirect Command Execution,2,Indirect Command Execution - forfiles.exe,64681a81-2921-4462-915a-cbb53a335cd4
+defense-evasion,T1130,Install Root Certificate,1,Install root CA on CentOS/RHEL,435a02d8-d3ba-4f22-bd59-5337b1800c4e
+defense-evasion,T1130,Install Root Certificate,2,Install root CA on Debian/Ubuntu,d8cbff42-0d4e-468e-b63d-024efdef3406
+defense-evasion,T1130,Install Root Certificate,3,Install root CA on macOS,8f677759-23f9-464a-a281-2e0b56429e26
+defense-evasion,T1130,Install Root Certificate,4,Install root CA on Windows,f1ebce3c-d73c-4487-8f1b-ffd18e69e548
+defense-evasion,T1118,InstallUtil,1,CheckIfInstallable method call,c6a9ab74-934c-491a-a179-80799d1e131d
+defense-evasion,T1118,InstallUtil,2,InstallHelper method call,7346e7ab-0bdc-4129-933b-82b80fe7e6a6
+defense-evasion,T1118,InstallUtil,3,InstallUtil class constructor method call,1a9de86e-79ed-4ecb-a10a-5ab4c81877fb
+defense-evasion,T1118,InstallUtil,4,InstallUtil Install method call,ba0cee5e-2fec-4991-8229-1ad00606b37e
+defense-evasion,T1118,InstallUtil,5,InstallUtil Uninstall method call - /U variant,333e2224-5606-42fe-8b6e-46bfd33309e7
+defense-evasion,T1118,InstallUtil,6,InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant,5fff88dc-1969-47db-9875-0561e8bbac70
+defense-evasion,T1118,InstallUtil,7,InstallUtil HelpText method call,ba9467f5-12db-426c-b527-83cb3082d5ef
+defense-evasion,T1118,InstallUtil,8,InstallUtil evasive invocation,b72c7bdb-06c2-4608-8ec0-dd40482a4876
+defense-evasion,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+defense-evasion,T1036,Masquerading,1,Masquerading as Windows LSASS process,fa1c458f-a436-432c-a5a4-155d47813494
+defense-evasion,T1036,Masquerading,2,Masquerading as Linux crond process.,137e8108-714c-4013-87d8-62669c94470b
+defense-evasion,T1036,Masquerading,3,Masquerading - cscript.exe running as notepad.exe,3eeccfaf-4151-4e97-bc35-0c2f80825510
+defense-evasion,T1036,Masquerading,4,Masquerading - wscript.exe running as svchost.exe,28926b26-fb8d-4790-ab0a-c89ecaf91bd1
+defense-evasion,T1036,Masquerading,5,Masquerading - powershell.exe running as taskhostw.exe,26a90846-6ac0-42e0-92a5-c17d967cc19a
+defense-evasion,T1036,Masquerading,6,Masquerading - non-windows exe running as windows exe,e2c0703e-3f64-4921-9902-a529e9e268e6
+defense-evasion,T1036,Masquerading,7,Masquerading - windows exe running as different windows exe,4d2eabc8-03f4-496a-bc5b-79a5e825f935
+defense-evasion,T1036,Masquerading,8,Malicious process Masquerading as LSM.exe,d3dba1f7-8259-4369-beec-756c2a3fed31
+defense-evasion,T1112,Modify Registry,1,Modify Registry of Current User Profile - cmd,54261b2f-9af4-447e-bf99-61831b285fb9
+defense-evasion,T1112,Modify Registry,2,Modify Registry of Local Machine - cmd,b7f59b02-6442-4d20-ae6f-2c5b56e8d845
+defense-evasion,T1112,Modify Registry,3,Modify registry to store logon credentials,bc0e2020-3075-4c9a-ac6e-283409f38ec9
+defense-evasion,T1112,Modify Registry,4,Add domain to Trusted sites Zone,eab379b8-9165-4752-8446-8d398754eede
+defense-evasion,T1112,Modify Registry,5,Javascript in registry,4128ec7f-4ca5-4b25-b4e0-c5f9c5d6149a
+defense-evasion,T1170,Mshta,1,Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject,9b8b054b-9522-4fec-9bea-463ba087e047
+defense-evasion,T1170,Mshta,2,Mshta executes VBScript to execute malicious command,275b65ae-81b6-4b6d-8d10-41f556e6a536
+defense-evasion,T1170,Mshta,3,Mshta Executes Remote HTML Application (HTA),e6f07e45-5083-4a18-af6a-d2f4ea4220e8
+defense-evasion,T1096,NTFS File Attributes,1,Alternate Data Streams (ADS),b99f1d81-054e-41b1-b377-c5594cbbb6d8
+defense-evasion,T1096,NTFS File Attributes,2,Store file in Alternate Data Stream (ADS),70f29c6a-64bd-4fb9-8007-f60520a4acaa
+defense-evasion,T1126,Network Share Connection Removal,1,Add Network Share,f3095f88-ec42-4652-b256-8b3bbecfb80f
+defense-evasion,T1126,Network Share Connection Removal,2,Remove Network Share,a53313e6-3bc1-4b9d-8b82-d49a11c0360f
+defense-evasion,T1126,Network Share Connection Removal,3,Remove Network Share PowerShell,486ffeb1-4a34-40d4-ba88-f4cf2473995e
+defense-evasion,T1027,Obfuscated Files or Information,1,Decode base64 Data into Script,440c8dfd-7eda-4735-a454-679660cf49ab
+defense-evasion,T1027,Obfuscated Files or Information,2,Execute base64-encoded PowerShell,fc259778-39b7-425d-8aab-9abe80bde8ef
+defense-evasion,T1027,Obfuscated Files or Information,3,Execute base64-encoded PowerShell from Windows Registry,3a6f4e45-294d-449c-8e85-d80643f66c21
+defense-evasion,T1502,Parent PID Spoofing,1,Parent PID Spoofing using PowerShell,4fd0fd19-f80c-47c9-b64a-5160f66b44c1
+defense-evasion,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+defense-evasion,T1093,Process Hollowing,1,Process Hollowing using PowerShell,1a2abf69-dd1d-4d3f-b4c3-bef44370d92e
+defense-evasion,T1055,Process Injection,1,Process Injection via mavinject.exe,0a803b60-c98f-4308-9394-5d399681f3c9
+defense-evasion,T1055,Process Injection,2,Shared Library Injection via /etc/ld.so.preload,30d797f6-0297-450a-91af-77306c984587
+defense-evasion,T1055,Process Injection,3,Shared Library Injection via LD_PRELOAD,61264175-b1aa-4696-b7ba-5eb68ff87304
+defense-evasion,T1055,Process Injection,4,Process Injection via C#,224ba64e-a4a4-446a-97f4-596166ce4456
+defense-evasion,T1055,Process Injection,5,svchost writing a file to a UNC path,cfec490f-6347-45ba-8e0f-8840c2d7069d
+defense-evasion,T1121,Regsvcs/Regasm,1,Regasm Uninstall Method Call Test,a49bd86d-5482-47bd-b36f-8133dcd22a07
+defense-evasion,T1121,Regsvcs/Regasm,2,Regsvs Uninstall Method Call Test,6605d995-32b5-43f6-bb06-d2efa0ab5de4
+defense-evasion,T1117,Regsvr32,1,Regsvr32 local COM scriptlet execution,04243a5a-4d74-46d8-9a06-c80c4e639e81
+defense-evasion,T1117,Regsvr32,2,Regsvr32 remote COM scriptlet execution,98f62af6-6496-4663-b3c5-51b714db0707
+defense-evasion,T1117,Regsvr32,3,Regsvr32 local DLL execution,998e8df6-59b5-48ad-ae53-491d744fa978
+defense-evasion,T1014,Rootkit,1,Loadable Kernel Module based Rootkit,29177778-45b6-400c-89cd-6c67287eb101
+defense-evasion,T1014,Rootkit,2,Loadable Kernel Module based Rootkit,c439ea6c-dd5a-4d3d-b35d-3abe427a7ff1
+defense-evasion,T1014,Rootkit,3,Windows Signed Driver Rootkit Test,89e684ec-1227-4b5f-b9cf-e4e834d08105
+defense-evasion,T1085,Rundll32,1,Rundll32 execute JavaScript Remote Payload With GetObject,c2a53fe0-7495-448c-93cd-46bc6115b795
+defense-evasion,T1085,Rundll32,2,Rundll32 execute VBscript command,12d622e5-6e35-4afa-a47e-2c9d6fa495e1
+defense-evasion,T1085,Rundll32,3,Rundll32 advpack.dll Execution,fdc3b0ee-387d-40c4-830e-37bb24f2250a
+defense-evasion,T1085,Rundll32,4,Rundll32 ieadvpack.dll Execution,e6556a3f-5bcf-4982-8cf6-4f8b896c026d
+defense-evasion,T1085,Rundll32,5,Rundll32 syssetup.dll Execution,551458cf-7d0b-4f2a-a70d-a1893ee88df8
+defense-evasion,T1085,Rundll32,6,Rundll32 setupapi.dll Execution,1f10eac1-f60d-4f2c-acde-0b0b676a7ac6
+defense-evasion,T1064,Scripting,1,Create and Execute Bash Shell Script,35195b07-f118-4dfb-baf3-55f811182811
+defense-evasion,T1064,Scripting,2,Create and Execute Batch Script,27810d1f-9904-4a38-a480-1d9dc6f17edd
+defense-evasion,T1218,Signed Binary Proxy Execution,1,mavinject - Inject DLL into running process,08f7c9d3-0cab-48e1-855b-0a1a01119afa
+defense-evasion,T1218,Signed Binary Proxy Execution,2,SyncAppvPublishingServer - Execute arbitrary PowerShell code,119c8637-814f-400e-ab7f-dea8ea9f309d
+defense-evasion,T1218,Signed Binary Proxy Execution,3,Register-CimProvider - Execute evil dll,f5e855e0-597b-4eac-ab15-d7f262b79b10
+defense-evasion,T1218,Signed Binary Proxy Execution,4,Msiexec.exe - Execute Local MSI file,f4662de6-1df6-4b61-b70d-40b2b48eaa44
+defense-evasion,T1218,Signed Binary Proxy Execution,5,Msiexec.exe - Execute Remote MSI file,7467d4af-0d5b-4155-b157-7f2f37faef96
+defense-evasion,T1218,Signed Binary Proxy Execution,6,Msiexec.exe - Execute Arbitrary DLL,51335c9a-967c-4991-b811-41e4258af64f
+defense-evasion,T1218,Signed Binary Proxy Execution,7,Odbcconf.exe - Execute Arbitrary DLL,9e9adc6d-a71a-4ce0-861d-3b125f2280b8
+defense-evasion,T1218,Signed Binary Proxy Execution,8,InfDefaultInstall.exe .inf Execution,ae94dc82-f61e-41bc-aad5-e8ac2e8308e9
+defense-evasion,T1216,Signed Script Proxy Execution,1,PubPrn.vbs Signed Script Bypass,17fef223-9248-4302-9fc6-51a17563f6d4
+defense-evasion,T1216,Signed Script Proxy Execution,2,SyncAppvPublishingServer Signed Script PowerShell Command Execution,d63da923-63a9-4610-8798-2ece32e9be57
+defense-evasion,T1216,Signed Script Proxy Execution,3,manage-bde.wsf Signed Script Command Execution,4aebfb5d-b177-4aab-b3b5-65d42e2fbffe
+defense-evasion,T1045,Software Packing,1,Binary simply packed by UPX (linux),f3005d74-0301-4242-a894-b02c8221a8be
+defense-evasion,T1045,Software Packing,2,"Binary packed by UPX, with modified headers (linux)",6b17e27e-6374-4856-a6df-625268d100c6
+defense-evasion,T1045,Software Packing,3,Binary simply packed by UPX,5a154014-8217-44d6-9a21-6c8d6aa05252
+defense-evasion,T1045,Software Packing,4,"Binary packed by UPX, with modified headers",024151a7-ddf9-4b90-a37b-5cdf3d846f61
+defense-evasion,T1151,Space after Filename,1,Space After Filename,f60c69b0-ebde-4937-8412-ee880c4003b8
+defense-evasion,T1099,Timestomp,1,Set a file's access timestamp,532263e3-d39b-4fc8-bfc6-63cfd0f4bfa0
+defense-evasion,T1099,Timestomp,2,Set a file's modification timestamp,53811a38-fcce-4faf-b198-5b02d20870c7
+defense-evasion,T1099,Timestomp,3,Set a file's creation timestamp,d19a37e0-df36-4625-a2eb-97753584ba06
+defense-evasion,T1099,Timestomp,4,Modify file timestamps using reference file,da6425e3-4ed6-452f-8b85-4cef2a37633c
+defense-evasion,T1099,Timestomp,5,Windows - Modify file creation timestamp with PowerShell,d29e6ce3-2195-4f24-a2ec-1da2c994c780
+defense-evasion,T1099,Timestomp,6,Windows - Modify file last modified timestamp with PowerShell,ac029ca7-66ec-4b6f-8726-133431a3f3dc
+defense-evasion,T1099,Timestomp,7,Windows - Modify file last access timestamp with PowerShell,5b47c788-14b7-46d4-88ef-b7c64c917899
+defense-evasion,T1099,Timestomp,8,Windows - Timestomp a File,d6f51f72-d8a6-4a21-b2e6-bee8a79c69cd
+defense-evasion,T1127,Trusted Developer Utilities,1,MSBuild Bypass Using Inline Tasks,c90f73f6-e09d-4430-a9d0-f57dbb53e45c
+defense-evasion,T1102,Web Service,1,Reach out to C2 Pointer URLs via command_prompt,2b796571-9840-4a26-b7f8-4334c47ff3a3
+defense-evasion,T1102,Web Service,2,Reach out to C2 Pointer URLs via powershell,ad4a9323-8084-40f8-9f8c-2598cf4ab2a2
+defense-evasion,T1220,XSL Script Processing,1,MSXSL Bypass using local files,f4b025fd-9391-42b6-867d-829d748e4377
+defense-evasion,T1220,XSL Script Processing,2,MSXSL Bypass using remote files,82a750fc-a3be-472c-b385-b31aff92dce7
+defense-evasion,T1220,XSL Script Processing,3,WMIC bypass using local XSL file,5c0c3627-aaf7-4d9d-a30d-d4e411a77b79
+defense-evasion,T1220,XSL Script Processing,4,WMIC bypass using remote XSL file,65d551dc-648c-4ac0-b533-bdf274b077de
+privilege-escalation,T1015,Accessibility Features,1,Attaches Command Prompt as a Debugger to a List of Target Processes,383ab50e-9db5-4fbd-90e8-4b7fe6a5960f
+privilege-escalation,T1103,AppInit DLLs,1,Install AppInit Shim,4c6f7d25-0507-4b6e-8f46-98add25ba6a5
+privilege-escalation,T1138,Application Shimming,1,Application Shim Installation,05d66f3e-a146-4fcf-b786-26b6f9272eba
+privilege-escalation,T1138,Application Shimming,2,New shim database files created in the default shim database directory,fc623ff3-75ab-499a-a75d-2b2468608c25
+privilege-escalation,T1138,Application Shimming,3,Registry key creation and/or modification events for SDB,000258fd-44a0-4e04-b902-d8d25fc71bd7
+privilege-escalation,T1088,Bypass User Account Control,1,Bypass UAC using Event Viewer (cmd),918e73b2-2a56-4d88-9ad2-4374afde7caa
+privilege-escalation,T1088,Bypass User Account Control,2,Bypass UAC using Event Viewer (PowerShell),7ba713a1-5a5f-4a7c-968f-8d226d96a05b
+privilege-escalation,T1088,Bypass User Account Control,3,Bypass UAC using Fodhelper,0806146c-fe2f-425f-94dc-03df082b8fe2
+privilege-escalation,T1088,Bypass User Account Control,4,Bypass UAC using Fodhelper - PowerShell,489433c4-7c94-4240-8c4f-fec7429c7e88
+privilege-escalation,T1088,Bypass User Account Control,5,Bypass UAC using ComputerDefaults (PowerShell),3b53d2c2-6753-4f23-939b-90a6aab947e8
+privilege-escalation,T1088,Bypass User Account Control,6,Bypass UAC by Mocking Trusted Directories,34cb5a33-7919-4519-b246-e858a5d22ab2
+privilege-escalation,T1038,DLL Search Order Hijacking,1,DLL Search Order Hijacking - amsi.dll,e078a6b8-6e93-4984-9b62-5e63ddd7cfb3
+privilege-escalation,T1519,Emond,1,Persistance with Event Monitor - emond,ee46862e-bd6f-4ade-8371-2cd36fecb73c
+privilege-escalation,T1044,File System Permissions Weakness,1,File System Permissions Weakness,963d4a0e-b8dd-4195-b9ac-0f2dd39ce9ae
+privilege-escalation,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages,5ee5d018-bcc6-4a82-b465-f4b4f97bc108
+privilege-escalation,T1183,Image File Execution Options Injection,1,IFEO Add Debugger,5786f6b2-b77f-40bf-acfd-e4145f6b57b0
+privilege-escalation,T1183,Image File Execution Options Injection,2,IFEO Global Flags,b013437e-6c01-4ed0-9bfa-fd40cfce6ea9
+privilege-escalation,T1160,Launch Daemon,1,Launch Daemon,085d9e0e-e9b4-4ccc-8f32-81f77979835e
+privilege-escalation,T1050,New Service,1,Service Installation CMD,8911be82-7641-42e9-a5e9-65fed09c2d68
+privilege-escalation,T1050,New Service,2,Service Installation PowerShell,e92be35a-3d91-451b-81c6-e5dd5c6a292c
+privilege-escalation,T1502,Parent PID Spoofing,1,Parent PID Spoofing using PowerShell,4fd0fd19-f80c-47c9-b64a-5160f66b44c1
+privilege-escalation,T1150,Plist Modification,1,Plist Modification,111da2da-433b-4c39-86e6-27aa53cc0cd2
+privilege-escalation,T1504,PowerShell Profile,1,Append malicious start-process cmdlet,7a4ce462-b978-400d-9969-e478b83e58e1
+privilege-escalation,T1055,Process Injection,1,Process Injection via mavinject.exe,0a803b60-c98f-4308-9394-5d399681f3c9
+privilege-escalation,T1055,Process Injection,2,Shared Library Injection via /etc/ld.so.preload,30d797f6-0297-450a-91af-77306c984587
+privilege-escalation,T1055,Process Injection,3,Shared Library Injection via LD_PRELOAD,61264175-b1aa-4696-b7ba-5eb68ff87304
+privilege-escalation,T1055,Process Injection,4,Process Injection via C#,224ba64e-a4a4-446a-97f4-596166ce4456
+privilege-escalation,T1055,Process Injection,5,svchost writing a file to a UNC path,cfec490f-6347-45ba-8e0f-8840c2d7069d
+privilege-escalation,T1053,Scheduled Task,1,At.exe Scheduled task,0a2ff65b-b35b-4954-81e1-9ca19ac2de80
+privilege-escalation,T1053,Scheduled Task,2,Scheduled task Local,148bcba2-9141-4b75-8375-9d7edad314a7
+privilege-escalation,T1053,Scheduled Task,3,Scheduled task Remote,91e6e5f8-d867-4cbe-9c4d-e5b57701460a
+privilege-escalation,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task,a7cb2775-3eed-4e4b-a786-ae796018ba89
+privilege-escalation,T1058,Service Registry Permissions Weakness,1,Service Registry Permissions Weakness,b1cc4b4c-a4e4-4eae-b9ca-e8bbe3625b70
+privilege-escalation,T1166,Setuid and Setgid,1,Make and modify binary from C source,560b64d9-ec12-4f3f-b153-bf8d704318e5
+privilege-escalation,T1166,Setuid and Setgid,2,Set a SetUID flag on file,d118c39d-487e-41d8-a8aa-dd1ac6cce31c
+privilege-escalation,T1166,Setuid and Setgid,3,Set a SetGID flag on file,75abaa14-102a-45c4-9673-8d8ac09d403f
+privilege-escalation,T1165,Startup Items,1,add file to Local Library StartupItems,d6460309-a8b5-4111-9976-2f7943c003b9
+privilege-escalation,T1169,Sudo,1,Sudo usage,6ddb0a50-7ee9-48e8-864e-7e86ae8c2a2c
+privilege-escalation,T1206,Sudo Caching,1,Unlimited sudo cache timeout,6ad573ab-1e76-4236-be2b-56975ad8c66e
+privilege-escalation,T1206,Sudo Caching,2,Disable tty_tickets for sudo caching,6492d060-2715-4253-8f93-a539c92653ed
+privilege-escalation,T1100,Web Shell,1,Web Shell Written to Disk,fb191d67-35e6-4694-9a8f-d46f13d1451a
+impact,T1531,Account Access Removal,1,Change User Password - Windows,b72f14d7-dd10-4a14-97a0-c8aebf508008
+impact,T1531,Account Access Removal,2,Delete User - Windows,b224af9e-897e-4d27-b903-cff8e43f23ed
+impact,T1485,Data Destruction,1,Windows - Overwrite file with Sysinternals SDelete,63f81f52-e418-4238-bdc3-0046ed9603e2
+impact,T1485,Data Destruction,2,macOS/Linux - Overwrite file with DD,3c409f1d-b390-4225-99fe-53791fdf5082
+impact,T1490,Inhibit System Recovery,1,Windows - Delete Volume Shadow Copies,ee082c24-47be-47c4-889a-298b4201b64f
+impact,T1490,Inhibit System Recovery,2,Windows - Delete Volume Shadow Copies via WMI,073801e7-956b-4df2-9495-fdad1e5510a1
+impact,T1490,Inhibit System Recovery,3,Windows - Delete Windows Backup Catalog,19ee47ed-ca2e-47a4-8553-d11d970cff0d
+impact,T1490,Inhibit System Recovery,4,Windows - Disable Windows Recovery Console Repair,9540e7a5-0c61-4047-b38b-e1a2ca440f57
+impact,T1490,Inhibit System Recovery,5,Windows - Delete Volume Shadow Copies via WMI with PowerShell,07167160-3e9a-401b-b7c4-b04847aa082e
+impact,T1490,Inhibit System Recovery,6,Windows - Delete Backup Files,1a845638-f1a7-4ddc-a113-bb215a28994f
+impact,T1496,Resource Hijacking,1,macOS/Linux - Simulate CPU Load with Yes,c385322d-68cd-4009-a8bf-d04e061c255e
+impact,T1489,Service Stop,1,Windows - Stop service using Service Controller,502e0434-7e02-4cf6-832f-617058f2d05f
+impact,T1489,Service Stop,2,Windows - Stop service using net.exe,81cd1647-4a64-423c-941e-6f7570f72b04
+impact,T1489,Service Stop,3,Windows - Stop service by killing process,6aeb5db5-5f9b-47a4-8bd5-452c16e1c776
+impact,T1529,System Shutdown/Reboot,1,Shutdown System - Windows,aa725484-8263-433e-8855-ae45804b63f3
+impact,T1529,System Shutdown/Reboot,2,Restart System - Windows,3cb61d53-033e-4bed-83b9-cea6d8218aa6
+impact,T1529,System Shutdown/Reboot,3,Restart System via `shutdown` - macOS/Linux,64e98b62-b3ca-429a-a52c-55b4667c181b
+impact,T1529,System Shutdown/Reboot,4,Shutdown System via `shutdown` - macOS/Linux,b6e6160a-0bc1-4faa-91aa-74ddba31023e
+impact,T1529,System Shutdown/Reboot,5,Restart System via `reboot` - macOS/Linux,49bd5fa8-177a-4988-bf7e-c9c82d974a98
+impact,T1529,System Shutdown/Reboot,6,Shutdown System via `halt` - Linux,e64d5c12-a106-4314-ae3b-00333e7fcb47
+impact,T1529,System Shutdown/Reboot,7,Reboot System via `halt` - Linux,ae3651db-84f4-4322-8b1c-08e095507fa0
+impact,T1529,System Shutdown/Reboot,8,Shutdown System via `poweroff` - Linux,a9e18980-4cf8-4938-9297-5f138cf9af10
+impact,T1529,System Shutdown/Reboot,9,Reboot System via `poweroff` - Linux,42c94858-e8b4-4453-91d7-26ef711145b3
+discovery,T1087,Account Discovery,1,Enumerate all accounts,b49627c8-22ef-4b9a-9b23-735c015c6acb
+discovery,T1087,Account Discovery,2,View sudoers access,7fd96cd4-ee69-4be3-8796-5c951355627e
+discovery,T1087,Account Discovery,3,View accounts with UID 0,30bd140a-ce15-4881-8d99-d7084e0bab86
+discovery,T1087,Account Discovery,4,List opened files by user,275b8ec4-36d1-40d3-9d02-a33caab0aecf
+discovery,T1087,Account Discovery,5,Show if a user account has ever logged in remotely,c250f76f-2255-4f9f-a63b-b2e63089249b
+discovery,T1087,Account Discovery,6,Enumerate users and groups,96b2c366-85d8-4083-9d73-71fa06ea4e11
+discovery,T1087,Account Discovery,7,Enumerate users and groups,8eae76a8-6205-49ce-9cfd-d302c7c6e079
+discovery,T1087,Account Discovery,8,Enumerate all accounts,dd3f23a7-90a5-40c5-a5df-adbd484d6917
+discovery,T1087,Account Discovery,9,Enumerate all accounts via PowerShell,b9619a97-4c99-4f03-b76b-72d9febaf52a
+discovery,T1087,Account Discovery,10,Enumerate logged on users via CMD,7691583f-bfe0-4df7-ac7c-e740e85de2c3
+discovery,T1087,Account Discovery,11,Enumerate logged on users via PowerShell,a9db48d9-f354-40fb-a6b9-82af5faa2658
+discovery,T1010,Application Window Discovery,1,List Process Main Windows - C# .NET,2236381b-0f92-405b-9af6-81c0c228dd96
+discovery,T1217,Browser Bookmark Discovery,1,List Mozilla Firefox Bookmark Database Files on Linux,19d7cb62-df0f-4b75-ac25-0b451dec7da1
+discovery,T1217,Browser Bookmark Discovery,2,List Mozilla Firefox Bookmark Database Files on macOS,3a5d1790-e3f9-4eea-86dd-3340d419266b
+discovery,T1217,Browser Bookmark Discovery,3,List Google Chrome Bookmark JSON Files on macOS,35e654fc-96be-4721-b42e-65d98ce509c0
+discovery,T1217,Browser Bookmark Discovery,4,List Google Chrome Bookmarks on Windows with powershell,9e73e17d-f1bd-47b6-be8c-8138f1813a83
+discovery,T1217,Browser Bookmark Discovery,5,List Google Chrome Bookmarks on Windows with command prompt.,a0948ba3-406e-4d17-ac56-11f3f3a17c62
+discovery,T1482,Domain Trust Discovery,1,Windows - Discover domain trusts with dsquery,7892a6b3-a9ce-492c-af2a-34c84326caae
+discovery,T1482,Domain Trust Discovery,2,Windows - Discover domain trusts with nltest,af4d0e80-d7a6-4fe3-b0e6-e64676052a3e
+discovery,T1482,Domain Trust Discovery,3,Powershell enumerate domains and forests,5dcd15f6-9c46-4e5b-98c4-74442cd5655c
+discovery,T1083,File and Directory Discovery,1,File and Directory Discovery (cmd.exe),6eb2650f-354e-4a5c-b9c4-0dbfea9a69aa
+discovery,T1083,File and Directory Discovery,2,File and Directory Discovery (PowerShell),39a7035e-30b5-44a3-b414-1e9320112f6c
+discovery,T1083,File and Directory Discovery,3,Nix File and Diectory Discovery,0742b587-74de-4b2f-9859-b91c450e6ab5
+discovery,T1083,File and Directory Discovery,4,Nix File and Directory Discovery 2,1a92cecc-c76d-4125-b095-b248bd7c7330
+discovery,T1046,Network Service Scanning,1,Port Scan,516fd6a1-595e-4ce1-90d9-a98992cdc2a0
+discovery,T1046,Network Service Scanning,2,Port Scan Nmap,bdd32174-baab-4032-9bae-337c1d16ac25
+discovery,T1135,Network Share Discovery,1,Network Share Discovery,71817144-7599-4009-a66f-eae566e588c6
+discovery,T1135,Network Share Discovery,2,Network Share Discovery command prompt,61ee5683-ab89-412e-a352-ab8a27c9d0c5
+discovery,T1135,Network Share Discovery,3,Network Share Discovery PowerShell,8c7b9983-b1f2-4e8c-bdca-67ff73c0cc43
+discovery,T1135,Network Share Discovery,4,View available share drives,fd917d1a-881e-4606-a391-55cf5ea1a709
+discovery,T1040,Network Sniffing,1,Packet Capture Linux,57ad13ef-2892-4c88-9320-1748a5d4f920
+discovery,T1040,Network Sniffing,2,Packet Capture macOS,d21660c1-75d5-49dd-840d-66da344205bc
+discovery,T1040,Network Sniffing,3,Packet Capture Windows Command Prompt,20068274-d11a-44bb-ba59-f5cb2f43f1ec
+discovery,T1040,Network Sniffing,4,Packet Capture PowerShell,c1ea9e71-1299-44b9-b5e3-969e6ac0a528
+discovery,T1201,Password Policy Discovery,1,Examine password complexity policy - Ubuntu,62a7b0f7-aaaf-4e7a-894c-a93636d73b31
+discovery,T1201,Password Policy Discovery,2,Examine password complexity policy - CentOS/RHEL 7.x,0c8d8362-4ae9-4066-a2ce-e5105239f0e5
+discovery,T1201,Password Policy Discovery,3,Examine password complexity policy - CentOS/RHEL 6.x,27b55adf-2e83-4aca-ab47-071f670af187
+discovery,T1201,Password Policy Discovery,4,Examine password expiration policy - All Linux,f2f3d640-9676-4ec3-ba3f-bbdbde30752e
+discovery,T1201,Password Policy Discovery,5,Examine local password policy - Windows,e17fccb1-903c-4016-af88-78e103a2459b
+discovery,T1201,Password Policy Discovery,6,Examine domain password policy - Windows,d849cee2-01f0-47e4-acdf-a0ab06d3d851
+discovery,T1201,Password Policy Discovery,7,Examine password policy - macOS,cfabc8c0-19ad-4d87-bf3c-b52b612ab554
+discovery,T1069,Permission Groups Discovery,1,Permission Groups Discovery,7db21d87-8207-4d40-ae4b-e09ecdcec7f0
+discovery,T1069,Permission Groups Discovery,2,Basic Permission Groups Discovery Windows,637265b9-6573-41c8-8b41-eafffc757a85
+discovery,T1069,Permission Groups Discovery,3,Permission Groups Discovery PowerShell,cd0c8ba0-4ae0-452d-9f03-3d840ced3e80
+discovery,T1069,Permission Groups Discovery,4,Elevated group enumeration using net group,8da7bab2-4d48-4f0b-a463-15f8f4e580e7
+discovery,T1057,Process Discovery,1,Process Discovery - ps,3fa4d9d2-9ba8-402d-ba4a-f4f8cfed9244
+discovery,T1057,Process Discovery,2,Process Discovery - tasklist,6efe66e7-06dc-4d9b-a48d-f1253deb73d2
+discovery,T1012,Query Registry,1,Query Registry,7feef613-cb81-4e09-b2d3-b4bbb958cf8d
+discovery,T1018,Remote System Discovery,1,Remote System Discovery - net,daeaa5eb-9734-42c6-b6a4-344a567d5f4d
+discovery,T1018,Remote System Discovery,2,Remote System Discovery - net group Domain Computers,204c5c2a-0d87-409d-b0a2-11456bbbcc0e
+discovery,T1018,Remote System Discovery,3,Remote System Discovery - nltest,319ba173-42ee-4acc-a32d-287c8ffa704f
+discovery,T1018,Remote System Discovery,4,Remote System Discovery - ping sweep,08a8bddb-aa74-4131-bef5-da4762e0402c
+discovery,T1018,Remote System Discovery,5,Remote System Discovery - arp,0f0ef5ba-51ff-451e-88ed-da87ce744cfc
+discovery,T1018,Remote System Discovery,6,Remote System Discovery - arp nix,b78a903b-b8a0-40d7-a53c-b770dcd5f9a0
+discovery,T1018,Remote System Discovery,7,Remote System Discovery - sweep,5b2a5904-5b04-4e05-ac30-7443c8e5788a
+discovery,T1018,Remote System Discovery,8,Remote System Discovery - nslookup,0a73bc97-0136-491d-a12f-6dbbb553a58a
+discovery,T1063,Security Software Discovery,1,Security Software Discovery,a6f3a4a9-07fb-41da-bc9b-2160a512b396
+discovery,T1063,Security Software Discovery,2,Security Software Discovery - powershell,8181b5c6-07a8-449b-b925-02e710972b47
+discovery,T1063,Security Software Discovery,3,Security Software Discovery - ps,1f62b18a-bdc4-4a67-90f2-6457dc36b436
+discovery,T1063,Security Software Discovery,4,Security Software Discovery - Sysmon Service,4654b41b-34fc-467f-8c39-3220978dc22d
+discovery,T1063,Security Software Discovery,5,Security Software Discovery - AV Discovery via WMI,30249220-4bd7-4891-830f-383351ce781b
+discovery,T1518,Software Discovery,1,Find and Display Internet Explorer Browser Version,06525b07-f5ae-409c-9e38-e6cfce6f02a7
+discovery,T1518,Software Discovery,2,Applications Installed,9eebf698-7e33-48f9-be80-9203cec5d8a2
+discovery,T1082,System Information Discovery,1,System Information Discovery,987f564b-b7f9-400c-912f-b584cc0f8aed
+discovery,T1082,System Information Discovery,2,System Information Discovery,70794ca2-e4cb-4ecc-92d9-93f56093eedf
+discovery,T1082,System Information Discovery,3,List OS Information,0653376d-aba5-4a92-abac-0291b9159c3f
+discovery,T1082,System Information Discovery,4,Linux VM Check via Hardware,893576c6-0028-4fda-af94-ad3f017edc64
+discovery,T1082,System Information Discovery,5,Linux VM Check via Kernel Modules,9250e60e-b0c1-451e-8a06-9bccecc7c2ee
+discovery,T1082,System Information Discovery,6,Hostname Discovery (Windows),02241ad9-6c6f-4bfb-afd5-045ee9315b79
+discovery,T1082,System Information Discovery,7,Hostname Discovery,01bda8b1-3746-486b-bf6e-adc43aac6d7a
+discovery,T1082,System Information Discovery,8,Windows MachineGUID Discovery,b7d56905-c44c-4c61-a39c-ff9cedfbe528
+discovery,T1016,System Network Configuration Discovery,1,System Network Configuration Discovery on Windows,114b84cd-7a87-4e04-be68-b29b13cbcc00
+discovery,T1016,System Network Configuration Discovery,2,List Windows Firewall Rules,417b0ccf-c686-4d33-aec4-7b68c201ad14
+discovery,T1016,System Network Configuration Discovery,3,System Network Configuration Discovery,6283f067-8fbb-41d5-b3a9-773edeed7d4b
+discovery,T1016,System Network Configuration Discovery,4,System Network Configuration Discovery (TrickBot Style),9f2df9fa-578e-42e3-af65-cf560cd81849
+discovery,T1016,System Network Configuration Discovery,5,List Open Egress Ports,24efc312-18e7-4a63-adcf-0513af363087
+discovery,T1049,System Network Connections Discovery,1,System Network Connections Discovery,ce0ddfe8-80b4-45b6-8e04-d10c3ccdd6a1
+discovery,T1049,System Network Connections Discovery,2,System Network Connections Discovery with PowerShell,9126a98d-a0ec-4da7-9bfc-5310d12a0fe9
+discovery,T1049,System Network Connections Discovery,3,System Network Connections Discovery Linux & MacOS,6b512537-dc50-414c-8e71-184bbd658476
+discovery,T1033,System Owner/User Discovery,1,System Owner/User Discovery,e280436e-3b0e-4eea-947b-d2752610bb62
+discovery,T1033,System Owner/User Discovery,2,System Owner/User Discovery,f43d9644-9d84-4fd0-b1f3-b860aa8d6a11
+discovery,T1007,System Service Discovery,1,System Service Discovery,38330081-5635-4e1b-b9c9-836239e35358
+discovery,T1007,System Service Discovery,2,System Service Discovery - net.exe,a4a27df1-130f-4314-87f1-d4e5b6b49f57
+discovery,T1124,System Time Discovery,1,System Time Discovery,dd7aca05-72ab-4b35-9fb1-096e26e1293e
+discovery,T1124,System Time Discovery,2,System Time Discovery - PowerShell,1bf246e5-1d8d-4b1c-b40f-3a075df4153f
+credential-access,T1098,Account Manipulation,1,Admin Account Manipulate,b2352a85-3e91-4d01-bc5c-b4439e9b6f23
+credential-access,T1139,Bash History,1,Search Through Bash History,71025b6e-c685-42f9-8de0-fceb724e56a9
+credential-access,T1110,Brute Force,1,Brute Force Credentials,90f5425a-b500-4cee-aef0-830ff941b95a
+credential-access,T1003,Credential Dumping,1,Powershell Mimikatz,7aa4c56b-3222-418c-b518-849128d78083
+credential-access,T1003,Credential Dumping,2,Gsecdump,45d9ac55-28d0-48e1-8304-68139761dad5
+credential-access,T1003,Credential Dumping,3,Windows Credential Editor,33a799f4-61a7-4282-9858-63ad6b69f968
+credential-access,T1003,Credential Dumping,4,"Registry dump of SAM, creds, and secrets",c0fdd1a8-be4b-4d79-a482-f19157f761f4
+credential-access,T1003,Credential Dumping,5,Dump LSASS.exe Memory using ProcDump,6d7d3fbd-242d-4c17-a27e-0ebc77be324a
+credential-access,T1003,Credential Dumping,6,Dump LSASS.exe Memory using comsvcs.dll,b5d8d4db-1ed9-49e9-a372-34dbc8c97f30
+credential-access,T1003,Credential Dumping,7,Dump LSASS.exe Memory using direct system calls and API unhooking,4ee89aeb-82d0-4ed5-9023-b658686fba4b
+credential-access,T1003,Credential Dumping,8,Dump LSASS.exe Memory using Windows Task Manager,a52640c2-586c-48eb-a7e5-a77bb9faecb5
+credential-access,T1003,Credential Dumping,9,Offline Credential Theft With Mimikatz,f141f160-d926-4af5-92a2-d3993b9130ad
+credential-access,T1003,Credential Dumping,10,Dump Active Directory Database with NTDSUtil,01d6f9f8-43a1-4f44-921c-82cc41e98edc
+credential-access,T1003,Credential Dumping,11,Create Volume Shadow Copy with NTDS.dit,5c4d1ea4-b643-47b1-8558-2ba3d7c70e66
+credential-access,T1003,Credential Dumping,12,Copy NTDS.dit from Volume Shadow Copy,3367905a-0b56-45e2-ad1f-ab7a41c290e3
+credential-access,T1003,Credential Dumping,13,GPP Passwords (findstr),61a39054-47fd-4b8a-a380-7182844a9e31
+credential-access,T1003,Credential Dumping,14,GPP Passwords (Get-GPPPassword),7ff2a08e-1b43-4aa5-8c52-d004c3e65b54
+credential-access,T1003,Credential Dumping,15,LSASS read with pypykatz,3d2a51f9-eabd-4552-be95-5687fab803af
+credential-access,T1003,Credential Dumping,16,Registry parse with pypykatz,9b2d9cec-91f1-4c8b-8ae8-b04745101de1
+credential-access,T1081,Credentials in Files,1,Extract Browser and System credentials with LaZagne,d3710d14-9b93-4e9d-9dd5-918617917659
+credential-access,T1081,Credentials in Files,2,Extract passwords with grep,48082ea4-9366-4e61-9c52-8e63ed3ab50c
+credential-access,T1081,Credentials in Files,3,Extracting passwords with findstr,bb0a13a7-0483-4c5f-bbcf-de00e7dc2ec3
+credential-access,T1081,Credentials in Files,4,Access unattend.xml,4dd8a64e-1e98-4ad5-989b-59d106bacb55
+credential-access,T1214,Credentials in Registry,1,Enumeration for Credentials in Registry,303bb177-6202-4450-b8b1-4c0d64b294f7
+credential-access,T1214,Credentials in Registry,2,Enumeration for PuTTY Credentials in Registry,5ecf38a2-c9c8-4b77-864a-dbce800f1205
+credential-access,T1179,Hooking,1,Hook PowerShell TLS Encrypt/Decrypt Messages,5ee5d018-bcc6-4a82-b465-f4b4f97bc108
+credential-access,T1056,Input Capture,1,Input Capture,ac378c1e-cbc6-4eea-b7aa-753eb4777241
+credential-access,T1141,Input Prompt,1,AppleScript - Prompt User for Password,b821f3b2-88fa-421a-b652-85511a40b063
+credential-access,T1141,Input Prompt,2,PowerShell - Prompt User for Password,158ba9fd-fc88-4361-8f0a-d835b35d5697
+credential-access,T1208,Kerberoasting,1,Request for service tickets,b7e44ef3-b3b8-4134-9fbf-55d98666288b
+credential-access,T1142,Keychain,1,Keychain,4e38a89f-caa3-4029-b90b-28c4d57f8147
+credential-access,T1040,Network Sniffing,1,Packet Capture Linux,57ad13ef-2892-4c88-9320-1748a5d4f920
+credential-access,T1040,Network Sniffing,2,Packet Capture macOS,d21660c1-75d5-49dd-840d-66da344205bc
+credential-access,T1040,Network Sniffing,3,Packet Capture Windows Command Prompt,20068274-d11a-44bb-ba59-f5cb2f43f1ec
+credential-access,T1040,Network Sniffing,4,Packet Capture PowerShell,c1ea9e71-1299-44b9-b5e3-969e6ac0a528
+credential-access,T1174,Password Filter DLL,1,Install and Register Password Filter DLL,71e2e973-4670-4769-ac30-fd20478df281
+credential-access,T1145,Private Keys,1,Private Keys,064f3ea6-232d-42c8-9d17-5d7138b72144
+credential-access,T1145,Private Keys,2,Discover Private SSH Keys,a3a52593-6b0a-4914-9a76-2c4a65f4a873
+credential-access,T1145,Private Keys,3,Copy Private SSH Keys with CP,71155409-4b77-4408-a262-6322a6a9cea3
+credential-access,T1145,Private Keys,4,Copy Private SSH Keys with rsync,71e16dd8-4c95-4370-8f8f-8c2ea9beedeb
+execution,T1155,AppleScript,1,AppleScript,3c243434-cfba-4fa7-af1c-4b87b9998bf2
+execution,T1191,CMSTP,1,CMSTP Executing Remote Scriptlet,b1012b1d-7ca7-413b-aec6-f46a5d23c8ae
+execution,T1191,CMSTP,2,CMSTP Executing UAC Bypass,8b1371ef-fb1a-43b0-941c-71d0a3a2a962
+execution,T1059,Command-Line Interface,1,Command-Line Interface,3ca978e6-45d9-42f6-8f5e-9e7a619df9c8
+execution,T1223,Compiled HTML File,1,Compiled HTML Help Local Payload,6a518104-1d3a-4741-a8a1-153aaca5ca50
+execution,T1223,Compiled HTML File,2,Compiled HTML Help Remote Payload,4dca974b-5f7a-42d5-852d-d6d9be218d72
+execution,T1196,Control Panel Items,1,Control Panel Items,24e03628-2fbc-4c64-abff-b4d0d928e67c
+execution,T1173,Dynamic Data Exchange,1,Execute Commands,4ca5c7e6-a8c9-421c-989c-811b32a061a8
+execution,T1173,Dynamic Data Exchange,2,Execute PowerShell script via Word DDE,e204f9da-c33c-4f50-a0f7-1daff7b17b0b
+execution,T1118,InstallUtil,1,CheckIfInstallable method call,c6a9ab74-934c-491a-a179-80799d1e131d
+execution,T1118,InstallUtil,2,InstallHelper method call,7346e7ab-0bdc-4129-933b-82b80fe7e6a6
+execution,T1118,InstallUtil,3,InstallUtil class constructor method call,1a9de86e-79ed-4ecb-a10a-5ab4c81877fb
+execution,T1118,InstallUtil,4,InstallUtil Install method call,ba0cee5e-2fec-4991-8229-1ad00606b37e
+execution,T1118,InstallUtil,5,InstallUtil Uninstall method call - /U variant,333e2224-5606-42fe-8b6e-46bfd33309e7
+execution,T1118,InstallUtil,6,InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant,5fff88dc-1969-47db-9875-0561e8bbac70
+execution,T1118,InstallUtil,7,InstallUtil HelpText method call,ba9467f5-12db-426c-b527-83cb3082d5ef
+execution,T1118,InstallUtil,8,InstallUtil evasive invocation,b72c7bdb-06c2-4608-8ec0-dd40482a4876
+execution,T1152,Launchctl,1,Launchctl,b26babc7-c5f5-4f7f-8de6-4133eb02d469
+execution,T1168,Local Job Scheduling,1,Cron - Replace crontab with referenced file,ceec02d0-1319-4803-abfd-8365aab3657d
+execution,T1168,Local Job Scheduling,2,Cron - Add script to cron folder,ce78ee97-c5c5-4202-9138-44a8cbbcee06
+execution,T1168,Local Job Scheduling,3,Event Monitor Daemon Persistence,79b65197-d7bd-4e79-befb-c6809940a687
+execution,T1170,Mshta,1,Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject,9b8b054b-9522-4fec-9bea-463ba087e047
+execution,T1170,Mshta,2,Mshta executes VBScript to execute malicious command,275b65ae-81b6-4b6d-8d10-41f556e6a536
+execution,T1170,Mshta,3,Mshta Executes Remote HTML Application (HTA),e6f07e45-5083-4a18-af6a-d2f4ea4220e8
+execution,T1086,PowerShell,1,Mimikatz,08afd984-a221-47e0-9b3c-955d73947771
+execution,T1086,PowerShell,2,Run BloodHound from local disk,3fdb80ca-1c16-411a-a117-e526f3941f18
+execution,T1086,PowerShell,3,Run Bloodhound from Memory using Download Cradle,31cb2da8-3f62-4863-8079-dad941f7f099
+execution,T1086,PowerShell,4,Obfuscation Tests,336350e5-a35c-4cc9-b2ca-40e9e4fd41e8
+execution,T1086,PowerShell,5,Mimikatz - Cradlecraft PsSendKeys,796fe4e1-2c3a-40a8-950b-c171679bd4c4
+execution,T1086,PowerShell,6,Invoke-AppPathBypass,fca1303d-d506-4d0d-8dc6-449a789c36df
+execution,T1086,PowerShell,7,Powershell MsXml COM object - with prompt,dfa83f0d-1e27-4537-b2fd-46ca5f3afd28
+execution,T1086,PowerShell,8,Powershell XML requests,415ab1e0-7716-4fd8-a7c7-c103daffcaae
+execution,T1086,PowerShell,9,Powershell invoke mshta.exe download,249520d9-8908-4295-a122-98943622557a
+execution,T1086,PowerShell,10,Powershell Invoke-DownloadCradle,03371bea-c7c3-4947-a9eb-865002925daf
+execution,T1086,PowerShell,11,PowerShell Fileless Script Execution,1fa28088-4e87-417c-a620-a6ef108dd814
+execution,T1086,PowerShell,12,PowerShell Downgrade Attack,970b750a-4efb-4e51-b1e5-eaad063e9f23
+execution,T1086,PowerShell,13,NTFS Alternate Data Stream Access,c0c14b4f-6ed6-4a21-8967-2ad45efeb9e8
+execution,T1121,Regsvcs/Regasm,1,Regasm Uninstall Method Call Test,a49bd86d-5482-47bd-b36f-8133dcd22a07
+execution,T1121,Regsvcs/Regasm,2,Regsvs Uninstall Method Call Test,6605d995-32b5-43f6-bb06-d2efa0ab5de4
+execution,T1117,Regsvr32,1,Regsvr32 local COM scriptlet execution,04243a5a-4d74-46d8-9a06-c80c4e639e81
+execution,T1117,Regsvr32,2,Regsvr32 remote COM scriptlet execution,98f62af6-6496-4663-b3c5-51b714db0707
+execution,T1117,Regsvr32,3,Regsvr32 local DLL execution,998e8df6-59b5-48ad-ae53-491d744fa978
+execution,T1085,Rundll32,1,Rundll32 execute JavaScript Remote Payload With GetObject,c2a53fe0-7495-448c-93cd-46bc6115b795
+execution,T1085,Rundll32,2,Rundll32 execute VBscript command,12d622e5-6e35-4afa-a47e-2c9d6fa495e1
+execution,T1085,Rundll32,3,Rundll32 advpack.dll Execution,fdc3b0ee-387d-40c4-830e-37bb24f2250a
+execution,T1085,Rundll32,4,Rundll32 ieadvpack.dll Execution,e6556a3f-5bcf-4982-8cf6-4f8b896c026d
+execution,T1085,Rundll32,5,Rundll32 syssetup.dll Execution,551458cf-7d0b-4f2a-a70d-a1893ee88df8
+execution,T1085,Rundll32,6,Rundll32 setupapi.dll Execution,1f10eac1-f60d-4f2c-acde-0b0b676a7ac6
+execution,T1053,Scheduled Task,1,At.exe Scheduled task,0a2ff65b-b35b-4954-81e1-9ca19ac2de80
+execution,T1053,Scheduled Task,2,Scheduled task Local,148bcba2-9141-4b75-8375-9d7edad314a7
+execution,T1053,Scheduled Task,3,Scheduled task Remote,91e6e5f8-d867-4cbe-9c4d-e5b57701460a
+execution,T1053,Scheduled Task,4,Powershell Cmdlet Scheduled Task,a7cb2775-3eed-4e4b-a786-ae796018ba89
+execution,T1064,Scripting,1,Create and Execute Bash Shell Script,35195b07-f118-4dfb-baf3-55f811182811
+execution,T1064,Scripting,2,Create and Execute Batch Script,27810d1f-9904-4a38-a480-1d9dc6f17edd
+execution,T1035,Service Execution,1,Execute a Command as a Service,978a4aaa-badd-4e60-9109-d2c97f84d807
+execution,T1035,Service Execution,2,Use PsExec to execute a command on a remote host,0564ba1d-8c5f-4e29-949d-f738d5d6b82f
+execution,T1218,Signed Binary Proxy Execution,1,mavinject - Inject DLL into running process,08f7c9d3-0cab-48e1-855b-0a1a01119afa
+execution,T1218,Signed Binary Proxy Execution,2,SyncAppvPublishingServer - Execute arbitrary PowerShell code,119c8637-814f-400e-ab7f-dea8ea9f309d
+execution,T1218,Signed Binary Proxy Execution,3,Register-CimProvider - Execute evil dll,f5e855e0-597b-4eac-ab15-d7f262b79b10
+execution,T1218,Signed Binary Proxy Execution,4,Msiexec.exe - Execute Local MSI file,f4662de6-1df6-4b61-b70d-40b2b48eaa44
+execution,T1218,Signed Binary Proxy Execution,5,Msiexec.exe - Execute Remote MSI file,7467d4af-0d5b-4155-b157-7f2f37faef96
+execution,T1218,Signed Binary Proxy Execution,6,Msiexec.exe - Execute Arbitrary DLL,51335c9a-967c-4991-b811-41e4258af64f
+execution,T1218,Signed Binary Proxy Execution,7,Odbcconf.exe - Execute Arbitrary DLL,9e9adc6d-a71a-4ce0-861d-3b125f2280b8
+execution,T1218,Signed Binary Proxy Execution,8,InfDefaultInstall.exe .inf Execution,ae94dc82-f61e-41bc-aad5-e8ac2e8308e9
+execution,T1216,Signed Script Proxy Execution,1,PubPrn.vbs Signed Script Bypass,17fef223-9248-4302-9fc6-51a17563f6d4
+execution,T1216,Signed Script Proxy Execution,2,SyncAppvPublishingServer Signed Script PowerShell Command Execution,d63da923-63a9-4610-8798-2ece32e9be57
+execution,T1216,Signed Script Proxy Execution,3,manage-bde.wsf Signed Script Command Execution,4aebfb5d-b177-4aab-b3b5-65d42e2fbffe
+execution,T1153,Source,1,Execute Script using Source,9b9270b2-30de-4675-a69c-8ffb833f11b4
+execution,T1153,Source,2,Execute Script using Source Alias,d1a6157a-a5a1-4ce2-9bbe-70f0bdd276b0
+execution,T1151,Space after Filename,1,Space After Filename,f60c69b0-ebde-4937-8412-ee880c4003b8
+execution,T1154,Trap,1,Trap,23e7523f-c9e4-42e9-a87f-1cd4182f3c1b
+execution,T1127,Trusted Developer Utilities,1,MSBuild Bypass Using Inline Tasks,c90f73f6-e09d-4430-a9d0-f57dbb53e45c
+execution,T1204,User Execution,1,OSTap Style Macro Execution,d1963ca1-2ca2-4292-9d9e-f3e7e6eaa6c0
+execution,T1204,User Execution,2,OSTap Payload Download,fd6360c8-812b-4a41-ace0-e728ed2d9bdc
+execution,T1204,User Execution,3,Maldoc choice flags command execution,0c471963-e962-4e23-aadf-d396a95a432c
+execution,T1204,User Execution,4,OSTAP JS version,c91d563d-f2a7-495b-989d-0a8d185162a3
+execution,T1047,Windows Management Instrumentation,1,WMI Reconnaissance Users,05f1e02d-f468-43b1-a18e-cd377b4d52bd
+execution,T1047,Windows Management Instrumentation,2,WMI Reconnaissance Processes,d76e9f6d-3559-44e8-850b-85aa907a2c3d
+execution,T1047,Windows Management Instrumentation,3,WMI Reconnaissance Software,b5e64b28-4b58-41f4-b1ad-e11d5e6d4eb9
+execution,T1047,Windows Management Instrumentation,4,WMI Reconnaissance List Remote Services,2468737f-6a7e-437b-bf00-4941fc766bd7
+execution,T1047,Windows Management Instrumentation,5,WMI Execute Local Process,59d878a6-b773-4457-830b-cf48bde5ad8f
+execution,T1047,Windows Management Instrumentation,6,WMI Execute Remote Process,8ee4f30a-b9e0-4d9b-8ce7-0d45a5b833a9
+execution,T1028,Windows Remote Management,1,Enable Windows Remote Management,16d48b60-3dec-4252-a7a3-2d42f364903e
+execution,T1028,Windows Remote Management,2,PowerShell Lateral Movement,0137bd40-ab15-447d-9ad4-5ed881873c38
+execution,T1028,Windows Remote Management,3,WMIC Process Call Create,6c35aeaa-d26f-4e67-845b-78916c5553f2
+execution,T1028,Windows Remote Management,4,Psexec,14165134-947b-41c7-b91e-2f421de803b0
+execution,T1028,Windows Remote Management,5,Invoke-Command,e0cec441-5445-4cea-b080-ad878878c339
+execution,T1220,XSL Script Processing,1,MSXSL Bypass using local files,f4b025fd-9391-42b6-867d-829d748e4377
+execution,T1220,XSL Script Processing,2,MSXSL Bypass using remote files,82a750fc-a3be-472c-b385-b31aff92dce7
+execution,T1220,XSL Script Processing,3,WMIC bypass using local XSL file,5c0c3627-aaf7-4d9d-a30d-d4e411a77b79
+execution,T1220,XSL Script Processing,4,WMIC bypass using remote XSL file,65d551dc-648c-4ac0-b533-bdf274b077de
+lateral-movement,T1155,AppleScript,1,AppleScript,3c243434-cfba-4fa7-af1c-4b87b9998bf2
+lateral-movement,T1037,Logon Scripts,1,Logon Scripts,56ae7028-9185-4d1a-8389-e3c3557ad799
+lateral-movement,T1037,Logon Scripts,2,Scheduled Task Startup Script,90d2814d-ffa9-461c-af30-81739cba64c4
+lateral-movement,T1037,Logon Scripts,3,Logon Scripts - Mac,bf96e38d-d481-4ff9-a299-2b317f662ddb
+lateral-movement,T1037,Logon Scripts,4,Supicious vbs file run from startup Folder,fdcd83dd-9cad-448e-a7d6-0eedf2ebd32e
+lateral-movement,T1037,Logon Scripts,5,Supicious jse file run from startup Folder,e74f7298-bc0a-46ab-a0a9-4ea9568f2c8d
+lateral-movement,T1037,Logon Scripts,6,Supicious bat file run from startup Folder,a87779ff-0ff2-4645-b917-a6784cd95fae
+lateral-movement,T1075,Pass the Hash,1,Mimikatz Pass the Hash,97316534-5a58-4c46-819a-1a7763a5efa0
+lateral-movement,T1075,Pass the Hash,2,crackmapexec Pass the Hash,779988e7-3302-424f-bc00-a8aea62d8b95
+lateral-movement,T1097,Pass the Ticket,1,Mimikatz Kerberos Ticket Attack,61406266-7328-4fd0-8f16-1b21da9c5954
+lateral-movement,T1076,Remote Desktop Protocol,1,RDP hijacking,93dad7e4-94b9-4246-9ee2-7e4d15289681
+lateral-movement,T1076,Remote Desktop Protocol,2,RDPto-DomainController,7a041836-a4b9-4b9e-a874-41b9871f753a
+lateral-movement,T1105,Remote File Copy,1,rsync remote file copy (push),5f354c24-41dd-4bb0-81dd-50b2063f600f
+lateral-movement,T1105,Remote File Copy,2,rsync remote file copy (pull),98a00afe-cbf1-4f1b-94d5-c278365fa5eb
+lateral-movement,T1105,Remote File Copy,3,scp remote file copy (push),b482f00e-8fec-4c63-a966-f3ccbbd4484a
+lateral-movement,T1105,Remote File Copy,4,scp remote file copy (pull),236e8b07-ba27-4ce2-bccb-61a8f03de0da
+lateral-movement,T1105,Remote File Copy,5,sftp remote file copy (push),46d0bb1b-8962-490e-b1c9-93de0161a643
+lateral-movement,T1105,Remote File Copy,6,sftp remote file copy (pull),3ff16771-cdd1-4c3d-962f-2727d99c7746
+lateral-movement,T1105,Remote File Copy,7,certutil download (urlcache),b4ec5bcc-b3cc-44cc-8ab5-a38a27153c51
+lateral-movement,T1105,Remote File Copy,8,certutil download (verifyctl),6e3ff814-56a0-482e-8342-7b1b89427628
+lateral-movement,T1105,Remote File Copy,9,Windows - BITSAdmin BITS Download,7d7629ba-3591-4a02-b1fd-6a78f636884a
+lateral-movement,T1105,Remote File Copy,10,Windows - PowerShell Download,8c31b39a-ed28-4b05-8417-a67314edf46c
+lateral-movement,T1105,Remote File Copy,11,OSTAP Worming Activity,2a267648-2b89-4344-9365-94342dbfe1fe
+lateral-movement,T1077,Windows Admin Shares,1,Map admin share,e0f8ac81-1e3e-4eab-a3c8-e3db6b01cbfe
+lateral-movement,T1077,Windows Admin Shares,2,Map Admin Share PowerShell,78b2d73a-fb7d-446a-87a7-163b9daaacda
+lateral-movement,T1077,Windows Admin Shares,3,Copy and Execute File with PsExec,a2c49a43-5cea-4f36-b447-ce6932f6c7e2
+lateral-movement,T1077,Windows Admin Shares,4,Execute command writing output to local Admin Share,94aadff4-75c8-4768-8df3-5629564f2c3f
+lateral-movement,T1028,Windows Remote Management,1,Enable Windows Remote Management,16d48b60-3dec-4252-a7a3-2d42f364903e
+lateral-movement,T1028,Windows Remote Management,2,PowerShell Lateral Movement,0137bd40-ab15-447d-9ad4-5ed881873c38
+lateral-movement,T1028,Windows Remote Management,3,WMIC Process Call Create,6c35aeaa-d26f-4e67-845b-78916c5553f2
+lateral-movement,T1028,Windows Remote Management,4,Psexec,14165134-947b-41c7-b91e-2f421de803b0
+lateral-movement,T1028,Windows Remote Management,5,Invoke-Command,e0cec441-5445-4cea-b080-ad878878c339
+collection,T1123,Audio Capture,1,using device audio capture commandlet,d9f83aa3-3e2c-48cb-a4bf-0247bd7bc411
+collection,T1119,Automated Collection,1,Automated Collection Command Prompt,06731215-8285-46f9-9fe5-3006fa1a210f
+collection,T1119,Automated Collection,2,Automated Collection PowerShell,d56651c7-0d7e-49ac-9c24-e20dddbd3b34
+collection,T1119,Automated Collection,3,Recon information for export with PowerShell,a6d22534-c221-4843-aead-7195f4018697
+collection,T1119,Automated Collection,4,Recon information for export with Command Prompt,142e8aaf-272c-4d23-bf65-823ab14a7538
+collection,T1115,Clipboard Data,1,Utilize Clipboard to store or execute commands from,cc9506c6-48ad-4205-95f3-22f6d559ed0a
+collection,T1115,Clipboard Data,2,PowerShell,1f59ef23-7dff-40c1-9255-897c49412db8
+collection,T1074,Data Staged,1,Stage data from Discovery.bat,745c929f-4289-4cca-a6af-5daa6e47257e
+collection,T1074,Data Staged,2,Stage data from Discovery.sh,7df23290-e35e-466a-a4ea-cb56ff2a9823
+collection,T1074,Data Staged,3,Zip a Folder with PowerShell for Staging in Temp,b5858e70-a3dd-4305-930a-fc3bed0b3fe2
+collection,T1005,Data from Local System,1,Search macOS Safari Cookies,0564d2d0-e78f-4dd3-96fa-67ac2e2b1b28
+collection,T1114,Email Collection,1,T1114 Email Collection with PowerShell,a40eea5d-7b11-4375-88e4-b0b670b9a6bc
+collection,T1056,Input Capture,1,Input Capture,ac378c1e-cbc6-4eea-b7aa-753eb4777241
+collection,T1113,Screen Capture,1,Screencapture,796abcf2-b149-46cf-bcdb-cf5b4c7d933c
+collection,T1113,Screen Capture,2,Screencapture (silent),19847cfd-cb65-4543-a24b-ff26d7504279
+collection,T1113,Screen Capture,3,X Windows Capture,4e72ce4d-08df-46cd-92bf-6bce0dd3fa67
+collection,T1113,Screen Capture,4,Import,14607672-7537-4006-9715-00ac1a4ad173
+exfiltration,T1002,Data Compressed,1,Compress Data for Exfiltration With PowerShell,5c752eec-b4ce-423b-82c1-8821dc554242
+exfiltration,T1002,Data Compressed,2,Compress Data for Exfiltration With Rar,466544ac-ff2a-4771-93d7-1ba959b7e5b2
+exfiltration,T1002,Data Compressed,3,Data Compressed - nix - zip,7b334f44-3e21-4e5d-a9ab-5d9259a6cb74
+exfiltration,T1002,Data Compressed,4,Data Compressed - nix - gzip Single File,129422f4-cf41-4df0-a99c-7b80d52e0304
+exfiltration,T1002,Data Compressed,5,Data Compressed - nix - tar Folder or File,b3df11fd-dad3-48c7-b03a-355dd5110626
+exfiltration,T1022,Data Encrypted,1,Data Encrypted with zip and gpg symmetric,3d30e9ee-c8d2-41e9-948e-54cad01f5110
+exfiltration,T1022,Data Encrypted,2,Compress Data and lock with password for Exfiltration with winrar,0cd2a967-ab69-4d42-bc94-0ef586a31174
+exfiltration,T1022,Data Encrypted,3,Compress Data and lock with password for Exfiltration with winzip,1dce7d9d-0034-4888-8178-8c916555bf24
+exfiltration,T1022,Data Encrypted,4,Compress Data and lock with password for Exfiltration with 7zip,0742cb0e-8ff5-4f7d-8c58-97509f3d752d
+exfiltration,T1030,Data Transfer Size Limits,1,Data Transfer Size Limits,ada6b7c7-abd8-4552-a2ca-a4c7affadae4
+exfiltration,T1048,Exfiltration Over Alternative Protocol,1,Exfiltration Over Alternative Protocol - SSH,488a0854-54b5-46c5-b8ed-479779ea6c9b
+exfiltration,T1048,Exfiltration Over Alternative Protocol,2,Exfiltration Over Alternative Protocol - SSH,519bbdc3-26f1-4d0f-9af3-771118a6dd1f
+exfiltration,T1048,Exfiltration Over Alternative Protocol,3,Exfiltration Over Alternative Protocol - HTTP,4d99db7f-e4c3-4b2a-817c-4091da56df29
+exfiltration,T1048,Exfiltration Over Alternative Protocol,4,Exfiltration Over Alternative Protocol - ICMP,529f20d6-b2bf-4974-b23c-e41964e3994a
+exfiltration,T1048,Exfiltration Over Alternative Protocol,5,Exfiltration Over Alternative Protocol - DNS,0f8af4e9-fa01-4e3c-bf45-8311a7004c5c
+command-and-control,T1090,Connection Proxy,1,Connection Proxy,fff549e2-d6c9-4a9f-9a1e-06e5008bc34e
+command-and-control,T1090,Connection Proxy,2,portproxy reg key,d1e8afed-f116-46f3-b874-8b353cb5835a
+command-and-control,T1132,Data Encoding,1,Base64 Encoded data.,7067601a-7204-490f-b26b-c885bd21c6e2
+command-and-control,T1219,Remote Access Tools,1,TeamViewer Files Detected Test on Windows,a46387c2-0f49-4e76-a789-e17408bdf368
+command-and-control,T1219,Remote Access Tools,2,AnyDesk Files Detected Test on Windows,23a4f0d7-9382-4185-be4b-3e28b90fa64d
+command-and-control,T1219,Remote Access Tools,3,LogMeIn Files Detected Test on Windows,1ebf0461-9602-4632-a237-382ccc4bf202
+command-and-control,T1105,Remote File Copy,1,rsync remote file copy (push),5f354c24-41dd-4bb0-81dd-50b2063f600f
+command-and-control,T1105,Remote File Copy,2,rsync remote file copy (pull),98a00afe-cbf1-4f1b-94d5-c278365fa5eb
+command-and-control,T1105,Remote File Copy,3,scp remote file copy (push),b482f00e-8fec-4c63-a966-f3ccbbd4484a
+command-and-control,T1105,Remote File Copy,4,scp remote file copy (pull),236e8b07-ba27-4ce2-bccb-61a8f03de0da
+command-and-control,T1105,Remote File Copy,5,sftp remote file copy (push),46d0bb1b-8962-490e-b1c9-93de0161a643
+command-and-control,T1105,Remote File Copy,6,sftp remote file copy (pull),3ff16771-cdd1-4c3d-962f-2727d99c7746
+command-and-control,T1105,Remote File Copy,7,certutil download (urlcache),b4ec5bcc-b3cc-44cc-8ab5-a38a27153c51
+command-and-control,T1105,Remote File Copy,8,certutil download (verifyctl),6e3ff814-56a0-482e-8342-7b1b89427628
+command-and-control,T1105,Remote File Copy,9,Windows - BITSAdmin BITS Download,7d7629ba-3591-4a02-b1fd-6a78f636884a
+command-and-control,T1105,Remote File Copy,10,Windows - PowerShell Download,8c31b39a-ed28-4b05-8417-a67314edf46c
+command-and-control,T1105,Remote File Copy,11,OSTAP Worming Activity,2a267648-2b89-4344-9365-94342dbfe1fe
+command-and-control,T1071,Standard Application Layer Protocol,1,Malicious User Agents - Powershell,a79ef0e7-c65f-4473-96ae-2d1788b87a04
+command-and-control,T1071,Standard Application Layer Protocol,2,Malicious User Agents - CMD,7cce2a3c-b5d1-4b4c-9722-b20abd4f98f9
+command-and-control,T1071,Standard Application Layer Protocol,3,Malicious User Agents - Nix,ea46f4c3-2c09-4b25-8fc7-a247d3d938c2
+command-and-control,T1071,Standard Application Layer Protocol,4,DNS Large Query Volume,c9b1bf32-034e-4d4c-88fa-6d7aee32546f
+command-and-control,T1071,Standard Application Layer Protocol,5,DNS Regular Beaconing,19d78296-0c4f-4c2a-8363-a8e6fedb4b67
+command-and-control,T1071,Standard Application Layer Protocol,6,DNS Long Domain Query,2aa85daa-34cd-44d7-ac8e-23ac0407da00
+command-and-control,T1071,Standard Application Layer Protocol,7,DNS C2,bf205a47-61ac-4901-93f4-0667d4d9a4c7
+command-and-control,T1032,Standard Cryptographic Protocol,1,OpenSSL C2,4c35742f-df88-486a-b5ae-bb9e8f110bd3
+command-and-control,T1095,Standard Non-Application Layer Protocol,1,ICMP C2,b425e76f-3377-4dc8-ac27-980badf46d98
+command-and-control,T1095,Standard Non-Application Layer Protocol,2,Netcat C2,c155dd74-a7c6-41a1-a975-ee9efd1a883f
+command-and-control,T1095,Standard Non-Application Layer Protocol,3,Powercat C2,904f8b3f-9262-43ac-b6da-43905ab30156
+command-and-control,T1065,Uncommonly Used Port,1,Testing usage of uncommonly used port with PowerShell,a12df916-b956-47e9-b982-a698be6443d6
+command-and-control,T1065,Uncommonly Used Port,2,Testing usage of uncommonly used port,6d4f0155-6495-4b38-89db-6961c69c5ddc
+command-and-control,T1102,Web Service,1,Reach out to C2 Pointer URLs via command_prompt,2b796571-9840-4a26-b7f8-4334c47ff3a3
+command-and-control,T1102,Web Service,2,Reach out to C2 Pointer URLs via powershell,ad4a9323-8084-40f8-9f8c-2598cf4ab2a2
+initial-access,T1193,Spearphishing Attachment,1,Download Phishing Attachment - VBScript,4f1206f6-71f8-42c9-b046-e65aa245a327

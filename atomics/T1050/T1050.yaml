@@ -4,6 +4,7 @@ display_name: Service Installation
 
 atomic_tests:
 - name: Service Installation CMD
+  auto_generated_guid: 8911be82-7641-42e9-a5e9-65fed09c2d68
   description: |
     Download an executable from github and start it as a service.
 
@@ -42,6 +43,7 @@ atomic_tests:
       sc.exe delete #{service_name} >nul 2>&1
 
 - name: Service Installation PowerShell
+  auto_generated_guid: e92be35a-3d91-451b-81c6-e5dd5c6a292c
   description: |
       Installs A Local Service via PowerShell.
 

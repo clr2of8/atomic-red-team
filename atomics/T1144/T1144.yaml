@@ -4,6 +4,7 @@ display_name: Gatekeeper Bypass
 
 atomic_tests:
 - name: Gatekeeper Bypass
+  auto_generated_guid: 218ebeb0-62e9-4590-8984-d9b28b9f2739
   description: |
     Gatekeeper Bypass via command line
 

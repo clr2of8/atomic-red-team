@@ -4,6 +4,7 @@ display_name: DLL Side-Loading
 
 atomic_tests:
 - name: DLL Side-Loading using the Notepad++ GUP.exe binary
+  auto_generated_guid: c69507ca-da63-425c-9c78-6844eacc1b22
   description: |
     GUP is an open source signed binary used by Notepad++ for software updates, and is vulnerable to DLL Side-Loading, thus enabling the libcurl dll to be loaded.
     Upon execution, calc.exe will be opened.

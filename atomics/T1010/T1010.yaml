@@ -4,6 +4,7 @@ display_name: Application Window Discovery
 
 atomic_tests:
 - name: List Process Main Windows - C# .NET
+  auto_generated_guid: 2236381b-0f92-405b-9af6-81c0c228dd96
   description: |
     Compiles and executes C# code to list main window titles associated with each process.
 

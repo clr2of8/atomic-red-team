@@ -4,6 +4,7 @@ display_name: Hidden Files and Directories
 
 atomic_tests:
 - name: Create a hidden file in a hidden directory
+  auto_generated_guid: 252ebeb8-09d5-4278-9c8b-8bf1893ee432
   description: |
     Creates a hidden file inside a hidden directory
   supported_platforms:
@@ -19,6 +20,7 @@ atomic_tests:
       rm -rf /var/tmp/.hidden-directory/
 
 - name: Mac Hidden file
+  auto_generated_guid: a5ef5d24-8190-4ad9-a852-a814cfb11cfc
   description: |
     Hide a file on MacOS
   supported_platforms:
@@ -30,6 +32,7 @@ atomic_tests:
       xattr -lr * / 2>&1 /dev/null | grep -C 2 "00 00 00 00 00 00 00 00 40 00 FF FF FF FF 00 00"
 
 - name: Create Windows System File with Attrib
+  auto_generated_guid: fa1ee4ae-7d22-426f-97b0-188a84f2e24a
   description: |
     Creates a file and marks it as a system file using the attrib.exe utility. Upon execution, open the file in file explorer then open Properties > Details
     and observe that the Attributes are "SA" for System and Archive.
@@ -59,6 +62,7 @@ atomic_tests:
       del /A:S #{file_to_modify} >nul 2>&1
 
 - name: Create Windows Hidden File with Attrib
+  auto_generated_guid: 0070dd25-7b8b-46fd-847b-c0aa79fb9304
   description: |
     Creates a file and marks it as hidden using the attrib.exe utility.Upon execution, open File Epxplorer and enable View > Hidden Items. Then, open Properties > Details on the file
     and observe that the Attributes are "SH" for System and Hidden.
@@ -89,6 +93,7 @@ atomic_tests:
       del /A:H #{file_to_modify} >nul 2>&1
 
 - name: Hidden files
+  auto_generated_guid: 454a5761-593e-4611-9a3e-df721986d4ab
   description: |
     Requires Apple Dev Tools
   supported_platforms:
@@ -105,6 +110,7 @@ atomic_tests:
       setfile -a V #{filename}
 
 - name: Hide a Directory
+  auto_generated_guid: 581aae0c-c30a-4ce1-989a-e69cc61a086f
   description: |
     Hide a directory on MacOS
   supported_platforms:
@@ -119,6 +125,7 @@ atomic_tests:
       rm /var/tmp/T1158_mac.txt
 
 - name: Show all hidden files
+  auto_generated_guid: 86a993ca-d357-48d4-9e81-b417676d6632
   description: |
     Show all hidden files on MacOS
   supported_platforms:
@@ -132,6 +139,7 @@ atomic_tests:
       defaults write com.apple.finder AppleShowAllFiles NO
 
 - name: Create ADS command prompt
+  auto_generated_guid: cd838f18-856e-4ed5-8992-cef06f024233
   description: |
     Create an Alternate Data Stream with the command prompt. Write access is required. Upon execution, run "dir /a-d /s /r | find ":$DATA"" in the %temp%
     folder to view that the alternate data stream exists. To view the data in the alternate data stream, run "notepad T1158_has_ads.txt:adstest.txt"
@@ -166,6 +174,7 @@ atomic_tests:
       del #{file_name} >nul 2>&1
 
 - name: Create ADS PowerShell
+  auto_generated_guid: 9180d996-a41e-42ec-a3b9-611d3669af49
   description: |
     Create an Alternate Data Stream with PowerShell. Write access is required. To verify execution, the the command "ls -Recurse | %{ gi $_.Fullname -stream *} | where stream -ne ':$Data' | Select-Object pschildname"
     in the %temp% direcotry to view all files with hidden data streams. To view the data in the alternate data stream, run "notepad.exe T1158_has_ads_powershell.txt:adstest.txt" in the %temp% folder.

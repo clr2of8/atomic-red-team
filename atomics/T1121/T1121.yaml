@@ -4,6 +4,7 @@ display_name: RegSvcs/RegAsm
 
 atomic_tests:
 - name: Regasm Uninstall Method Call Test
+  auto_generated_guid: a49bd86d-5482-47bd-b36f-8133dcd22a07
   description: |
     Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shouldn't really execute either." will be displayed.
   supported_platforms:
@@ -38,6 +39,7 @@ atomic_tests:
       del #{output_file} >nul 2>&1
 
 - name: Regsvs Uninstall Method Call Test
+  auto_generated_guid: 6605d995-32b5-43f6-bb06-d2efa0ab5de4
   description: |
     Executes the Uninstall Method, No Admin Rights Required, Requires SNK. Upon execution, "I shouldn't really execute" will be displayed
     along with other information about the assembly being installed.

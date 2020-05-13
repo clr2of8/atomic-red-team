@@ -4,6 +4,7 @@ display_name: System Network Connections Discovery
 
 atomic_tests:
 - name: System Network Connections Discovery
+  auto_generated_guid: ce0ddfe8-80b4-45b6-8e04-d10c3ccdd6a1
   description: |
     Get a listing of network connections.
 
@@ -21,6 +22,7 @@ atomic_tests:
       net sessions
 
 - name: System Network Connections Discovery with PowerShell
+  auto_generated_guid: 9126a98d-a0ec-4da7-9bfc-5310d12a0fe9
   description: |
     Get a listing of network connections.
 
@@ -36,6 +38,7 @@ atomic_tests:
       Get-NetTCPConnection
 
 - name: System Network Connections Discovery Linux & MacOS
+  auto_generated_guid: 6b512537-dc50-414c-8e71-184bbd658476
   description: |
     Get a listing of network connections.
 

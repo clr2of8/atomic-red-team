@@ -4,6 +4,7 @@ display_name: Compiled HTML File
 
 atomic_tests:
 - name: Compiled HTML Help Local Payload
+  auto_generated_guid: 6a518104-1d3a-4741-a8a1-153aaca5ca50
   description: |
     Uses hh.exe to execute a local compiled HTML Help payload.
     Upon execution calc.exe will open
@@ -32,6 +33,7 @@ atomic_tests:
       hh.exe #{local_chm_file}
 
 - name: Compiled HTML Help Remote Payload
+  auto_generated_guid: 4dca974b-5f7a-42d5-852d-d6d9be218d72
   description: |
     Uses hh.exe to execute a remote compiled HTML Help payload.
     Upon execution displays an error saying the file cannot be open

@@ -4,6 +4,7 @@ display_name: Timestomp
 
 atomic_tests:
 - name: Set a file's access timestamp
+  auto_generated_guid: 532263e3-d39b-4fc8-bfc6-63cfd0f4bfa0
   description: |
     Stomps on the access timestamp of a file
   supported_platforms:
@@ -20,6 +21,7 @@ atomic_tests:
       touch -a -t 197001010000.00 #{target_filename}
 
 - name: Set a file's modification timestamp
+  auto_generated_guid: 53811a38-fcce-4faf-b198-5b02d20870c7
   description: |
     Stomps on the modification timestamp of a file
   supported_platforms:
@@ -36,6 +38,7 @@ atomic_tests:
       touch -m -t 197001010000.00 #{target_filename}
 
 - name: Set a file's creation timestamp
+  auto_generated_guid: d19a37e0-df36-4625-a2eb-97753584ba06
   description: |
     Stomps on the create timestamp of a file
 
@@ -60,6 +63,7 @@ atomic_tests:
       stat #{target_filename}
 
 - name: Modify file timestamps using reference file
+  auto_generated_guid: da6425e3-4ed6-452f-8b85-4cef2a37633c
   description: |
     Modifies the `modify` and `access` timestamps using the timestamps of a specified reference file.
 
@@ -83,6 +87,7 @@ atomic_tests:
       touch -acmr #{reference_file_path} #{target_file_path}
 
 - name: Windows - Modify file creation timestamp with PowerShell
+  auto_generated_guid: d29e6ce3-2195-4f24-a2ec-1da2c994c780
   description: |
     Modifies the file creation timestamp of a specified file. This technique was seen in use by the Stitch RAT.
     To verify execution, use File Explorer to view the Properties of the file and observe that the Created time is the year 1970.
@@ -118,6 +123,7 @@ atomic_tests:
       Remove-Item #{file_path} -Force -ErrorAction Ignore
 
 - name: Windows - Modify file last modified timestamp with PowerShell
+  auto_generated_guid: ac029ca7-66ec-4b6f-8726-133431a3f3dc
   description: |
     Modifies the file last modified timestamp of a specified file. This technique was seen in use by the Stitch RAT.
     To verify execution, use File Explorer to view the Properties of the file and observe that the Modified time is the year 1970.
@@ -154,6 +160,7 @@ atomic_tests:
       Remove-Item #{file_path} -Force -ErrorAction Ignore
 
 - name: Windows - Modify file last access timestamp with PowerShell
+  auto_generated_guid: 5b47c788-14b7-46d4-88ef-b7c64c917899
   description: |
     Modifies the last access timestamp of a specified file. This technique was seen in use by the Stitch RAT.
     To verify execution, use File Explorer to view the Properties of the file and observe that the Accessed time is the year 1970.
@@ -190,6 +197,7 @@ atomic_tests:
       Remove-Item #{file_path} -Force -ErrorAction Ignore
 
 - name: Windows - Timestomp a File
+  auto_generated_guid: d6f51f72-d8a6-4a21-b2e6-bee8a79c69cd
   description: |
     Timestomp kxwn.lock.
 

@@ -4,6 +4,7 @@ display_name: File Deletion
 
 atomic_tests:
 - name: Delete a single file - Linux/macOS
+  auto_generated_guid: 882269ea-8683-4902-837a-3a19d657e9cc
   description: |
     Delete a single file from the temporary directory
   supported_platforms:
@@ -20,6 +21,7 @@ atomic_tests:
       rm -f #{file_to_delete}
 
 - name: Delete an entire folder - Linux/macOS
+  auto_generated_guid: 1519522d-c28b-432e-953b-2bc196830476
   description: |
     Recursively delete the temporary directory and all files contained within it
   supported_platforms:
@@ -36,6 +38,7 @@ atomic_tests:
       rm -rf #{folder_to_delete}
 
 - name: Overwrite and delete a file with shred
+  auto_generated_guid: 7f5709bc-1f8a-4cf6-8130-82adf0bcd3cb
   description: |
     Use the `shred` command to overwrite the temporary file and then delete it
   supported_platforms:
@@ -51,6 +54,7 @@ atomic_tests:
       shred -u #{file_to_shred}
 
 - name: Delete a single file - Windows cmd
+  auto_generated_guid: f9c688d0-8670-49c9-ac16-ec020007c94e
   description: |
     Delete a single file from the temporary directory using cmd.exe.
     Upon execution, no output will be displayed. Use File Explorer to verify the file was deleted.
@@ -79,6 +83,7 @@ atomic_tests:
       del /f #{file_to_delete}
 
 - name: Delete an entire folder - Windows cmd
+  auto_generated_guid: e62d4f13-7ff8-462b-89e0-19e73a27e4b1
   description: |
     Recursively delete a folder in the temporary directory using cmd.exe.
     Upon execution, no output will be displayed. Use File Explorer to verify the folder was deleted.
@@ -107,6 +112,7 @@ atomic_tests:
       rmdir /s /q #{folder_to_delete}
 
 - name: Delete a single file - Windows PowerShell
+  auto_generated_guid: 241ca5f8-f89f-4e60-8854-639a6604ef80
   description: |
     Delete a single file from the temporary directory using Powershell. Upon execution, no output will be displayed. Use File Explorer to verify the file was deleted.
   supported_platforms:
@@ -133,6 +139,7 @@ atomic_tests:
       Remove-Item -path #{file_to_delete}
 
 - name: Delete an entire folder - Windows PowerShell
+  auto_generated_guid: c8c5ecb9-966b-49a6-930c-f7800833858f
   description: |
     Recursively delete a folder in the temporary directory using Powershell. Upon execution, no output will be displayed. Use File Explorer to verify the folder was deleted.
   supported_platforms:
@@ -159,6 +166,7 @@ atomic_tests:
       Remove-Item -Path #{folder_to_delete} -Recurse
 
 - name: Delete Filesystem - Linux
+  auto_generated_guid: e0c9c090-0914-4920-91fa-aa9adf483a08
   description: |
     This test deletes the entire root filesystem of a Linux system. This technique was used by Amnesia IoT malware to avoid analysis. This test is dangerous and destructive, do NOT use on production equipment.
   supported_platforms:
@@ -170,6 +178,7 @@ atomic_tests:
       rm -rf / --no-preserve-root > /dev/null 2> /dev/null
 
 - name: Delete-PrefetchFile
+  auto_generated_guid: 60f882b0-d1f5-4b20-b9d1-a727a56b0952
   description: |
     Delete a single prefetch file.  Deletion of prefetch files is a known anti-forensic technique. To verify execution, Run "(Get-ChildItem -Path "$Env:SystemRoot\prefetch\*.pf" | Measure-Object).Count"
     before and after the test to verify that the number of prefetch files decreases by 1.
@@ -182,6 +191,7 @@ atomic_tests:
       Remove-Item -Path (Join-Path "$Env:SystemRoot\prefetch\" (Get-ChildItem -Path "$Env:SystemRoot\prefetch\*.pf" -Name)[0])
 
 - name: Delete TeamViewer Log Files
+  auto_generated_guid: 2cd8cd8f-44a8-477d-b7d8-047f231ef43b
   description: |
     Adversaries may delete TeamViewer log files to hide activity. This should provide a high true-positive alert ration.
     This test just places the files in a non-TeamViewer folder, a detection would just check for a deletion event matching the TeamViewer

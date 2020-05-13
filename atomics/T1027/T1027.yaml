@@ -4,6 +4,7 @@ display_name: Obfuscated Files or Information
 
 atomic_tests:
 - name: Decode base64 Data into Script
+  auto_generated_guid: 440c8dfd-7eda-4735-a454-679660cf49ab
   description: |
     Creates a base64-encoded data file and decodes it into an executable shell script
 
@@ -23,6 +24,7 @@ atomic_tests:
       /tmp/art.sh
 
 - name: Execute base64-encoded PowerShell
+  auto_generated_guid: fc259778-39b7-425d-8aab-9abe80bde8ef
   description: |
     Creates base64-encoded PowerShell code and executes it. This is used by numerous adversaries and malicious tools.
     
@@ -45,6 +47,7 @@ atomic_tests:
       powershell.exe -EncodedCommand $EncodedCommand
 
 - name: Execute base64-encoded PowerShell from Windows Registry
+  auto_generated_guid: 3a6f4e45-294d-449c-8e85-d80643f66c21
   description: |
     Stores base64-encoded PowerShell code in the Windows Registry and deobfuscates it for execution. This is used by numerous adversaries and malicious tools.
 

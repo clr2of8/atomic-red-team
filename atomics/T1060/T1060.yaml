@@ -4,6 +4,7 @@ display_name: Registry Run Keys / Start Folder
 
 atomic_tests:
 - name: Reg Key Run
+  auto_generated_guid: 4cdf6f8a-6479-44d7-9faf-6d2fc0baf4f6
   description: |
     Run Key Persistence
 
@@ -23,6 +24,7 @@ atomic_tests:
       REG DELETE "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "Atomic Red Team" /f >nul 2>&1
 
 - name: Reg Key RunOnce
+  auto_generated_guid: 54d37497-b233-4313-9e68-4cef3afd0f9f
   description: |
     RunOnce Key Persistence.
 
@@ -43,6 +45,7 @@ atomic_tests:
       REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx\0001\Depend /v 1 /f >nul 2>&1
 
 - name: PowerShell Registry RunOnce
+  auto_generated_guid: 715037af-647f-437a-9ff2-7def3298b3d8
   description: |
     RunOnce Key Persistence via PowerShell
     Upon successful execution, a new entry will be added to the runonce item in the registry.

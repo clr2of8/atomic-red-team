@@ -4,6 +4,7 @@ display_name: DCShadow
 
 atomic_tests:
 - name: DCShadow - Mimikatz
+  auto_generated_guid: 8bf91ee7-242a-4196-be72-da81800f73da
   description: |
     Utilize Mimikatz DCShadow method to simulate behavior of a Domain Controller
 

@@ -4,6 +4,7 @@ display_name: Component Object Model (COM) Hijacking
 
 atomic_tests:
 - name: COM Hijack Leveraging user scope COR_PROFILER
+  auto_generated_guid: 0b3245e7-3639-4317-9805-d9e1c6e1e521
   description: |
     Creates user scope environment variables and CLSID COM object to enable a .NET profiler (COR_PROFILER). The unmanaged profiler DLL (`atomicNotepad.dll`) executes when the CLR is loaded by the Event Viewer process. Additionally, the profiling DLL will inherit the integrity level of Event Viewer bypassing UAC and executing `notepad.exe` with high integrity. If the account used is not a local administrator the profiler DLL will still execute each time the CLR is loaded by a process, however, the notepad process will not execute with high integrity. 
 
@@ -49,6 +50,7 @@ atomic_tests:
       Remove-ItemProperty -Path HKCU:\Environment -Name "COR_PROFILER_PATH" -Force | Out-Null
 
 - name: COM Hijack Leveraging System Scope COR_PROFILER
+  auto_generated_guid: f41b29ce-12c0-43c1-9047-193198059628
   description: |
     Creates system scope environment variables to enable a .NET profiler (COR_PROFILER). System scope environment variables require a restart to take effect. The unmanaged profiler DLL (`atomicNotepad.dll`) executes when the CLR is loaded by any process. Additionally, the profiling DLL will inherit the integrity level of Event Viewer bypassing UAC and executing `notepad.exe` with high integrity. If the account used is not a local administrator the profiler DLL will still execute each time the CLR is loaded by a process, however, the notepad process will not execute with high integrity. 
 
@@ -90,6 +92,7 @@ atomic_tests:
       Remove-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' -Name "COR_PROFILER_PATH" -Force | Out-Null
 
 - name: COM Hijack Leveraging registry-free process scope COR_PROFILER
+  auto_generated_guid: dc08b504-1e1f-4b85-b33d-d940ff7c001d
   description: |
     Creates process scope environment variables to enable a .NET profiler (COR_PROFILER) without making changes to the registry. The unmanaged profiler DLL (`atomicNotepad.dll`) executes when the CLR is loaded by PowerShell.
 

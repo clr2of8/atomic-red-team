@@ -4,6 +4,7 @@ display_name: Password Policy Discovery
 
 atomic_tests:
 - name: Examine password complexity policy - Ubuntu
+  auto_generated_guid: 62a7b0f7-aaaf-4e7a-894c-a93636d73b31
   description: |
     Lists the password complexity policy to console on Ubuntu Linux.
 
@@ -16,6 +17,7 @@ atomic_tests:
       cat /etc/pam.d/common-password
 
 - name: Examine password complexity policy - CentOS/RHEL 7.x
+  auto_generated_guid: 0c8d8362-4ae9-4066-a2ce-e5105239f0e5
   description: |
     Lists the password complexity policy to console on CentOS/RHEL 7.x Linux.
 
@@ -36,6 +38,7 @@ atomic_tests:
       cat /etc/security/pwquality.conf
 
 - name: Examine password complexity policy - CentOS/RHEL 6.x
+  auto_generated_guid: 27b55adf-2e83-4aca-ab47-071f670af187
   description: |
     Lists the password complexity policy to console on CentOS/RHEL 6.x Linux.
 
@@ -57,6 +60,7 @@ atomic_tests:
       cat /etc/security/pwquality.conf
 
 - name: Examine password expiration policy - All Linux
+  auto_generated_guid: f2f3d640-9676-4ec3-ba3f-bbdbde30752e
   description: |
     Lists the password expiration policy to console on CentOS/RHEL/Ubuntu.
 
@@ -69,6 +73,7 @@ atomic_tests:
       cat /etc/login.defs
 
 - name: Examine local password policy - Windows
+  auto_generated_guid: e17fccb1-903c-4016-af88-78e103a2459b
   description: |
     Lists the local password policy to console on Windows.
 
@@ -82,6 +87,7 @@ atomic_tests:
       net accounts
 
 - name: Examine domain password policy - Windows
+  auto_generated_guid: d849cee2-01f0-47e4-acdf-a0ab06d3d851
   description: |
     Lists the domain password policy to console on Windows.
 
@@ -95,6 +101,7 @@ atomic_tests:
       net accounts /domain
 
 - name: Examine password policy - macOS
+  auto_generated_guid: cfabc8c0-19ad-4d87-bf3c-b52b612ab554
   description: |
     Lists the password policy to console on macOS.
 

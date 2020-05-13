@@ -4,6 +4,7 @@ display_name: Create Account
 
 atomic_tests:
 - name: Create a user account on a Linux system
+  auto_generated_guid: 62edb633-1cb4-43b7-9fe0-f3f2962ad577
   description: |
     Create a user via useradd
   supported_platforms:
@@ -22,6 +23,7 @@ atomic_tests:
       userdel #{username}
 
 - name: Create a user account on a MacOS system
+  auto_generated_guid: 77509ed4-f962-4d51-8815-b6f56c64f8f2
   description: |
     Creates a user on a MacOS system with dscl
   supported_platforms:
@@ -49,6 +51,7 @@ atomic_tests:
       dscl . -delete /Users/#{username}
 
 - name: Create a new user in a command prompt
+  auto_generated_guid: b86c2a3d-031d-4ab7-93eb-a2d6c7d81b6f
   description: |
     Creates a new user in a command prompt. Upon execution, "The command completed successfully." will be displayed. To verify the
     new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136_CMD"
@@ -72,6 +75,7 @@ atomic_tests:
       net user /del "#{username}" >nul 2>&1
 
 - name: Create a new user in PowerShell
+  auto_generated_guid: 56e36711-5dec-4c9f-a27a-03820644abd0
   description: |
     Creates a new user in PowerShell. Upon execution, details about the new account will be displayed in the powershell session. To verify the
     new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136_PowerShell"
@@ -92,6 +96,7 @@ atomic_tests:
 
 
 - name: Create a new user in Linux with `root` UID and GID.
+  auto_generated_guid: c35887a6-dd12-4520-bc09-c167e8ff9fde
   description: |
     Creates a new user in Linux and adds the user to the `root` group. This technique was used by adversaries during the Butter attack campaign.
   supported_platforms:

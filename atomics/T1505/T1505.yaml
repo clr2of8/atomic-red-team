@@ -4,6 +4,7 @@ display_name: Server Software Component
 
 atomic_tests:
 - name: Install MS Exchange Transport Agent Persistence
+  auto_generated_guid: e8b6191b-09ff-4e61-a94b-f6ac3b435055
   description: |
     Install a Microsoft Exchange Transport Agent for persistence. This requires execution from an Exchange Client Access Server and the creation of a DLL with specific exports. Seen in use by Turla.
     More details- https://docs.microsoft.com/en-us/exchange/transport-agents-exchange-2013-help

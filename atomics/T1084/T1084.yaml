@@ -4,6 +4,7 @@ display_name: Windows Management Instrumentation Event Subscription
 
 atomic_tests:
 - name: Persistence via WMI Event Subscription
+  auto_generated_guid: 275ca623-899a-4e37-912e-dcc630dfb1c9
   description: |
     Run from an administrator powershell window. After running, reboot the victim machine.
     After it has been online for 4 minutes you should see notepad.exe running as SYSTEM.

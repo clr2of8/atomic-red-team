@@ -4,6 +4,7 @@ display_name: Clear Command History
 
 atomic_tests:
 - name: Clear Bash history (rm)
+  auto_generated_guid: d7a68489-9b17-4f03-b70c-8c4851718e39
   description: |
     Clears bash history via rm
   supported_platforms:
@@ -15,6 +16,7 @@ atomic_tests:
       rm ~/.bash_history
 
 - name: Clear Bash history (echo)
+  auto_generated_guid: 8ea12ac8-a48d-494b-ac05-4245e0115da0
   description: |
     Clears bash history via rm
   supported_platforms:
@@ -26,6 +28,7 @@ atomic_tests:
       echo "" > ~/.bash_history
 
 - name: Clear Bash history (cat dev/null)
+  auto_generated_guid: a92d4f35-01e7-4b1b-95a6-727ba3e5b53d
   description: |
     Clears bash history via cat /dev/null
   supported_platforms:
@@ -37,6 +40,7 @@ atomic_tests:
       cat /dev/null > ~/.bash_history
 
 - name: Clear Bash history (ln dev/null)
+  auto_generated_guid: 65e8caa0-cc76-450a-929c-9a89ff16942b
   description: |
     Clears bash history via a symlink to /dev/null
   supported_platforms:
@@ -48,6 +52,7 @@ atomic_tests:
       ln -sf /dev/null ~/.bash_history
 
 - name: Clear Bash history (truncate)
+  auto_generated_guid: d3987ae0-f3be-4931-a2bf-34546d50db86
   description: |
     Clears bash history via truncate
   supported_platforms:
@@ -58,6 +63,7 @@ atomic_tests:
       truncate -s0 ~/.bash_history
 
 - name: Clear history of a bunch of shells
+  auto_generated_guid: 28e4676f-3062-4449-8bf6-25c668d51205
   description: |
     Clears the history of a bunch of different shell types by setting the history size to zero
   supported_platforms:

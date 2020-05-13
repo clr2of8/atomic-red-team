@@ -4,6 +4,7 @@ display_name: System Network Configuration Discovery
 
 atomic_tests:
 - name: System Network Configuration Discovery on Windows
+  auto_generated_guid: 114b84cd-7a87-4e04-be68-b29b13cbcc00
   description: |
     Identify network configuration information
 
@@ -23,6 +24,7 @@ atomic_tests:
       net config
 
 - name: List Windows Firewall Rules
+  auto_generated_guid: 417b0ccf-c686-4d33-aec4-7b68c201ad14
   description: |
     Enumerates Windows Firewall Rules using netsh.
 
@@ -38,6 +40,7 @@ atomic_tests:
       netsh advfirewall firewall show rule name=all
 
 - name: System Network Configuration Discovery
+  auto_generated_guid: 6283f067-8fbb-41d5-b3a9-773edeed7d4b
   description: |
     Identify network configuration information.
 
@@ -57,6 +60,7 @@ atomic_tests:
       if [ -x "$(command -v netstat)" ]; then netstat -ant | awk '{print $NF}' | grep -v '[a-z]' | sort | uniq -c; else echo "netstat is missing from the machine. skipping..."; fi;
 
 - name: System Network Configuration Discovery (TrickBot Style)
+  auto_generated_guid: 9f2df9fa-578e-42e3-af65-cf560cd81849
   description: |
     Identify network configuration information as seen by Trickbot and described here https://www.sneakymonkey.net/2019/10/29/trickbot-analysis-part-ii/
 
@@ -74,6 +78,7 @@ atomic_tests:
       nltest /domain_trusts
 
 - name: List Open Egress Ports
+  auto_generated_guid: 24efc312-18e7-4a63-adcf-0513af363087
   description: |
     This is to test for what ports are open outbound.  The technique used was taken from the following blog:
     https://www.blackhillsinfosec.com/poking-holes-in-the-firewall-egress-testing-with-allports-exposed/

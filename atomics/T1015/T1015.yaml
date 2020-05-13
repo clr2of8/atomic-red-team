@@ -4,6 +4,7 @@ display_name: Accessibility Features
 
 atomic_tests:
 - name: Attaches Command Prompt as a Debugger to a List of Target Processes
+  auto_generated_guid: 383ab50e-9db5-4fbd-90e8-4b7fe6a5960f
   description: |
     Attaches cmd.exe to a list of processes. Configure your own Input arguments to a different executable or list of executables.
 

@@ -4,6 +4,7 @@ display_name: Service Execution
 
 atomic_tests:
 - name: Execute a Command as a Service
+  auto_generated_guid: 978a4aaa-badd-4e60-9109-d2c97f84d807
   description: |
     Creates a service specifying an aribrary command and executes it. When executing commands such as PowerShell, the service will report that it did not start correctly even when code executes properly.
 
@@ -29,6 +30,7 @@ atomic_tests:
       sc.exe delete #{service_name}
 
 - name: Use PsExec to execute a command on a remote host
+  auto_generated_guid: 0564ba1d-8c5f-4e29-949d-f738d5d6b82f
   description: |
     Requires having Sysinternals installed, path to sysinternals is one of the input input_arguments
     Will run a command on a remote host.

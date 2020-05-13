@@ -4,6 +4,7 @@ display_name: Control Panel Items
 
 atomic_tests:
 - name: Control Panel Items
+  auto_generated_guid: 24e03628-2fbc-4c64-abff-b4d0d928e67c
   description: |
      This test simulates an adversary leveraging control.exe
      Upon execution calc.exe will be launched

