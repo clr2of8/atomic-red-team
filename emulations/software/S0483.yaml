@@ -1,0 +1,27 @@
+software: S0483
+display_name: IcedID
+emulations:
+
+- name: IcedID variation A
+  auto_generated_guid: 96345bfc-8ae7-4b6a-80b7-223200f24ef9
+  description: |
+    desc
+  atomics:
+  - technique: T1553.005
+    guid: 42f22b00-0242-4afc-a61b-0da05041f9cc
+    input_arguments:
+      path_of_iso: PathToAtomicsFolder\T1553.005\bin\FeelTheBurn.iso
+  - technique: T1016
+    guid: 970ab6a1-0157-4f3f-9a73-ec4166754b23
+  - technique: T1518.001
+    guid: 1553252f-14ea-4d3b-8a08-d7a4211aa945
+    
+- name: IcedID variation b
+  auto_generated_guid: 12345bfc-99e7-4b6a-8065-223200f24645
+  description: |
+    desc
+  atomics:
+  - technique: T1016
+    guid: 970ab6a1-0157-4f3f-9a73-ec4166754b23
+  - technique: T1518.001
+    guid: 1553252f-14ea-4d3b-8a08-d7a4211aa945
