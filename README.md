@@ -16,8 +16,12 @@
 
 # Atomic Red Team
 
+<<<<<<< HEAD
 ![GitHub Action Status](https://github.com/redcanaryco/atomic-red-team/actions/workflows/validate-atomics.yml/badge.svg?branch=master) ![Atomics](https://img.shields.io/badge/Atomics-1713-flat.svg) ![GitHub Action Status](https://github.com/redcanaryco/atomic-red-team/actions/workflows/generate-docs.yml/badge.svg?branch=master)
 
+=======
+![GitHub Action Status](https://github.com/redcanaryco/atomic-red-team/actions/workflows/validate-atomics.yml/badge.svg?branch=master) ![Atomics](https://img.shields.io/badge/Atomics-1357-flat.svg) ![GitHub Action Status](https://github.com/redcanaryco/atomic-red-team/actions/workflows/generate-docs.yml/badge.svg?branch=master)
+>>>>>>> 656161c4 (updating atomics count in README.md [ci skip])
 
 
 
