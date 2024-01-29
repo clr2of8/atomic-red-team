@@ -934,3 +934,124 @@ atomic_tests:
       Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProtocolDefaults' -Name 'https' -Value 3
     name: powershell
 
+- name: Activities To Disable Secondary Authentication Detected By Modified Registry Value.
+  auto_generated_guid: c26fb85a-fa50-4fab-a64a-c51f5dc538d5
+  description: |
+    Detect the disable secondary authentication activities that adversary attempt to bypass MFA and to get the unauthorized access to the system or sensitive data.
+    See the related article (https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.SecondaryAuthenticationFactor::MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice).
+  supported_platforms:
+  - windows
+  executor:
+    command: |
+      reg add "HKLM\SOFTWARE\Policies\Microsoft\SecondaryAuthenticationFactor" /v "AllowSecondaryAuthenticationDevice" /t REG_DWORD /d 0 /f
+    cleanup_command: |
+      reg add "HKLM\SOFTWARE\Policies\Microsoft\SecondaryAuthenticationFactor" /v "AllowSecondaryAuthenticationDevice" /t REG_DWORD /d 1 /f
+    name: command_prompt
+    
+- name: Activities To Disable Microsoft [FIDO Aka Fast IDentity Online] Authentication Detected By Modified Registry Value.
+  auto_generated_guid: ffeddced-bb9f-49c6-97f0-3d07a509bf94
+  description: |
+    Detect the Microsoft FIDO authentication disable activities that adversary attempt to gains access to login credentials (e.g., passwords), they may be able to impersonate the user and access sensitive accounts or data and also increases the risk of falling victim to phishing attacks.
+    See the related article (https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.FidoAuthentication::AllowFidoDeviceSignon).
+  supported_platforms:
+  - windows
+  executor:
+    command: |
+      reg add "HKLM\SOFTWARE\Policies\Microsoft\FIDO" /v "AllowExternalDeviceSignon" /t REG_DWORD /d 0 /f
+    cleanup_command: |
+      reg add "HKLM\SOFTWARE\Policies\Microsoft\FIDO" /v "AllowExternalDeviceSignon" /t REG_DWORD /d 1 /f
+    name: command_prompt  
+
+- name: Scarab Ransomware Defense Evasion Activities
+  auto_generated_guid: ca8ba39c-3c5a-459f-8e15-280aec65a910
+  description: |
+    Scarab Ransomware defense evasion activities that can abuse the registry values to modify the settings of the Credential Security Support Provider to overcome potential RDP connection issues.
+    [Scarab Ransomware Article](https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/)
+  supported_platforms:
+  - windows
+  executor:
+    command: |
+      reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters" /v AllowEncryptionOracle /t REG_DWORD /d 2 /f
+    cleanup_command: |
+       reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters" /v AllowEncryptionOracle /t REG_DWORD /d 0 /f
+    name: command_prompt
+
+- name: Disable Remote Desktop Anti-Alias Setting Through Registry
+  auto_generated_guid: 61d35188-f113-4334-8245-8c6556d43909
+  description: |
+    A modification registry to disable RDP anti-alias settings. This technique was seen in DarkGate malware as part of its installation
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services" /v "DisableRemoteDesktopAntiAlias" /t REG_DWORD /d 1 /f
+    cleanup_command: |
+       reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services" /v "DisableRemoteDesktopAntiAlias" /t REG_DWORD /d 0 /f
+    name: command_prompt
+  
+- name: Disable Remote Desktop Security Settings Through Registry
+  auto_generated_guid: 4b81bcfa-fb0a-45e9-90c2-e3efe5160140
+  description: |
+    A modification registry to disable RDP security settings. This technique was seen in DarkGate malware as part of its installation
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services" /v "DisableSecuritySettings" /t REG_DWORD /d 1 /f
+    cleanup_command: |
+       reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services" /v "DisableSecuritySettings" /t REG_DWORD /d 0 /f
+    name: command_prompt
+
+- name: Disabling ShowUI Settings of Windows Error Reporting (WER)
+  auto_generated_guid: 09147b61-40f6-4b2a-b6fb-9e73a3437c96
+  description: |
+    A modification registry to disable ShowUI settings of Windows Error Report. This registry setting can influence the behavior of error reporting dialogs or prompt box. 
+    This technique was seen in DarkGate malware as part of its installation.
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKCU\Software\Microsoft\Windows\Windows Error Reporting" /v DontShowUI /t REG_DWORD /d 1 /f
+    cleanup_command: |
+       reg add "HKCU\Software\Microsoft\Windows\Windows Error Reporting" /v DontShowUI /t REG_DWORD /d 0 /f
+    name: command_prompt
+
+- name: Enable Proxy Settings
+  auto_generated_guid: eb0ba433-63e5-4a8c-a9f0-27c4192e1336
+  description: |
+    A modification registry to enable proxy settings. This technique was seen in DarkGate malware as part of its installation.
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f
+    cleanup_command: |
+       reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f
+    name: command_prompt
+
+- name: Set-Up Proxy Server
+  auto_generated_guid: d88a3d3b-d016-4939-a745-03638aafd21b
+  description: |
+    A modification registry to setup proxy server. This technique was seen in DarkGate malware as part of its installation.
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "proxy.atomic-test.com:8080" /f
+    cleanup_command: |
+       reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer
+    name: command_prompt
+
+
+- name: RDP Authentication Level Override
+  auto_generated_guid: 7e7b62e9-5f83-477d-8935-48600f38a3c6
+  description: |
+    A modification registry to override RDP Authentication Level. This technique was seen in DarkGate malware as part of its installation.
+  supported_platforms:
+  - windows
+  executor:
+    command: | 
+       reg add "HKCU\Software\Microsoft\Terminal Server Client" /v AuthenticationLevelOverride /t REG_DWORD /d 0 /f
+    cleanup_command: |
+       reg delete "HKCU\Software\Microsoft\Terminal Server Client" /v AuthenticationLevelOverride
+    name: command_prompt

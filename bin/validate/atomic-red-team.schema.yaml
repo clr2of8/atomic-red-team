@@ -21,6 +21,7 @@ properties:
 $defs:
   test:
     type: object
+    additionalProperties: false
     required:
       - name
       - description
@@ -62,7 +63,6 @@ $defs:
           "/": {}
         patternProperties:
           "^[\\w-]+$":
-            type: integer
             type: object
             required:
               - description

